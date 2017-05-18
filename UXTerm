@@ -9,7 +9,6 @@ UXTerm*scrollTtyOutput: false
 UXTerm*VT100.Translations: #override \
       Shift Ctrl<Key>V: insert-selection(CLIPBOARD) \n\ 
       Shift Ctrl<Key>V: insert-selection(PRIMARY) \n\ 
-      Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
       Shift<Btn1Down>: select-start() \n\ 
       Shift<Btn1Motion>: select-extend() \n\ 
       Shift<Btn1Up>: select-end(CLIPBOARD) \n\
