@@ -1,11 +1,13 @@
 UXTerm*Background: black
 UXTerm*Foreground: grey
 UXTerm*SaveLines: 2000
-UXTerm*faceName: Ubuntu mono
+UXTerm*faceName: Hack
 UXTerm*faceSize: 12
 UXTerm*rightScrollBar: true
 UXTerm*ScrollBar: true
 UXTerm*scrollTtyOutput: false
+UXTerm*eightBitInput:   false
+UXTerm*metaSendsEscape: true
 UXTerm*VT100.Translations: #override \
       Shift Ctrl<Key>V: insert-selection(CLIPBOARD) \n\ 
       Shift Ctrl<Key>V: insert-selection(PRIMARY) \n\ 

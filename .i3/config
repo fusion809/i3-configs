@@ -16,7 +16,7 @@ set $mod Mod4
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:Monospace 13
+font pango:Hack 12
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -32,6 +32,12 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+# Launch PCManFM
+bindsym $mod+p exec pcmanfm
+
+# Launch RuneScape NXT client with Optirun
+bindsym $mod+o exec rs-launcher
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -150,7 +156,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status | i3weather
+        status_command ~/.i3/i3status.sh
+        #~/.i3/i3status.sh
         colors {
                 background #000000
                 statusline #ffffff
