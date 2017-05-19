@@ -1,5 +1,5 @@
 UXTerm*Background: black
-UXTerm*Foreground: green
+UXTerm*Foreground: grey
 UXTerm*SaveLines: 2000
 UXTerm*faceName: Ubuntu mono
 UXTerm*faceSize: 12
