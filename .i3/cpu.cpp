@@ -1,3 +1,4 @@
+// First segment (down to L49) is from SO http://stackoverflow.com/a/26930298/1876983
 #include "stdlib.h"
 #include "stdio.h"
 #include "string.h"
