@@ -39,6 +39,9 @@ bindsym $mod+p exec pcmanfm
 # Launch RuneScape NXT client with Optirun
 bindsym $mod+o exec rs-launcher
 
+# Launch Google Chrome
+bindsym $mod+c exec google-chrome-stable
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -97,16 +100,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym F1 workspace 1
+bindsym F2 workspace 2
+bindsym F3 workspace 3
+bindsym F4 workspace 4
+bindsym F5 workspace 5
+bindsym F6 workspace 6
+bindsym F7 workspace 7
+bindsym F8 workspace 8
+bindsym F9 workspace 9
+bindsym F10 workspace 10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
