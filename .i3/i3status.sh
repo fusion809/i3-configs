@@ -4,6 +4,8 @@
 do
     read line
     RAM=`free -kh | grep Mem | awk '{print $3}'`
+    TOTR=$(cat /proc/meminfo | grep MemT | sed 's/.*\://g' | sed 's/ *//g' | sed 's/kB//g')
+    TOT=$(octave --eval "$TOTR/1024^2" | sed 's/ans = *//g' | sed 's/$/G/g' )
 
     # Put uptime
     uptime=`uptime | awk '{print $3 " " $4}' | sed 's/,.*//'`
@@ -15,5 +17,5 @@ do
     g++ -o cpu.o $HOME/.i3/cpu.cpp
     CPU=$(./cpu.o)
 
-    printf "%s\n" "Up: $UP | CPU: $CPU% | RAM: $RAM | $line"
+    printf "%s\n" "Up: $UP | CPU: $CPU% | RAM: $RAM/$TOT | $line"
 done
