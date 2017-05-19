@@ -3,7 +3,7 @@
 /usr/bin/i3status -c $HOME/.i3status.conf | while :
 do
     read line
-    ram=`free -kh | grep Mem | awk '{print $3}'`
+    RAM=`free -kh | grep Mem | awk '{print $3}'`
 
     # Put uptime
     uptime=`uptime | awk '{print $3 " " $4}' | sed 's/,.*//'`
@@ -13,8 +13,7 @@ do
 
     # Compile C++ CPU prog and run it
     g++ -o cpu.o $HOME/.i3/cpu.cpp
-    pu=$(./cpu.o)
+    CPU=$(./cpu.o)
 
-    printf "%s\n" "Up: $UP | CPU: $pu | $line" || exit "1"
-
+    printf "%s\n" "Up: $UP | CPU: $CPU% | RAM: $RAM | $line"
 done
