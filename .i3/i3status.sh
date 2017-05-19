@@ -5,7 +5,7 @@ do
     read line
     RAM=`free -kh | grep Mem | awk '{print $3}'`
     TOTR=$(cat /proc/meminfo | grep MemT | sed 's/.*\://g' | sed 's/ *//g' | sed 's/kB//g')
-    TOT=$(octave --eval "$TOTR/1024^2" | sed 's/ans = *//g' | sed 's/$/G/g' )
+    TOT=$(octave --eval "round(10*$TOTR/1024^2)/10" | sed 's/ans = *//g' | sed 's/$/G/g' )
 
     # Put uptime
     uptime=`uptime | awk '{print $3 " " $4}' | sed 's/,.*//'`
