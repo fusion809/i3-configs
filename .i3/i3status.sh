@@ -10,9 +10,13 @@ do
 
     # Put uptime
     uptime=`uptime | awk '{print $3 " " $4}' | sed 's/,.*//'`
-    hour=$(echo $uptime | sed 's/\:.*//g')
-    min=$(echo $uptime | sed 's/.*\://g')
-    UP="${hour}h ${min}m"
+    hour=$(echo $uptime | grep "\:" | sed 's/\:.*//g')
+    min=$(echo $uptime | sed 's/.*\://g' | sed "s/min//g")
+    if [[ -n $hour ]]; then
+         UP="${hour}h ${min}m"
+    else
+         UP="${min}m"
+    fi
 
     # Compile C++ CPU prog and run it
     g++ -o cpu.o $HOME/.i3/cpu.cpp
