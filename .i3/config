@@ -39,6 +39,9 @@ bindsym $mod+p exec pcmanfm
 # Launch RuneScape NXT client with Optirun
 bindsym $mod+o exec rs-launcher
 
+# Launch VirtualBox
+bindsym $mod+v exec virtualbox
+
 # Launch Google Chrome
 bindsym $mod+c exec google-chrome-stable
 
