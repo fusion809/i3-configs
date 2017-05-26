@@ -26,8 +26,10 @@ font pango:Hack 12
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
+# start an LXTerminal (best terminal for the resources it uses; UXTerm has copy/paste issues and rendering issues for Vim nerd-fonts
 bindsym $mod+Return exec lxterminal
+# Uncomment the following line and comment the above line if you want to use UXTerm instead
+#bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
