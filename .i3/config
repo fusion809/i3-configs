@@ -40,7 +40,7 @@ bindsym $mod+p exec pcmanfm
 bindsym $mod+o exec rs-launcher
 
 # Launch VirtualBox
-bindsym $mod+v exec virtualbox
+bindsym $mod+shift+v exec virtualbox
 
 # Launch Google Chrome
 bindsym $mod+c exec google-chrome-stable

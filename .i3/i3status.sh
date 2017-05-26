@@ -3,6 +3,7 @@
 /usr/bin/i3status -c $HOME/.i3status.conf | while :
 do
     read line
+    # RAM
     RAM=`free -kh | grep Mem | awk '{print $3}'`
     TOTR=$(cat /proc/meminfo | grep MemT | sed 's/.*\://g' | sed 's/ *//g' | sed 's/kB//g')
     g++ -o ram.o $HOME/.i3/ram.cpp
@@ -22,5 +23,8 @@ do
     g++ -o cpu.o $HOME/.i3/cpu.cpp
     CPU=$(./cpu.o)
 
-    printf "%s\n" "Up: $UP | CPU: $CPU% | RAM: $RAM/$TOT | $line"
+    # Download rate
+    DOWN=$(. ~/.i3/download.sh)
+
+    printf "%s\n" "Up: $UP | CPU: $CPU% | RAM: $RAM/$TOT | Down: $DOWN | $line"
 done
