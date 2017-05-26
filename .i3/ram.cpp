@@ -10,6 +10,6 @@ using namespace std;
 int main(int argc, char *argv[]) {
     float TOT = atoi(argv[1]);
     float TOTm = TOT/(1024*1024);
-    printf("%.2f", TOTm);
+    printf("%.1f", TOTm);
     return 0;
 }

@@ -2,10 +2,10 @@
 
 # band function
 function band {
-    cat /proc/net/dev | grep "wlo1" | cut -d ':' -f 2 | cut -d ' ' -f 2
+    cat /proc/net/dev | grep "wlo1" | cut -d ':' -f 2 | cut -d ' ' -f 37
 }
 
-# Initial bandwidth download
+# Initial bandwidth upload
 BAND1=$(band)
 
 # Second(s) to wait to recheck file
@@ -20,7 +20,7 @@ BAND2=$(band)
 # Determine difference
 let DIFF=BAND2-BAND1
 
-# Determine rate of change in download bandwidth over time interval
+# Determine rate of change in upload bandwidth over time interval
 let RATE=DIFF/S
 
 # Convert rate to kB/s

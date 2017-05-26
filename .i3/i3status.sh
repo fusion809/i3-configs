@@ -25,6 +25,7 @@ do
 
     # Download rate
     DOWN=$(. ~/.i3/download.sh)
+    UPL=$(. ~/.i3/upload.sh)
 
-    printf "%s\n" "Up: $UP | CPU: $CPU% | RAM: $RAM/$TOT | Down: $DOWN | $line"
+    printf "%s\n" "Up: $UP | CPU: $CPU% | RAM: $RAM/$TOT | ↓ $DOWN ↑ $UPL | $line"
 done
