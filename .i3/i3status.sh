@@ -27,5 +27,5 @@ do
     DOWN=$(. ~/.i3/download.sh)
     UPL=$(. ~/.i3/upload.sh)
 
-    printf "%s\n" "Up: $UP | CPU: $CPU% | RAM: $RAM/$TOT | ↓ $DOWN ↑ $UPL | $line"
+    printf "%s\n" "Up: $UP | ↓ $DOWN ↑ $UPL | CPU: $CPU% | RAM: $RAM/$TOT | $line"
 done
