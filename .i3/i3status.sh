@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 /usr/bin/i3status -c $HOME/.i3status.conf | while :
 do
@@ -29,5 +29,32 @@ do
     # Upload rate
     UPL=$(./upload.sh)
 
-    printf "%s\n" "Up: $UP | ↓ $DOWN ↑ $UPL | CPU: $CPU% | RAM: $RAM/$TOT | $line"
+    function temp {
+         K=$(cat /sys/devices/platform/coretemp.0/hwmon/hwmon0/temp$1_input)
+         let K=K/1000
+         printf "$K°"
+    }
+
+    # Temp of core 1
+    TEMP0=$(temp 1)
+
+    # Temp of core 2
+    TEMP1=$(temp 2)
+
+    # Temp of core 3
+    TEMP2=$(temp 3)
+
+    # Temp of core 4
+    TEMP3=$(temp 4)
+
+    # Temp of core 5
+    TEMP4=$(temp 5)
+
+    # Date
+    DATE=$(date +"%l:%M:%S %p, %a %d %b %y")
+
+    # CPU Load
+    LOAD=$(uptime | cut -d ':' -f 5 | cut -d ',' -f 1 | sed 's/ //g')
+
+    printf "%s\n" "Up: $UP | ↓ $DOWN kB/s ↑ $UPL kB/s | CPU: $CPU% | RAM: $RAM/$TOT | Load: $LOAD | $TEMP0 | $TEMP1 | $TEMP2 | $TEMP3 | $TEMP4 | $DATE"
 done

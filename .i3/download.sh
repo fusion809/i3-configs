@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # band function
 function band {
@@ -9,7 +9,7 @@ function band {
 BAND1=$(band)
 
 # Second(s) to wait to recheck file
-S="1"
+S="0.1"
 
 # Sleep for those secs
 sleep $S
@@ -27,4 +27,4 @@ let RATE=DIFF/S
 let RATEkB=RATE/1024
 
 # Print rate in kB/s
-printf "$RATEkB kB/s"
+printf '%.2f' "$RATEkB"
