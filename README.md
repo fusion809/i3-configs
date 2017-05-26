@@ -7,8 +7,8 @@ This repository contains my i3 configs. The i3bar includes uptime, upload/downlo
 For these configs to work out-of-the-box one needs to have the following installed:
 
 * Bash
-* feh
-* g++
+* feh for desktop background
+* g++ for CPU/RAM information
 * i3bar
 * Python 2.x/3.x
 * Spectacle (so that one can take screenshots with <kbd>Win</kbd>+<kbd>F1</kbd>).
