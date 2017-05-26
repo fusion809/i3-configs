@@ -9,7 +9,7 @@ function band {
 BAND1=$(band)
 
 # Second(s) to wait to recheck file
-S="0.05"
+S="0.5"
 
 # Sleep for those secs
 sleep $S
