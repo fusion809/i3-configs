@@ -1,12 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 
 /usr/bin/i3status -c $HOME/.i3status.conf | while :
 do
     read line
+    cd $HOME/.i3
     # RAM
     RAM=`free -kh | grep Mem | awk '{print $3}'`
     TOTR=$(cat /proc/meminfo | grep MemT | sed 's/.*\://g' | sed 's/ *//g' | sed 's/kB//g')
-    g++ -o ram.o $HOME/.i3/ram.cpp
+    g++ -o ram.o ram.cpp
     TOT=$(./ram.o $TOTR | sed 's/$/G/g' )
 
     # Put uptime
@@ -20,12 +21,13 @@ do
     fi
 
     # Compile C++ CPU prog and run it
-    g++ -o cpu.o $HOME/.i3/cpu.cpp
+    g++ -o cpu.o cpu.cpp
     CPU=$(./cpu.o)
 
     # Download rate
-    DOWN=$(. ~/.i3/download.sh)
-    UPL=$(. ~/.i3/upload.sh)
+    DOWN=$(./download.sh)
+    # Upload rate
+    UPL=$(./upload.sh)
 
     printf "%s\n" "Up: $UP | ↓ $DOWN ↑ $UPL | CPU: $CPU% | RAM: $RAM/$TOT | $line"
 done
