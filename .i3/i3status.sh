@@ -11,13 +11,15 @@ do
     TOT=$(./ram.o $TOTR | sed 's/$/G/g' )
 
     # Put uptime
-    uptime=`uptime | awk '{print $3 " " $4}' | sed 's/,.*//'`
-    hour=$(echo $uptime | grep "\:" | sed 's/\:.*//g')
-    min=$(echo $uptime | sed 's/.*\://g' | sed "s/min//g")
-    if [[ -n $hour ]]; then
-         UP="${hour}h ${min}m"
+    uptime=$(cat /proc/uptime | cut -d ' ' -f 1)
+    uptime=$(octave --eval "round($uptime)" | sed 's/ans \= *//g') 
+    hour=$(octave --eval "fix($uptime/3600)" | sed 's/ans \= *//g')
+    min=$(octave --eval "fix($uptime/60-$hour*60)" | sed 's/ans \= *//g')
+    sec=$(octave --eval "fix($uptime-$hour*3600-$min*60)" | sed 's/ans \= *//g')
+    if ! [[ $hour == 0 ]]; then
+         UP="${hour}h ${min}m ${sec}s"
     else
-         UP="${min}m"
+         UP="${min}m ${sec}"
     fi
 
     # Compile C++ CPU prog and run it
