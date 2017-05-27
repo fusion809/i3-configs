@@ -37,6 +37,12 @@ bindsym $mod+Return exec terminator
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# Launch 0 A.D.
+bindsym $mod+0 exec optirun-0ad
+
+# Launch OpenRA
+bindsym $mod+shift+o exec openra
+
 # Launch PCManFM
 bindsym $mod+p exec pcmanfm
 

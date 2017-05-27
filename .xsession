@@ -1,1 +1,1 @@
-feh --bg-scale ~/.local/share/wallpapers/Gentoo12-wallpapers-18-1600.png
+feh --bg-scale ~/.local/share/wallpapers/if-it-moves-compile-it.png
