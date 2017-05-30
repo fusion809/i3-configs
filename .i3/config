@@ -114,7 +114,7 @@ bindsym $mod+a focus parent
 
 # switch to workspace
 bindsym F1 workspace 1
-bindsym F2 workspace 2
+bindsym $mod+2 workspace 2
 bindsym F3 workspace 3
 bindsym F4 workspace 4
 bindsym F5 workspace 5
@@ -123,6 +123,9 @@ bindsym F7 workspace 7
 bindsym F8 workspace 8
 bindsym F9 workspace 9
 bindsym F10 workspace 10
+
+# Terminal
+bindsym F12 exec terminator
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
