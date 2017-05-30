@@ -46,6 +46,9 @@ bindsym $mod+shift+o exec openra
 # Launch PCManFM
 bindsym $mod+p exec pcmanfm
 
+# Launch Thunar
+bindsym $mod+t exec thunar
+
 # Launch RuneScape NXT client with Optirun
 bindsym $mod+o exec rs-launcher
 
