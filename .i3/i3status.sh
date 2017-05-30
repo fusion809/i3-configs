@@ -57,7 +57,7 @@ do
 
     # CPU Load
     function load {
-         uptime | cut -d ':' -f "$1" | cut -d ',' -f "$2" | sed 's/ //g'
+         uptime | cut -d ':' -f "$1" | cut -d ',' -f "$2" | grep "[0-9]" | sed 's/ //g'
     }
     if $hour >= 1 || load 4 2; then
          LOAD=$(load 5 1)
