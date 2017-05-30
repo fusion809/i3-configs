@@ -19,7 +19,7 @@ do
     if ! [[ $hour == 0 ]]; then
          UP="${hour}h ${min}m ${sec}s"
     else
-         UP="${min}m ${sec}"
+         UP="${min}m ${sec}s"
     fi
 
     # Compile C++ CPU prog and run it
