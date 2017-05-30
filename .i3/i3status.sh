@@ -56,10 +56,13 @@ do
     DATE=$(date +"%l:%M:%S %p, %a %d %b %y")
 
     # CPU Load
-    if $hour >= 1; then
-         LOAD=$(uptime | cut -d ':' -f 5 | cut -d ',' -f 1 | sed 's/ //g')
+    function load {
+         uptime | cut -d ':' -f "$1" | cut -d ',' -f "$2" | sed 's/ //g'
+    }
+    if $hour >= 1 || load 4 2; then
+         LOAD=$(load 5 1)
     else
-         LOAD=$(uptime | cut -d ':' -f 4 | cut -d ',' -f 1 | sed 's/ //g')
+         LOAD=$(load 4 1)
     fi
     printf "%s\n" "Up: $UP | ↓ $DOWN kB/s ↑ $UPL kB/s | CPU: $CPU% | RAM: $RAM/$TOT | Load: $LOAD | $TEMP0 | $TEMP1 | $TEMP2 | $TEMP3 | $TEMP4 | $DATE"
 done
