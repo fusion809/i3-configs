@@ -71,6 +71,9 @@ bindsym $mod+t exec thunar
 # Launch VirtualBox
 bindsym $mod+Shift+v exec virtualbox
 
+# Launch virt-manager
+bindsym $mod+Shift+m exec virt-manager
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
