@@ -59,8 +59,12 @@ do
     function load {
          uptime | cut -d ':' -f "$1" | cut -d ',' -f "$2" | grep "[0-9]" | sed 's/ //g'
     }
-    if $hour >= 1 || load 4 2; then
+
+    loadcheck=$(load 4 2)
+    if [[ $hour -ge "1.0" ]]; then
          LOAD=$(load 5 1)
+    elif [[ $loadcheck -gt "0.05" ]]; then
+         LOAD=$(load 4 1)
     else
          LOAD=$(load 4 1)
     fi
