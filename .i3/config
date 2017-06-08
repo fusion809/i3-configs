@@ -17,6 +17,9 @@ bindsym $mod+F1 exec spectacle
 # Open Konversation
 bindsym $mod+i exec konversation
 
+# Open Firefox
+bindsym $mod+Shift+f exec firefox
+
 # Open LibreOffice writer
 bindsym $mod+Shift+w exec libreoffice-writer 
 
@@ -79,6 +82,9 @@ bindsym $mod+Shift+v exec virtualbox
 
 # Launch virt-manager
 bindsym $mod+Shift+m exec virt-manager
+
+# Launch VLC
+bindsym $mod+Shift+p exec vlc
 
 # change focus
 bindsym $mod+j focus left
