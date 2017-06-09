@@ -17,11 +17,16 @@ For these configs to work out-of-the-box one needs to have the following install
 If you do not want to use these apps (Terminator and Spectacle) and want to use alternative apps edit `~/.i3/config` accordingly. Likewise these configs are set up for PCs with 5 or more cores. If your screen is small and the i3bar does not seem to fit properly on your screen I would suggest editing the font setting line in `~/.i3/config` accordingly. If you use some other internet connection than wlo1 you will need to edit the `~/.i3/download.sh` and `~/.i3/upload.sh` files to use your network connection.
 
 ## Shortcuts
-| Shortcut       |                           Action                                 |
-|----------------|------------------------------------------------------------------|
-| <kbd>F12</kbd> | Change to workspace where an instance of Terminology is running. |
-| <kbd>Win</kbd>+<kbd>Enter</kbd> | Launch Terminology. |
-| <kbd>Win</kbd>+<kbd>0</kbd> | Launch 0 A.D. with Optirun (Bumblebee). |
-| <kbd>Win</kbd>+<kbd>c</kbd> | Launch Chromium browser. |
+| Shortcut                                                                          |                           Action                                                                                |
+|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| <kbd>F11</kbd>                                                                    | Change to workspace where an instance of VLC is running.                                                        |
+| <kbd>F12</kbd>                                                                    | Change to workspace where an instance of Terminology is running.                                                |
+| <kbd>Win</kbd>+<kbd>Enter</kbd>                                                   | Launch Terminology.                                                                                             |
+| <kbd>Win</kbd>+<kbd>0</kbd>                                                       | Launch 0 A.D. with Optirun (Bumblebee).                                                                         |
+| <kbd>Win</kbd>+<kbd>c</kbd>                                                       | Launch Chromium browser.                                                                                        |
+| <kbd>Win</kbd>+<kbd>d</kbd>                                                       | Launch dmenu_run so you can enter in a command to run.                                                          |
+| <kbd>Win</kbd>+<kbd>g</kbd>                                                       | Launch Google Chrome browser.                                                                                   |
+| <kbd>Win</kbd>+<kbd>i</kbd>                                                       | Launch i3-input.                                                                                                |
+| <kbd>Win</kbd>+<kbd>m</kbd>                                                       | Launch MarvinSketch (installed from [fusion809-overlay](https://github.com/fusion809/fusion809-overlay))        |
 
 
