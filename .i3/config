@@ -11,11 +11,8 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 set $mod Mod4
 
-# Take a screenshot using PrintScrn
-bindsym $mod+F1 exec spectacle
-
-# Open Konversation
-bindsym $mod+i exec konversation
+# Take a screenshot
+bindsym Print --release exec /usr/local/bin/scrnshot
 
 # Open Firefox
 bindsym $mod+Shift+f exec firefox
@@ -38,35 +35,26 @@ font pango:Hack 10
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start an LXTerminal (best terminal for the resources it uses; UXTerm has copy/paste issues and rendering issues for Vim nerd-fonts
-bindsym $mod+Return exec terminator
-# Uncomment the following line and comment the above line if you want to use UXTerm instead
-#bindsym $mod+Return exec i3-sensible-terminal
-
-# kill focused window
-bindsym $mod+q kill
-
 # Launch 0 A.D.
 bindsym $mod+0 exec optirun-0ad
+
+# Focus terminal?
+bindsym $mod+b [class="Terminator"] focus
 
 # Launch Chromium
 bindsym $mod+c exec chromium
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # Launch Google Chrome
 bindsym $mod+g exec google-chrome-stable
 
+# Open i3-input
+bindsym $mod+i exec i3-input
+
 # Launch MarvinSketch
 bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
-
-# Launch OpenRA
-bindsym $mod+Shift+o exec openra
 
 # Launch RuneScape NXT client with Optirun
 bindsym $mod+o exec rs-launcher
@@ -74,14 +62,20 @@ bindsym $mod+o exec rs-launcher
 # Launch PCManFM
 bindsym $mod+p exec pcmanfm
 
+# kill focused window
+bindsym $mod+q kill
+
 # Launch Thunar
 bindsym $mod+t exec thunar
 
-# Launch VirtualBox
-bindsym $mod+Shift+v exec virtualbox
-
 # Launch virt-manager
 bindsym $mod+Shift+m exec virt-manager
+
+# Launch OpenRA
+bindsym $mod+Shift+o exec openra
+
+# Launch VirtualBox
+bindsym $mod+Shift+v exec virtualbox
 
 # Launch VLC
 bindsym $mod+Shift+p exec vlc
