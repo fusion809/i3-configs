@@ -6,12 +6,25 @@ This repository contains my i3 configs. The i3bar includes uptime, upload/downlo
 ## Requirements
 For these configs to work out-of-the-box one needs to have the following installed:
 
-* feh for desktop background
-* g++ for CPU/RAM information
-* i3bar
+* feh for desktop background.
+* g++ for CPU/RAM information.
+* i3bar.
 * ImageMagick, so that one can take screenshots with <kbd>PrtScrn</kbd> (or <kbd>Print</kbd> or <kbd>PrntScr</kbd>).
 * Terminology, for the <kbd>Win</kbd>+<kbd>Enter</kbd> shortcut to open a terminal.
 * Zsh, which is required for the floating point arithmetic used in download/upload calculations. 
+
+## Quick install
+To install on distributions without the bash executable in `/bin` run:
+
+```bash
+/bin/bash -c "$(wget -cqO- https://git.io/vHDJ7)"
+```
+
+while for those with bash in `/bin` run:
+
+```bash
+/bin/bash -c "$(wget -cqO- https://git.io/vHDUm)"
+```
 
 ## Customization
 If you do not want to use these apps (Terminology and ImageMagick) and want to use alternative apps edit `~/.i3/config` accordingly. Likewise these configs are set up for PCs with 5 or more cores. If your screen is small and the i3bar does not seem to fit properly on your screen I would suggest editing the font setting line in `~/.i3/config` accordingly. If you use some other internet connection than wlo1 you will need to edit the `~/.i3/download.sh` and `~/.i3/upload.sh` files to use your network connection.

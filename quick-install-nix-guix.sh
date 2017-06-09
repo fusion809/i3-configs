@@ -8,7 +8,7 @@ if `printf $SHELL | grep bash > /dev/null 2>&1`; then
 elif `printf $SHELL | grep zsh > /dev/null 2>&1`; then
     printf "You're using Zsh, this script should work, hopefully.\n"
 else
-    printf "You're using Bourne shell (sh), this script will not work and will exit now!\n" && exit 1
+    printf "You're using Bourne Shell (sh), C Shell (csh) or some other unsupported shell, this script will not work and will exit now!\n" && exit 1
 fi
 
 # Path variables
