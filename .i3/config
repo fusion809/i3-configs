@@ -39,7 +39,7 @@ floating_modifier $mod
 bindsym $mod+0 exec optirun-0ad
 
 # Focus terminal?
-bindsym $mod+b [class="Terminator"] focus
+bindsym F12 [class="terminology"] focus
 
 # Launch Chromium
 bindsym $mod+c exec chromium
@@ -143,7 +143,7 @@ bindsym F9 workspace 9
 bindsym F10 workspace 10
 
 # Terminal
-bindsym F12 exec terminator
+bindsym $mod+Enter exec terminology
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1

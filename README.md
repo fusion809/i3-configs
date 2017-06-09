@@ -9,8 +9,8 @@ For these configs to work out-of-the-box one needs to have the following install
 * feh for desktop background
 * g++ for CPU/RAM information
 * i3bar
+* ImageMagick, so that one can take screenshots with <kbd>PrtScrn</kbd> (or <kbd>Print</kbd> or <kbd>PrntScr</kbd>).
 * Python 2.x/3.x
-* Spectacle, so that one can take screenshots with <kbd>Win</kbd>+<kbd>F1</kbd>.
 * Terminator, for the <kbd>Win</kbd>+<kbd>Enter</kbd> shortcut to open a terminal.
 * Zsh, which is required for the floating point arithmetic used in download/upload calcs. 
 
