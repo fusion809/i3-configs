@@ -11,15 +11,6 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 set $mod Mod4
 
-# Take a screenshot
-bindsym Print --release exec /usr/local/bin/scrnshot
-
-# Open Firefox
-bindsym $mod+Shift+f exec firefox
-
-# Open LibreOffice writer
-bindsym $mod+Shift+w exec libreoffice-writer 
-
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -35,50 +26,67 @@ font pango:Hack 10
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# Launch 0 A.D.
-bindsym $mod+0 exec optirun-0ad
-
 # Focus terminal?
 bindsym F12 [class="terminology"] focus
 
-# Launch Chromium
+#########################################################################################
+###################################### Start apps #######################################
+#########################################################################################
+
+# Screenshot
+bindsym Print --release exec /usr/local/bin/scrnshot
+
+# Terminal
+bindsym $mod+Return exec terminology
+
+# 0 A.D.
+bindsym $mod+0 exec optirun-0ad
+
+# Chromium
 bindsym $mod+c exec chromium
 
-# start dmenu (a program launcher)
+# dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 
-# Launch Google Chrome
+# Google Chrome
 bindsym $mod+g exec google-chrome-stable
 
-# Open i3-input
+# i3-input
 bindsym $mod+i exec i3-input
 
-# Launch MarvinSketch
+# MarvinSketch
 bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
 
-# Launch RuneScape NXT client with Optirun
+# RuneScape NXT client with Optirun
 bindsym $mod+o exec rs-launcher
 
-# Launch PCManFM
+# PCManFM
 bindsym $mod+p exec pcmanfm
 
-# kill focused window
-bindsym $mod+q kill
-
-# Launch Thunar
+# Thunar
 bindsym $mod+t exec thunar
 
-# Launch virt-manager
+# Firefox
+bindsym $mod+Shift+f exec firefox
+
+# virt-manager
 bindsym $mod+Shift+m exec virt-manager
 
-# Launch OpenRA
+# OpenRA
 bindsym $mod+Shift+o exec openra
 
-# Launch VirtualBox
+# VLC
+bindsym $mod+Shift+p exec vlc
+
+# VirtualBox
 bindsym $mod+Shift+v exec virtualbox
 
-# Launch VLC
-bindsym $mod+Shift+p exec vlc
+# LibreOffice writer
+bindsym $mod+Shift+w exec libreoffice-writer 
+
+#########################################################################################
+#################################### Window tweaks ######################################
+#########################################################################################
 
 # change focus
 bindsym $mod+j focus left
@@ -130,6 +138,9 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# kill focused window
+bindsym $mod+q kill
+
 # switch to workspace
 bindsym F1 workspace 1
 bindsym $mod+2 workspace 2
@@ -141,9 +152,6 @@ bindsym F7 workspace 7
 bindsym F8 workspace 8
 bindsym F9 workspace 9
 bindsym F10 workspace 10
-
-# Terminal
-bindsym $mod+Enter exec terminology
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -202,5 +210,3 @@ bar {
                 inactive_workspace #888888 #000000
         }
 }
-
-bindsym Mod1+Tab exec ~/.i3/alt_tab.sh

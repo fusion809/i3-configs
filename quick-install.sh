@@ -14,11 +14,16 @@ function checke {
 
 # Check deps
 checke cp
+checke feh
 checke g++
 checke git
+checke i3bar
+checke import
 checke ln
 checke mkdir
 checke sudo
+checke terminology
+checke zsh
 
 # Script assumes all deps are installed
 if ! [[ -d $CFG ]]; then

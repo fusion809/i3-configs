@@ -1,3 +1,8 @@
+# Halt on errors
+set -e
+set -x
+
+# Check shell
 if `printf $SHELL | grep bash > /dev/null 2>&1`; then
     printf "You're using Bash, good, this script should run fine!\n"
 elif `printf $SHELL | grep zsh > /dev/null 2>&1`; then
@@ -5,10 +10,6 @@ elif `printf $SHELL | grep zsh > /dev/null 2>&1`; then
 else
     printf "You're using Bourne shell (sh), this script will not work and will exit now!\n" && exit 1
 fi
-
-# Halt on errors
-set -e
-set -x
 
 # Path variables
 CFG="$HOME/GitHub/mine/configs"
@@ -20,11 +21,16 @@ function checke {
 
 # Check deps
 checke cp
+checke feh
 checke g++
 checke git
+checke i3bar
+checke import
 checke ln
 checke mkdir
 checke sudo
+checke terminology
+checke zsh
 
 # Script assumes all deps are installed
 if ! [[ -d $CFG ]]; then
