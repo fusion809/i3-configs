@@ -90,15 +90,15 @@ do
     ##########################################################################################
     ##################################### Weather ############################################
     ##########################################################################################
-    WEATH=$(wget -cqO- https://weather.com/en-AU/weather/today/l/ASXX0117:1:AS)
+    WEATH=$(wget -cqO- http://www.weatherzone.com.au/qld/lower-burdekin/townsville)
     # Echo has to be used on the following two lines as printf gives some %} issue
-    temp=$(echo $WEATH | sed 's|</div>|\n</div>|g' | grep 'today_nowcard-temp' | cut -d '>' -f 4 | sed 's/<sup//g')
-    cond=$(echo $WEATH | sed 's|</div>|\n</div>|g' | grep 'today_nowcard-phrase' | cut -d '>' -f 3)
+    temp=$(echo $WEATH | grep 'tempnow' | cut -d '>' -f 2 | sed 's|</span||g' | sed 's|&deg;|°|g')
+    cond=$(echo $WEATH | grep "icon-forecast-large weathericons" | cut -d '=' -f 3 | cut -d '"' -f 2)
 
     ##########################################################################################
     ###################################### Status ############################################
     ##########################################################################################
    # printf "%s\n" "$cond $temp °C | Up: $UP | ↓ $DOWN kB/s ↑ $UPL kB/s | CPU: $CPU% | RAM: $RAM/$TOT | Load: $LOAD | $TEMP0 | $TEMP1 | $TEMP2 | $TEMP3 | $TEMP4 | $DATE"
-    printf "%s\n" "$cond $temp °C | Up: $UP | CPU: $CPU% | RAM: $RAM/$TOT | Load: $LOAD | $TEMP0 | $TEMP1 | $TEMP2 | $TEMP3 | $TEMP4 | $DATE"
+    printf "%s\n" "$cond $temp | Up: $UP | CPU: $CPU% | RAM: $RAM/$TOT | Load: $LOAD | $TEMP0 | $TEMP1 | $TEMP2 | $TEMP3 | $TEMP4 | $DATE"
 
 done

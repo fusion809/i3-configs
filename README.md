@@ -2,7 +2,7 @@
 ![The configs as of 27 May 2017 running on Gentoo Linux with i3 4.13](https://fusion809.github.io/images/desktop-environments/i3-4.13-my-configs-11-Jun-2017.png)
 
 <!--upload/download rates (unfortunately they are incredibly inaccurate, sometimes they will show 0 kB/s even when download/upload rates are > 1,000 kB/s, if you know how to make it accurate please file a new issue or pull request and I will happily accept it!), -->
-This repository contains my i3 configs. The i3bar includes uptime, % CPU used, RAM usage, core temperatures (set up for my system in particular so may not work for others. It is fairly easy to edit `~/.i3/i3status.sh` to set it up for your system) and time. 
+This repository contains my i3 configs. The i3bar includes weather conditions (including temperatures; presently calculates it for my location, feel free to edit it in `~/.i3/i3status.sh`), uptime, % CPU used, RAM usage, core temperatures (set up for my system in particular so may not work for others. It is fairly easy to edit `~/.i3/i3status.sh` to set it up for your system) and time. 
 
 ## Requirements
 For these configs to work out-of-the-box one needs to have the following installed:
