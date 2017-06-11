@@ -9,7 +9,7 @@ function band {
 BAND1=$(band)
 
 # Second(s) to wait to recheck file
-S="0.3"
+S="1"
 
 # Sleep for those secs
 sleep $S
@@ -27,4 +27,4 @@ let RATE=DIFF/S
 let RATEkB=RATE/1024
 
 # Print rate in kB/s
-printf '%.2f' "$RATEkB"
+printf '%.2f' "$RATEkB" > /tmp/download-rate-i3

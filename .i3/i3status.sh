@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+killall daemon.o
+cd $HOME/.i3 && ./daemon.o && cd -
 /usr/bin/i3status -c $HOME/.i3status.conf | while :
 do
     # Read input
@@ -32,19 +34,19 @@ do
     ##########################################################################################
     ###################################### CPU Usage #########################################
     ##########################################################################################
-    CPU=$(/usr/local/bin/cpu)
+    CPU=$(cat cpu.log | tail -n 1)
 
     ##########################################################################################
     #################################### Date Transfer #######################################
     ##########################################################################################
     # Download rate
-    DOWN=$(./download.sh)
+    DOWN=$(cat $HOME/.i3/down.log | tail -n 1)
     # Upload rate
-    UPL=$(./upload.sh)
+    UPL=$(cat $HOME/.i3/up.log | tail -n 1)
 
     ##########################################################################################
     ###################################### CPU Temp ##########################################
-    ##########################################################################################
+    #########################################################################################
     function temp {
          K=$(cat /sys/devices/platform/coretemp.0/hwmon/hwmon0/temp$1_input)
          let K=K/1000
@@ -88,16 +90,15 @@ do
     ##########################################################################################
     ##################################### Weather ############################################
     ##########################################################################################
-    #WEATH=$(curl -sL wttr.in/townsville)
-    #function weathd {
-    #     printf $WEATH | head -n "$1" | tail -n 1 | sed 's|[-\.\ \:\_\;]||g'
-    #}
-
-    #temp=$(weathd 4)
-    #cond=$(weathd 3)
+    WEATH=$(wget -cqO- https://weather.com/en-AU/weather/today/l/ASXX0117:1:AS)
+    # Echo has to be used on the following two lines as printf gives some %} issue
+    temp=$(echo $WEATH | sed 's|</div>|\n</div>|g' | grep 'today_nowcard-temp' | cut -d '>' -f 4 | sed 's/<sup//g')
+    cond=$(echo $WEATH | sed 's|</div>|\n</div>|g' | grep 'today_nowcard-phrase' | cut -d '>' -f 3)
 
     ##########################################################################################
     ###################################### Status ############################################
     ##########################################################################################
-    printf "%s\n" "Up: $UP | ↓ $DOWN kB/s ↑ $UPL kB/s | CPU: $CPU% | RAM: $RAM/$TOT | Load: $LOAD | $TEMP0 | $TEMP1 | $TEMP2 | $TEMP3 | $TEMP4 | $DATE"
+   # printf "%s\n" "$cond $temp °C | Up: $UP | ↓ $DOWN kB/s ↑ $UPL kB/s | CPU: $CPU% | RAM: $RAM/$TOT | Load: $LOAD | $TEMP0 | $TEMP1 | $TEMP2 | $TEMP3 | $TEMP4 | $DATE"
+    printf "%s\n" "$cond $temp °C | Up: $UP | CPU: $CPU% | RAM: $RAM/$TOT | Load: $LOAD | $TEMP0 | $TEMP1 | $TEMP2 | $TEMP3 | $TEMP4 | $DATE"
+
 done
