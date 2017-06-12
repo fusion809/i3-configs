@@ -13,11 +13,29 @@ font pango:Hack 9
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# Switch to VLC
-bindsym F11 [class="vlc"] focus
+##################################################################################################
+################################### Change to workspace with app #################################
+##################################################################################################
+# 0 A.D.
+bindsym $mod+1 [class="pyrogenesis"] focus
+
+# Chromium
+bindsym $mod+2 [class="chromium-browser-chromium"] focus
+
+# OpenRA
+bindsym $mod+3 [class="mono-sgen"] focus
+
+# Switch to RS
+bindsym $mod+4 [class="RuneScape"] focus
 
 # Switch to Terminology
-bindsym F12 [class="terminology"] focus
+bindsym F11 [class="terminology"] focus
+
+# Switch to Thunar
+bindsym $mod+5 [class="thunar"] focus
+
+# Switch to VLC
+bindsym F12 [class="vlc"] focus
 
 # Take a screenshot
 bindsym Print --release exec /usr/local/bin/scrnshot
@@ -65,7 +83,7 @@ bindsym $mod+Shift+p exec vlc
 bindsym $mod+Shift+v exec virtualbox
 
 # Open LibreOffice writer
-bindsym $mod+Shift+w exec libreoffice-writer 
+bindsym $mod+Shift+w exec libreoffice-writer
 
 # change focus
 bindsym $mod+j focus left

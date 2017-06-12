@@ -90,15 +90,14 @@ do
     ##########################################################################################
     ##################################### Weather ############################################
     ##########################################################################################
-    WEATH=$(wget -cqO- http://www.weatherzone.com.au/qld/lower-burdekin/townsville)
-    # Echo has to be used on the following two lines as printf gives some %} issue
-    temp=$(echo $WEATH | grep 'tempnow' | cut -d '>' -f 2 | sed 's|</span||g' | sed 's|&deg;|°|g')
-    cond=$(echo $WEATH | grep "icon-forecast-large weathericons" | cut -d '=' -f 3 | cut -d '"' -f 2)
+    temp=$(cat temp.txt)
+    cond=$(cat cond.txt)
 
     ##########################################################################################
     ###################################### Status ############################################
     ##########################################################################################
    # printf "%s\n" "$cond $temp °C | Up: $UP | ↓ $DOWN kB/s ↑ $UPL kB/s | CPU: $CPU% | RAM: $RAM/$TOT | Load: $LOAD | $TEMP0 | $TEMP1 | $TEMP2 | $TEMP3 | $TEMP4 | $DATE"
-    printf "%s\n" "$cond $temp | Up: $UP | CPU: $CPU% | RAM: $RAM/$TOT | Load: $LOAD | $TEMP0 | $TEMP1 | $TEMP2 | $TEMP3 | $TEMP4 | $DATE"
+   # printf "%s\n" "$cond $temp | Up: $UP | CPU: $CPU% | RAM: $RAM/$TOT | Load: $LOAD | $TEMP0 | $TEMP1 | $TEMP2 | $TEMP3 | $TEMP4 | $DATE"
+    printf "%s\n" "Up: $UP | CPU: $CPU% | RAM: $RAM/$TOT | Load: $LOAD | $TEMP0 | $TEMP1 | $TEMP2 | $TEMP3 | $TEMP4 | $DATE"
 
 done
