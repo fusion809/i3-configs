@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 from i3pystatus import Status
 from collections import defaultdict
 from string import Formatter
@@ -40,7 +40,9 @@ status.register("temp",
     dynamic_color=True
    )
 
-status.register("network", interface="wlo1")
+#status.register("network", interface="wlo1")
+#status.register("network", interface="wlo1", format="{bytes_recv} kB/s")
+status.register("network", interface="wlo1", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
 
 status.register(
     'weather',
@@ -49,6 +51,7 @@ status.register(
     hints={'markup': 'pango'},
     backend=weathercom.Weathercom(
         location_code='ASXX0117:1:AS',
+        locale='en-AU',
         units="metric",
     ),
 )
