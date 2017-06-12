@@ -1,8 +1,12 @@
 # i3-configs
-![The configs as of 27 May 2017 running on Gentoo Linux with i3 4.13](https://fusion809.github.io/images/desktop-environments/i3-4.13-my-configs-11-Jun-2017.png)
+![The C/C++/Shell configs as of 11 June 2017 running on Gentoo Linux with i3 4.13](https://fusion809.github.io/images/desktop-environments/i3-4.13-my-configs-11-Jun-2017.png)
 
 <!--upload/download rates (unfortunately they are incredibly inaccurate, sometimes they will show 0 kB/s even when download/upload rates are > 1,000 kB/s, if you know how to make it accurate please file a new issue or pull request and I will happily accept it!), -->
-This repository contains my i3 configs. The i3bar includes weather conditions (including temperatures; presently calculates it for my location, feel free to edit it in `~/.i3/i3status.sh`), uptime, % CPU used, RAM usage, core temperatures (set up for my system in particular so may not work for others. It is fairly easy to edit `~/.i3/i3status.sh` to set it up for your system) and time. 
+This repository contains my i3 configs. There are two main routes of using them. Either you can use the i3pystatus (yes you will need to install i3pystatus, a bleeding-edge, from lastest git snapshot, version of the package is needed!) powered bar or the C/C++/Shell-powered bar. 
+
+The C/C++/Shell-powered bar includes weather conditions (including temperatures; presently calculates it for my location, feel free to edit it in `~/.i3/i3status.sh`), uptime, % CPU used, RAM usage, core temperatures (set up for my system in particular so may not work for others. It is fairly easy to edit `~/.i3/i3status.sh` to set it up for your system) and time. 
+
+The Python-based (or i3pystatus) bar displays the following: weather conditions (although sometimes it botches it and labels the temperature in Farenheit as degrees Celsius), download rate for wlo1 (not hard to change to another interface by editing `~/.i3/i3status.py`), uptime, disk space (used/total), core temperatures, CPU usage (%), load (average over 1 minute), RAM usage (used/total) and date. 
 
 ## Requirements
 For these configs to work out-of-the-box one needs to have the following installed:
@@ -10,6 +14,10 @@ For these configs to work out-of-the-box one needs to have the following install
 * feh for desktop background.
 * g++ for CPU/RAM information.
 * i3bar.
+* i3pystatus (for Python-based counterpart of the bar)
+# Switch to Terminology
+bindsym F12 [class="terminology"] focus
+
 * ImageMagick, so that one can take screenshots with <kbd>PrtScrn</kbd> (or <kbd>Print</kbd> or <kbd>PrntScr</kbd>).
 * Terminology, for the <kbd>Win</kbd>+<kbd>Enter</kbd> shortcut to open a terminal.
 * Zsh, which is required for the floating point arithmetic used in download/upload calculations. 

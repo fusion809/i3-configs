@@ -28,12 +28,12 @@ status.register("cpu_usage",
     format="CPU: {usage}%",)
 
 # Shows your CPU temperature, if you have a Intel CPU
-#status.register("temp",
-#    format="{Physical_id_0}°C {Core_0_bar}{Core_1_bar}{Core_2_bar}{Core_3_bar}",
-#    hints={"markup": "pango"},
-#    lm_sensors_enabled=True,
-#    dynamic_color=True
-#   )
+status.register("temp",
+    format="{Core_0}°C {Core_1}°C {Core_2}°C {Core_3}°C",
+    hints={"markup": "pango"},
+    lm_sensors_enabled=True,
+    dynamic_color=True
+   )
 
 # Shows disk usage of /
 # Format:
@@ -46,7 +46,7 @@ status.register("disk",
 status.register("uptime",
     format="Up: {hours}h {mins}m {secs}s")
 
-#status.register("net_speed")
+status.register("network", interface="wlo1")
 
 status.register(
     'weather',
