@@ -20,6 +20,11 @@ status.register("mem",
     round_size=3
     )
 
+status.register("disk",
+    path="/",
+    round_size=1,
+    format="Disk: {used}/{total}G",)
+
 # Shows the average load of the last minute and the last 5 minutes
 # (the default value for format is used)
 status.register("load", format="Load: {avg1}")
@@ -35,17 +40,6 @@ status.register("temp",
     dynamic_color=True
    )
 
-# Shows disk usage of /
-# Format:
-# 42/128G [86G]
-status.register("disk",
-    path="/",
-    round_size=1,
-    format="Disk: {used}/{total}G",)
-
-status.register("uptime",
-    format="Up: {hours}h {mins}m {secs}s")
-
 status.register("network", interface="wlo1")
 
 status.register(
@@ -58,5 +52,8 @@ status.register(
         units="metric",
     ),
 )
+
+status.register("uptime",
+    format="Up: {hours}h {mins}m {secs}s")
 
 status.run()
