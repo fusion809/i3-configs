@@ -19,27 +19,6 @@ typedef struct {
     unsigned long int steal;
 } cpu_usage;
 
-typedef struct {
-    // Receive
-    unsigned long int rbytes;
-    unsigned long int rpackets;
-    unsigned long int rerrs;
-    unsigned long int rdrop;
-    unsigned long int rfifo;
-    unsigned long int rframe;
-    unsigned long int rcompressed;
-    unsigned long int rmulticast;
-    // Transmit
-    unsigned long int tbytes;
-    unsigned long int tpackets;
-    unsigned long int terrs;
-    unsigned long int tdrop;
-    unsigned long int tfifo;
-    unsigned long int tcolls;
-    unsigned long int tcarrier;
-    unsigned long int tcompressed;
-} bandwidth;
-
 cpu_usage readStats() {
     FILE* fp = fopen("/proc/stat", "r");
 
@@ -51,29 +30,6 @@ cpu_usage readStats() {
          while (fgets(buf, BUF_SIZE, fp)) {
               if (sscanf(buf, "cpu %lu %lu %lu %lu %lu %lu %lu %lu",
                 &usage.user, &usage.nice, &usage.system, &usage.idle, &usage.iowait, &usage.irq, &usage.softirq, &usage.steal))
-              {
-                   break;
-              }
-
-         }
-    }
-
-    fclose(fp);
-
-    return usage;
-}
-
-bandwidth readNet() {
-    FILE* fp = fopen("/proc/net/dev", "r");
-
-    bandwidth usage;
-
-    if (fp != NULL) {
-         char buf[BUF_SIZE];
-
-         while (fgets(buf, BUF_SIZE, fp)) {
-              if (sscanf(buf, "wlo1: %lu %lu %lu %lu %lu %lu %lu %lu %lu %lu %lu %lu %lu %lu %lu %lu",
-                &usage.rbytes, &usage.rpackets, &usage.rerrs, &usage.rdrop, &usage.rfifo, &usage.rframe, &usage.rcompressed, &usage.rmulticast, &usage.tbytes, &usage.tpackets, &usage.terrs, &usage.tdrop, &usage.tfifo, &usage.tcolls, &usage.tcarrier, &usage.tcompressed))
               {
                    break;
               }
@@ -125,16 +81,6 @@ double calculateUsage(cpu_usage u1, cpu_usage u2, int numCores) {
 
     double result = (double) (totald - idled) / (double) totald;
 
-    return result;
-}
-
-int calculateDown(bandwidth u1, bandwidth u2) {
-    unsigned long int result = u2.rbytes - u1.rbytes;
-    return result;
-}
-
-int calculateUp(bandwidth u1, bandwidth u2) {
-    unsigned long int result = u2.tbytes - u1.tbytes;
     return result;
 }
 
@@ -192,16 +138,20 @@ int main()
          sleep(1);
          // take a reading
          cpu_usage usage1 = readStats();
-         bandwidth data1 = readNet();
+         // Received bytes
+         int rbytes1 = open("/sys/class/net/wlo1/statistics/rx_bytes");
+         // Transmitted bytes
+         int tbytes1 = open("/sys/class/net/wlo1/statistics/tx_bytes");
 
          // wait a second and take another
          sleep(1);
          cpu_usage usage2 = readStats();
-         bandwidth data2 = readNet();
+         int rbytes2 = open("/sys/class/net/wlo1/statistics/rx_bytes");
+         int tbytes2 = open("/sys/class/net/wlo1/statistics/tx_bytes");
 
          double usagePercent = calculateUsage(usage1, usage2, numCores) * 100 ;
-         int downrate = calculateDown(data1, data2);
-         int uprate = calculateUp(data1, data2);
+         int downrate = rbytes2 - rbytes1;
+         int uprate = tbytes2 - tbytes1;
          // Round to 2 decimal places
          double CPU = ((int)(usagePercent * 100 + .5) / 100.0);
 
