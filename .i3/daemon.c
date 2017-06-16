@@ -1,3 +1,4 @@
+// Taken from http://www.thegeekstuff.com/2012/02/c-daemon-process and https://www.reddit.com/r/i3wm/comments/6gbuel/calculatingobtaining_cpu_usage_downloadupload/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>

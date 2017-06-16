@@ -40,9 +40,9 @@ status.register("temp",
     dynamic_color=True
    )
 
-#status.register("network", interface="wlo1")
-#status.register("network", interface="wlo1", format="{bytes_recv} kB/s")
 status.register("network", interface="wlo1", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
+
+status.register("battery")
 
 status.register(
     'weather',
