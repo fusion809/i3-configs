@@ -4,3 +4,4 @@ octave-workspace
 '='
 *.log
 *.txt
+__pycache__
