@@ -17,10 +17,10 @@ floating_modifier $mod
 ################################### Change to workspace with app #################################
 ##################################################################################################
 # 0 A.D.
-bindsym $mod+1 [class="pyrogenesis"] focus
+bindsym $mod+3 [class="pyrogenesis"] focus
 
 # Chromium
-bindsym $mod+3 [class="chromium-browser-chromium"] focus
+bindsym $mod+1 [class="chromium-browser-chromium"] focus
 
 # OpenRA
 bindsym $mod+4 [class="mono-sgen"] focus
