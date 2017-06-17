@@ -20,7 +20,7 @@ floating_modifier $mod
 bindsym $mod+3 [class="pyrogenesis"] focus
 
 # Chromium
-bindsym $mod+1 [class="chromium-browser-chromium"] focus
+bindsym End [class="Chromium-browser-chromium"] focus
 
 # OpenRA
 bindsym $mod+4 [class="mono-sgen"] focus
