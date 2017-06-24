@@ -20,7 +20,10 @@ floating_modifier $mod
 bindsym $mod+3 [class="pyrogenesis"] focus
 
 # Chromium
-bindsym End [class="Chromium-browser-chromium"] focus
+# gentoo
+#bindsym End [class="Chromium-browser-chromium"] focus
+# Arch
+bindsym End [class="Chromium"] focus
 
 # OpenRA
 bindsym $mod+4 [class="mono-sgen"] focus
@@ -35,7 +38,7 @@ bindsym F11 [class="terminology"] focus
 bindsym $mod+6 [class="thunar"] focus
 
 # Switch to VLC
-bindsym F12 [class="vlc"] focus
+bindsym F12 [class="Vlc"] focus
 
 # Take a screenshot
 bindsym Print --release exec /usr/local/bin/scrnshot

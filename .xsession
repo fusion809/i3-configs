@@ -1,1 +1,1 @@
-feh --bg-scale ~/.local/share/wallpapers/if-it-moves-compile-it.png
+feh --bg-scale ~/.local/share/wallpapers/arch_linux_by_lapapunk.png

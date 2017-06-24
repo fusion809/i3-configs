@@ -43,7 +43,7 @@ status.register(
     hints={'markup': 'pango'},
     backend=weathercom.Weathercom(
         location_code='ASXX0117:1:AS',
-        locale='en-AU',
+       # locale='en-AU',
         units="metric",
     ))
 
