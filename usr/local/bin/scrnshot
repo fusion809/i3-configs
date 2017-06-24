@@ -10,4 +10,4 @@ D=$(calc d)
 m=$(calc m)
 Y=$(calc Y)
 
-import -window root -frame -silent "/home/fusion809/Pictures/Screenshots/Screenshot_${Y}${m}${D}_${H}${M}${S}.png"
+import -window root -frame -silent "$HOME/Pictures/Screenshots/Screenshot_${Y}${m}${D}_${H}${M}${S}.png"
