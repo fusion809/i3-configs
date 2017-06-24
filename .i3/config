@@ -154,7 +154,7 @@ bindsym F9 workspace 9
 bindsym F10 workspace 10
 
 # Terminal
-bindsym $mod+Return exec terminology
+bindsym $mod+Tab exec terminology
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
