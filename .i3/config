@@ -22,8 +22,8 @@ bindsym $mod+3 [class="pyrogenesis"] focus
 # Chromium
 # gentoo
 #bindsym End [class="Chromium-browser-chromium"] focus
-# Arch
-bindsym End [class="Chromium"] focus
+# Arch; Firefox
+bindsym End [class="Firefox"] focus
 
 # OpenRA
 bindsym $mod+4 [class="mono-sgen"] focus
@@ -210,7 +210,9 @@ bar {
                 background #000000
                 statusline #ffffff
 
-                focused_workspace  #ff4500 #000000
-                inactive_workspace #888888 #000000
+                #focused_workspace  #ff4500 #000000
+                #inactive_workspace #888888 #000000
+                focused_workspace  #454545 #225577 #ffffff
+                inactive_workspace #454545 #212121 #ffffff
         }
 }
