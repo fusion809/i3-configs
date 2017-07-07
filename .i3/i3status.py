@@ -52,10 +52,10 @@ status.register("uptime",
 
 status.register("shell",
     command="/usr/local/bin/vimn",
-    interval=5)
+    interval=60)
 
 status.register("shell",
     command="/usr/local/bin/atomn",
-    interval=5)
+    interval=60)
 
 status.run()
