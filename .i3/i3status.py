@@ -50,4 +50,12 @@ status.register(
 status.register("uptime",
     format="Up: {hours}h {mins}m {secs}s")
 
+status.register("shell",
+    command="/usr/local/bin/vimn",
+    interval=5)
+
+status.register("shell",
+    command="/usr/local/bin/atomn",
+    interval=5)
+
 status.run()
