@@ -21,9 +21,9 @@ bindsym $mod+3 [class="pyrogenesis"] focus
 
 # Chromium
 # gentoo
-bindsym End [class="Chromium-browser-chromium"] focus
-# Arch
-#bindsym End [class="Chromium"] focus
+#bindsym End [class="Chromium-browser-chromium"] focus
+# Arch; Firefox
+bindsym End [class="Firefox"] focus
 
 # OpenRA
 bindsym $mod+4 [class="mono-sgen"] focus
@@ -38,12 +38,13 @@ bindsym F11 [class="terminology"] focus
 bindsym $mod+6 [class="thunar"] focus
 
 # Switch to VLC
-bindsym F12 [class="vlc"] focus
-# Arch
-#bindsym F12 [class="Vlc"] focus
+bindsym F12 [class="Vlc"] focus
 
 # Take a screenshot
 bindsym Print --release exec /usr/local/bin/scrnshot
+
+# Take a screencast
+bindsym $mod+Print exec /usr/local/bin/vid
 
 # Launch 0 A.D.
 bindsym $mod+0 exec optirun-0ad
@@ -155,7 +156,19 @@ bindsym F8 workspace 8
 bindsym F9 workspace 9
 bindsym F10 workspace 10
 
-# Terminal; $mod+Tab is used instead of $mod+Enter as it is easier to reach with one hand
+# 11-20
+bindsym $mod+F1 workspace 11
+bindsym $mod+F2 workspace 12
+bindsym $mod+F3 workspace 13
+bindsym $mod+F4 workspace 14
+bindsym $mod+F5 workspace 15
+bindsym $mod+F6 workspace 16
+bindsym $mod+F7 workspace 17
+bindsym $mod+F8 workspace 18
+bindsym $mod+F9 workspace 19
+bindsym $mod+$mod1+0 workspace 20
+
+# Terminal
 bindsym $mod+Tab exec terminology
 
 # move focused container to workspace
@@ -169,6 +182,18 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+
+# 11-20
+bindsym $mod+Shift+F1 move container to workspace 11
+bindsym $mod+Shift+F2 move container to workspace 12
+bindsym $mod+Shift+F3 move container to workspace 13
+bindsym $mod+Shift+F4 move container to workspace 14
+bindsym $mod+Shift+F5 move container to workspace 15
+bindsym $mod+Shift+F6 move container to workspace 16
+bindsym $mod+Shift+F7 move container to workspace 17
+bindsym $mod+Shift+F8 move container to workspace 18
+bindsym $mod+Shift+F9 move container to workspace 19
+bindsym $mod+Shift+F10 move container to workspace 20
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -212,7 +237,9 @@ bar {
                 background #000000
                 statusline #ffffff
 
-                focused_workspace  #ff4500 #000000
-                inactive_workspace #888888 #000000
+                #focused_workspace  #ff4500 #000000
+                #inactive_workspace #888888 #000000
+                focused_workspace  #454545 #225577 #ffffff
+                inactive_workspace #454545 #212121 #ffffff
         }
 }
