@@ -9,5 +9,5 @@ pkgpbv=$(sed -n 's/_pkgrel=//p' PKGBUILD)
 if ! ( [ $pkgpnbv == $pkgnbv ] && [ $pkgpbv == $pkgbv ] ); then
     printf "A $pkgver."
 else
-    printf "A OK" 
+    printf "A OK"
 fi

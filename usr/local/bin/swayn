@@ -1,0 +1,10 @@
+#!/bin/bash
+pkgver=$(wget -cqO- https://github.com/SirCmpwn/sway/releases | grep "\.tar\.gz" | head -n 1 | cut -d '"' -f 2 | cut -d '/' -f 5 | sed 's/\.tar\.gz//g')
+pkgverp=$(sed -n 's/pkgver=//p' $PK/sway/PKGBUILD)
+pkgverp=${pkgverp/.r/-r}
+
+if ! [[ $pkgver == $pkgverp ]]; then
+    printf "S $pkgver"
+else
+    printf "S OK"
+fi
