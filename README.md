@@ -1,5 +1,5 @@
 # i3-configs
-![The C/C++/Shell configs as of 11 June 2017 running on Gentoo Linux with i3 4.13](https://fusion809.github.io/images/i3/i3-4.13-my-configs-11-Jun-2017.png)
+![The Python configs as of 15 August 2017 running on Gentoo Linux with i3 4.13](https://fusion809.github.io/images/i3/i3-4.13-my-configs-15-Aug-2017.png)
 
 <!--upload/download rates (unfortunately they are incredibly inaccurate, sometimes they will show 0 kB/s even when download/upload rates are > 1,000 kB/s, if you know how to make it accurate please file a new issue or pull request and I will happily accept it!), -->
 This repository contains my i3 configs. There are two main routes of using them. Either you can use the i3pystatus (yes you will need to install i3pystatus, a bleeding-edge, from lastest git snapshot, version of the package is needed!) powered bar or the C/C++/Shell-powered bar. 
