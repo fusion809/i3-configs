@@ -74,13 +74,13 @@ bindsym $mod+p exec pcmanfm
 bindsym $mod+t exec thunar
 
 # Open Firefox
-bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+f exec firefox-nightly
 
 # Launch virt-manager
 bindsym $mod+Shift+m exec virt-manager
 
 # Launch OpenRA
-bindsym $mod+Shift+o exec openra
+bindsym $mod+Shift+o exec openra-ra
 
 # Launch VLC
 bindsym $mod+Shift+p exec vlc
