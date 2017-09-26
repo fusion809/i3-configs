@@ -26,7 +26,7 @@ bindsym F12 [class="terminology"] focus
 To install on distributions without the bash executable in `/bin` run:
 
 ```bash
-/bin/bash -c "$(wget -cqO- https://git.io/vHDJ7)"
+bash -c "$(wget -cqO- https://git.io/vHDJ7)"
 ```
 
 while for those with bash in `/bin` run:
