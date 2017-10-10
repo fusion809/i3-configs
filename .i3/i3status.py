@@ -59,6 +59,10 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
+    command="/usr/local/bin/nixn",
+    interval=300)
+
+status.register("shell",
     command="/usr/local/bin/atomn",
     interval=300)
 
