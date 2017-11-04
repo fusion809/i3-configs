@@ -15,9 +15,9 @@ status.register("disk",
     round_size=1,
     format="Disk: {used}/{total}G")
 
-status.register("mem", 
-    format="RAM: {used_mem}/{total_mem} GiB", 
-    color="#FFFFFF", 
+status.register("mem",
+    format="RAM: {used_mem}/{total_mem} GiB",
+    color="#FFFFFF",
     divisor=1073741824,
     round_size=3)
 
@@ -64,6 +64,10 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/marvinn",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/guixn",
     interval=300)
 
 status.register("shell",
