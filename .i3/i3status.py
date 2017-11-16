@@ -66,9 +66,10 @@ status.register("shell",
     command="/usr/local/bin/marvinn",
     interval=300)
 
-status.register("shell",
-    command="/usr/local/bin/icecatn",
-    interval=300)
+# Not really useful now as I've ditched IceCat
+#status.register("shell",
+#    command="/usr/local/bin/icecatn",
+#    interval=300)
 
 # Too many updates for this to be worthwhile
 #status.register("shell",
