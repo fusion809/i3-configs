@@ -15,9 +15,6 @@ For these configs to work out-of-the-box one needs to have the following install
 * g++ for CPU/RAM information.
 * i3bar.
 * i3pystatus (for Python-based counterpart of the bar)
-# Switch to Terminology
-bindsym F12 [class="terminology"] focus
-
 * ImageMagick, so that one can take screenshots with <kbd>PrtScrn</kbd> (or <kbd>Print</kbd> or <kbd>PrntScr</kbd>).
 * Terminology, for the <kbd>Win</kbd>+<kbd>Enter</kbd> shortcut to open a terminal.
 * Zsh, which is required for the floating point arithmetic used in download/upload calculations. 
