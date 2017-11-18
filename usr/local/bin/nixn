@@ -9,7 +9,7 @@ echo "$pkgver" > /tmp/$pkgname
 echo "$pkgverp\n" >> /tmp/$pkgname
 
 if ! [[ "$pkgver" == "$pkgverp" ]]; then
-    echo "${pkgname:0:1} $pkgver" | tr '[:lower:]' '[:upper:]'
+    echo "${pkgname:0:1}$pkgver" | tr '[:lower:]' '[:upper:]'
 else
     echo "${pkgname:0:1} OK" | tr '[:lower:]' '[:upper:]'
 fi

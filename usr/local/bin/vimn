@@ -9,5 +9,5 @@ vim_patchversion=$(cat vim.spec | grep "%define.*patchlevel" | sed 's/%define.*p
 if [ $pkgver == ${vim_baseversion}.${vim_patchversion} ]; then
      printf "V OK"
 else
-     printf "V $pkgver"
+     printf "V$pkgver"
 fi

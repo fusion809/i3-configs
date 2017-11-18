@@ -7,7 +7,7 @@ echo "$pkgver" > /tmp/marvin
 echo "$pkgverp\n" >> /tmp/marvin
 
 if ! [[ "$pkgver" == "$pkgverp" ]]; then
-    echo "M $pkgver"
+    echo "M$pkgver"
 else
     echo "M OK"
 fi
