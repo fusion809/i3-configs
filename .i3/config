@@ -33,7 +33,10 @@ bindsym $mod+4 [class="mono-sgen"] focus
 bindsym Home [class="RuneScape"] focus
 
 # Switch to Terminology
-bindsym F12 [class="terminology"] focus
+bindsym F11 [class="terminology"] focus
+
+# Switch to MPlayer
+bindsym F12 [class="MPlayer"] focus
 
 # Take a screenshot
 bindsym Print --release exec /usr/local/bin/scrnshot
