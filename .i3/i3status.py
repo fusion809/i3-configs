@@ -32,10 +32,7 @@ status.register("cpu_usage",
     format="{usage}%")
 
 status.register("temp",
-    format="{Core_0}C {Core_1}C {Core_2}C {Core_3}C",
-    hints={"markup": "pango"},
-    lm_sensors_enabled=True,
-    dynamic_color=True)
+    hints={"markup": "pango"})
 
 status.register("network", interface="wlo1", format_up="d{bytes_recv}KB/s u{bytes_sent}KB/s")
 
