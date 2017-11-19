@@ -11,20 +11,25 @@ status.register("clock",
     format="%a %-d %b %y %r")
 
 status.register("disk",
+    path="/data",
+    round_size=1,
+    format="{used}/{total}G")
+
+status.register("disk",
     path="/",
     round_size=1,
-    format="Disk: {used}/{total}G")
+    format="{used}/{total}G")
 
 status.register("mem",
-    format="RAM: {used_mem}/{total_mem} GiB",
+    format="{used_mem}/{total_mem}G",
     color="#FFFFFF",
     divisor=1073741824,
     round_size=3)
 
-status.register("load", format="Load: {avg1}")
+status.register("load", format="{avg1}")
 
 status.register("cpu_usage",
-    format="CPU: {usage}%")
+    format="{usage}%")
 
 status.register("temp",
     format="{Core_0}°C {Core_1}°C {Core_2}°C {Core_3}°C",
@@ -48,7 +53,11 @@ status.register(
     ))
 
 status.register("uptime",
-    format="Up: {hours}h {mins}m {secs}s")
+    format="{hours}:{mins}:{secs}")
+
+status.register("shell",
+    command="/usr/local/bin/vscoden",
+    interval=300)
 
 status.register("shell",
     command="/usr/local/bin/vimn",
