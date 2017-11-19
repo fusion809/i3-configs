@@ -8,7 +8,7 @@ from i3pystatus import IntervalModule
 status = Status()
 
 status.register("clock",
-    format="%a %-d %b %y %r")
+    format="%a %d %b %y %r")
 
 status.register("disk",
     path="/data",
