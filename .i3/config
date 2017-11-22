@@ -32,7 +32,7 @@ bindsym $mod+4 [class="mono-sgen"] focus
 bindsym Home [class="RuneScape"] focus
 
 # Switch to Terminology
-bindsym F11 [class="terminology"] focus
+bindsym F11 [class="lxterminal"] focus
 
 # Switch to Thunar
 bindsym $mod+6 [class="thunar"] focus
@@ -169,7 +169,7 @@ bindsym $mod+F9 workspace 19
 bindsym $mod+$mod1+0 workspace 20
 
 # Terminal
-bindsym $mod+Tab exec terminology
+bindsym $mod+Tab exec lxterminal
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1

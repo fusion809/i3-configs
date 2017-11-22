@@ -32,7 +32,7 @@ status.register("cpu_usage",
 #    lm_sensors_enabled=True,
 #    dynamic_color=True)
 
-status.register("network", interface="enp0s3", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
+status.register("network", interface="wlo1", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
 
 status.register("battery")
 
@@ -48,7 +48,7 @@ status.register(
     ))
 
 status.register("uptime",
-    format="{hours}h {mins}m {secs}s")
+    format="{hours}:{mins}:{secs}")
 
 #status.register("shell",
 #    command="/usr/local/bin/vimn",
