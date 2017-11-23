@@ -1,0 +1,7 @@
+#!/bin/bash
+#exec &>/var/log/all/.log
+#sv start /etc/service/*tty*             &>/tmp/x.log || echo "tty failed!" >> /tmp/x.log && exit
+#sv start /etc/service/dbus              &>>/tmp/x.log || echo "dbus failed!" >> /tmp/x.log && exit
+#sv start /etc/service/consolekit        &>>/tmp/x.log || echo "consolekit failed!" >> /tmp/x.log && exit
+#exec slim -nodaemon
+exec /usr/local/bin/xinit-fusion809
