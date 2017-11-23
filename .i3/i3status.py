@@ -8,23 +8,23 @@ from i3pystatus import IntervalModule
 status = Status()
 
 status.register("clock",
-    format="%a %-d %b %y %r")
+    format="%A %d %B %Y %r")
 
 status.register("disk",
     path="/",
     round_size=1,
-    format="{used}/{total}G")
+    format="/dev/sda3: {used}/{total} GiB")
 
 status.register("mem", 
-    format="{used_mem}/{total_mem}GiB", 
+    format="RAM: {used_mem}/{total_mem} GiB", 
     color="#FFFFFF", 
     divisor=1073741824,
     round_size=3)
 
-status.register("load", format="{avg1}")
+status.register("load", format="Load: {avg1}")
 
 status.register("cpu_usage",
-    format="{usage}%")
+    format="CPU: {usage}%")
 
 #status.register("temp",
 #    format="{Core_0}°C {Core_1}°C {Core_2}°C {Core_3}°C",
