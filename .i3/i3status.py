@@ -34,7 +34,7 @@ status.register("cpu_usage",
 status.register("temp",
     hints={"markup": "pango"})
 
-status.register("network", interface="wlo1", format_up="D{bytes_recv}KB/s U{bytes_sent}KB/s")
+status.register("network", interface="wlo1", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
 
 status.register("battery")
 
