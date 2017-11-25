@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo xbps-install -Su
-sudo xbps-install feh i3 xorg lxterminal firefox python3-pip python3-devel vlc adwaita-icon-theme pcmanfm wget slim
-sudo pip3 install colour psutil netifaces git+https://github.com/enkore/i3pystatus.git
+sudo xbps-install feh i3 xorg firefox python3-pip python3-devel vlc adwaita-icon-theme pcmanfm wget slim terminology libsensors-devel
+sudo pip3 install colour psutil netifaces git+https://github.com/bastienleonard/pysensors.git git+https://github.com/enkore/i3pystatus.git
 sudo ln -sf /etc/sv/consolekit /var/service/
 sudo ln -sf /etc/sv/slim /var/service/
 ln -sf /data/{AUR,GitHub,Documents,OBS,Pictures,Videos,"VirtualBox VMs",.VirtualBox} $HOME/
