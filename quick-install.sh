@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo xbps-install -Su
-sudo xbps-install feh i3 xorg firefox python3-pip python3-devel vlc adwaita-icon-theme pcmanfm wget slim terminology libsensors-devel
+sudo xbps-install feh i3 xorg firefox python3-pip python3-devel vlc adwaita-icon-theme pcmanfm wget slim terminology libsensors-devel lm_sensors
 sudo pip3 install colour psutil netifaces git+https://github.com/bastienleonard/pysensors.git git+https://github.com/enkore/i3pystatus.git
 sudo ln -sf /etc/sv/consolekit /var/service/
 sudo ln -sf /etc/sv/slim /var/service/
