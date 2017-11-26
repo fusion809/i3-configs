@@ -1,0 +1,15 @@
+#!/bin/bash
+AUR=$HOME/AUR
+owner=NixOS
+pkgname=nix
+pkgver=$(wget -cqO- https://github.com/$owner/$pkgname/releases | grep "\.tar\.gz" | head -n 1 | cut -d '"' -f 2 | cut -d '/' -f 5 | sed 's/\.tar\.gz//g')
+pkgverp=$(sed -n 's/pkgver=//p' $AUR/$pkgname/PKGBUILD | head -n 1 | sed 's/\.r/\-r/g')
+
+echo "$pkgver" > /tmp/$pkgname
+echo "$pkgverp\n" >> /tmp/$pkgname
+
+if ! [[ "$pkgver" == "$pkgverp" ]]; then
+    echo "${pkgname:0:1}$pkgver" | tr '[:lower:]' '[:upper:]'
+else
+    echo "${pkgname:0:1} OK" | tr '[:lower:]' '[:upper:]'
+fi
