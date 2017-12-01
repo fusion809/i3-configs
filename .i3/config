@@ -151,7 +151,7 @@ bindsym $mod+2 workspace 2
 bindsym F3 workspace 3
 bindsym F4 workspace 4
 bindsym F5 workspace 5
-bindsym F6 workspace 6
+#bindsym F6 workspace 6
 bindsym F7 workspace 7
 bindsym F8 workspace 8
 bindsym F9 workspace 9
