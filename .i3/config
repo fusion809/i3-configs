@@ -71,8 +71,8 @@ bindsym $mod+o exec rs-launcher
 # Launch PCManFM
 bindsym $mod+p exec pcmanfm
 
-# Launch Thunar
-bindsym $mod+t exec thunar
+# Launch Tor browser (en)
+bindsym $mod+t exec tor-browser-en
 
 # Open Firefox
 bindsym $mod+Shift+f exec firefox
