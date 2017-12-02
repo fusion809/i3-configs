@@ -74,6 +74,9 @@ bindsym $mod+p exec pcmanfm
 # Launch Tor browser (en)
 bindsym $mod+t exec tor-browser-en
 
+# Open Deluge
+bindsym $mod+Shift+d exec deluge
+
 # Open Firefox
 bindsym $mod+Shift+f exec firefox
 
