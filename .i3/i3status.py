@@ -32,9 +32,8 @@ status.register("cpu_usage",
     format="{usage}%")
 
 status.register("temp",
-#    format="{Core_0}°C {Core_1}°C {Core_2}°C {Core_3}°C",
-     format="{temp1}°C {temp2}°C",
-     hints={"markup": "pango"},
+    format="{Core_0}°C {Core_1}°C {Core_2}°C {Core_3}°C",
+    hints={"markup": "pango"},
     lm_sensors_enabled=True,
     dynamic_color=True)
 
