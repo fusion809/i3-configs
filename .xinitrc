@@ -1,4 +1,4 @@
-feh --bg-scale /home/fusion809/.local/share/wallpapers/nmuODa9.jpg && \
+feh --bg-scale /home/fusion809/.local/share/wallpapers/"Gentoo Linux Wallpapers (2)".jpg && \
 DEFAULTSESSION=i3
 
 case "$1" in
