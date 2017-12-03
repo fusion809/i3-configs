@@ -56,8 +56,8 @@ bindsym $mod+c exec chromium
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 
-# Launch Google Chrome
-bindsym $mod+g exec google-chrome-stable
+# Launch SuperTuxKart on Optirun
+bindsym $mod+g exec stkart
 
 # Open i3-input
 bindsym $mod+i exec i3-input
