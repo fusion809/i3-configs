@@ -33,7 +33,7 @@ bindsym $mod+4 [class="mono-sgen"] focus
 bindsym Home [class="RuneScape"] focus
 
 # Switch to PCManFM
-bindsym F10 [class="pcmanfm"] focus
+bindsym F10 [class="Pcmanfm"] focus
 
 # Switch to VLC
 bindsym F11 [class="Vlc"] focus
