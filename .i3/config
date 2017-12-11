@@ -33,13 +33,13 @@ bindsym $mod+4 [class="mono-sgen"] focus
 bindsym Home [class="RuneScape"] focus
 
 # Switch to Terminology
-bindsym F11 [class="terminology"] focus
+bindsym F12 [class="terminology"] focus
 
-# Switch to Thunar
-bindsym $mod+6 [class="thunar"] focus
+# Switch to PCManFM
+bindsym $mod+6 [class="pcmanfm"] focus
 
 # Switch to VLC
-bindsym F12 [class="Vlc"] focus
+bindsym F11 [class="Vlc"] focus
 
 # Take a screenshot
 bindsym Print --release exec /usr/local/bin/scrnshot
@@ -48,16 +48,13 @@ bindsym Print --release exec /usr/local/bin/scrnshot
 bindsym $mod+Print exec /usr/local/bin/vid
 
 # Launch 0 A.D.
-bindsym $mod+0 exec optirun-0ad
+bindsym $mod+g exec optirun-0ad
 
 # Launch Chromium
 bindsym $mod+c exec chromium
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
-
-# Launch Google Chrome
-bindsym $mod+g exec google-chrome-stable
 
 # Open i3-input
 bindsym $mod+i exec i3-input
@@ -158,7 +155,7 @@ bindsym F6 workspace 6
 bindsym F7 workspace 7
 bindsym F8 workspace 8
 bindsym F9 workspace 9
-bindsym F10 workspace 10
+bindsym $mod+0 workspace 10
 
 # 11-20
 bindsym $mod+F1 workspace 11
