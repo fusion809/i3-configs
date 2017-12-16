@@ -45,8 +45,8 @@ ln -sf $I3/.i3 $HOME
 
 # Compile C++ programs
 pushd $HOME/.i3
-g++ -o cpu.o cpu.ln -sfp
-g++ -o ram.o ram.ln -sfp
+g++ -o cpu.o cpu.cpp
+g++ -o ram.o ram.cpp
 popd
 
 # Set them up
