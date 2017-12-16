@@ -41,7 +41,7 @@ if [[ -d $HOME/.i3 ]]; then
     rm -rf $HOME/.i3
 fi
 
-ln -sf -a $I3/.i3 $HOME
+ln -sf $I3/.i3 $HOME
 
 # Compile C++ programs
 pushd $HOME/.i3
