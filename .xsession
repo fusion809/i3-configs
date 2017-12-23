@@ -1,1 +1,1 @@
-feh --bg-scale ~/.local/share/wallpapers/If-it-moves-compile-it.jpg
+feh --bg-scale /usr/share/pixmaps/gentoo/misc/emergence-1400x1050.jpg

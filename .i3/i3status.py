@@ -67,9 +67,9 @@ status.register("shell",
     command="/usr/local/bin/swayn",
     interval=300)
 
-status.register("shell",
-    command="/usr/local/bin/nixn",
-    interval=300)
+#status.register("shell",
+#    command="/usr/local/bin/nixn",
+#    interval=300)
 
 #status.register("shell",
 #    command="/usr/local/bin/marvinn",
