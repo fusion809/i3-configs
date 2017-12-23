@@ -1,5 +1,5 @@
 XTerm*Background: black
-XTerm*Foreground: green
+XTerm*Foreground: white
 XTerm*SaveLines: 2000
 XTerm*faceName: Ubuntu mono
 XTerm*faceSize: 12
@@ -12,3 +12,6 @@ XTerm*VT100.Translations: #override \
       Shift<Btn1Down>: select-start() \n\ 
       Shift<Btn1Motion>: select-extend() \n\ 
       Shift<Btn1Up>: select-end(CLIPBOARD) \n\
+Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
+Ctrl <Key>V: insert-selection(CLIPBOARD)
+

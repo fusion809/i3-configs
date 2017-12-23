@@ -5,7 +5,7 @@ set -e
 set -x
 
 # Path variables
-CFG="$HOME/GitHub/mine/configs"
+CFG="$HOME/GitHub/mine/config"
 I3="$CFG/i3-configs"
 
 function checke {
@@ -13,16 +13,20 @@ function checke {
 }
 
 # Check deps
-checke ln -sf
+checke cp
 checke feh
+checke firefox
 checke g++
 checke git
 checke i3bar
 checke import
 checke ln
 checke mkdir
+checke pip3
+checke python3
 checke sudo
-checke terminology
+checke tmux
+checke xterm
 checke zsh
 
 # Script assumes all deps are installed
@@ -75,3 +79,8 @@ ln -sf $I3/.xsession $HOME
 ################################ /usr/local/bin ###############################
 ###############################################################################
 sudo ln -sf $I3/usr/local/bin/* /usr/local/bin
+
+###############################################################################
+#################################### XTerm ####################################
+###############################################################################
+ln -sf $I3/XTerm $HOME

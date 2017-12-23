@@ -38,8 +38,8 @@ bindsym F10 [class="Pcmanfm"] focus
 # Switch to VLC
 bindsym F11 [class="Vlc"] focus
 
-# Switch to Terminology
-bindsym F12 [class="terminology"] focus
+# Switch to xterm
+bindsym F12 [class="XTerm"] focus
 
 # Take a screenshot
 bindsym Print --release exec /usr/local/bin/scrnshot
@@ -170,7 +170,8 @@ bindsym $mod+F9 workspace 19
 bindsym $mod+$mod1+0 workspace 20
 
 # Terminal
-bindsym $mod+Tab exec terminology
+bindsym $mod+Tab exec xterm
+bindsym $mod+Enter exec xterm
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
