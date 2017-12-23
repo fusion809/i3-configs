@@ -23,8 +23,8 @@ bindsym $mod+3 [class="pyrogenesis"] focus
 # Chromium
 # gentoo
 #bindsym End [class="Chromium-browser-chromium"] focus
-# Arch; Firefox
-bindsym End [class="Firefox"] focus
+# Arch; QupZilla
+bindsym End [class="QupZilla"] focus
 
 # OpenRA
 bindsym $mod+4 [class="mono-sgen"] focus
@@ -74,8 +74,8 @@ bindsym $mod+t exec tor-browser-en
 # Open Deluge
 bindsym $mod+Shift+d exec deluge
 
-# Open Firefox
-bindsym $mod+Shift+f exec firefox
+# Open QupZilla
+bindsym $mod+Shift+q exec qupzilla
 
 # Launch virt-manager
 bindsym $mod+Shift+m exec virt-manager
