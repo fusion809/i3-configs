@@ -9,7 +9,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Hack 9
+font pango:Ubuntu Mono 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -23,8 +23,8 @@ bindsym $mod+3 [class="pyrogenesis"] focus
 # Chromium
 # gentoo
 #bindsym End [class="Chromium-browser-chromium"] focus
-# Arch; QupZilla
-bindsym End [class="QupZilla"] focus
+# Arch; Firefox
+bindsym End [class="Firefox"] focus
 
 # OpenRA
 bindsym $mod+4 [class="mono-sgen"] focus
@@ -74,8 +74,8 @@ bindsym $mod+t exec tor-browser-en
 # Open Deluge
 bindsym $mod+Shift+d exec deluge
 
-# Open QupZilla
-bindsym $mod+Shift+q exec qupzilla
+# Open Firefox
+bindsym $mod+Shift+f exec firefox
 
 # Launch virt-manager
 bindsym $mod+Shift+m exec virt-manager
