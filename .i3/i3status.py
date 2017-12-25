@@ -8,7 +8,7 @@ from i3pystatus import IntervalModule
 status = Status()
 
 status.register("clock",
-    format="%a %d %b %y %r")
+    format="%a %-d %b %y %r")
 
 status.register("disk",
     path="/data",
@@ -67,9 +67,9 @@ status.register("shell",
     command="/usr/local/bin/swayn",
     interval=300)
 
-status.register("shell",
-    command="/usr/local/bin/nixn",
-    interval=300)
+#status.register("shell",
+#    command="/usr/local/bin/nixn",
+#    interval=300)
 
 #status.register("shell",
 #    command="/usr/local/bin/marvinn",
