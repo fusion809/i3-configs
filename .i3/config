@@ -86,6 +86,9 @@ bindsym $mod+Shift+o exec openra-ra
 # Launch VLC
 bindsym $mod+Shift+p exec vlc
 
+# Launch QupZilla
+bindsym $mod+Shift+q exec qupzilla
+
 # Launch VirtualBox
 bindsym $mod+Shift+v exec virtualbox
 
