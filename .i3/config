@@ -23,8 +23,8 @@ bindsym $mod+3 [class="pyrogenesis"] focus
 # Chromium
 # gentoo
 #bindsym End [class="Chromium-browser-chromium"] focus
-# Arch; Firefox
-bindsym End [class="Firefox"] focus
+# Arch; Pale Moon
+bindsym End [class="Pale moon"] focus
 
 # OpenRA
 bindsym $mod+4 [class="mono-sgen"] focus
@@ -83,11 +83,11 @@ bindsym $mod+Shift+m exec virt-manager
 # Launch OpenRA
 bindsym $mod+Shift+o exec openra-ra
 
-# Launch VLC
-bindsym $mod+Shift+p exec vlc
+# Launch Pale Moon
+bindsym $mod+Shift+p exec palemoon
 
-# Launch QupZilla
-bindsym $mod+Shift+q exec qupzilla
+# Launch VLC
+bindsym $mod+Shift+q exec vlc
 
 # Launch VirtualBox
 bindsym $mod+Shift+v exec virtualbox
