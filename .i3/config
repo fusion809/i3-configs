@@ -24,7 +24,9 @@ bindsym $mod+3 [class="pyrogenesis"] focus
 # gentoo
 #bindsym End [class="Chromium-browser-chromium"] focus
 # Arch; Pale Moon
-bindsym End [class="Pale moon"] focus
+#bindsym End [class="Pale moon"] focus
+# Firefox
+bindsym End [class="Firefox"] focus
 
 # OpenRA
 bindsym $mod+4 [class="mono-sgen"] focus
