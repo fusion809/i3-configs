@@ -1,4 +1,4 @@
-feh --bg-scale /home/fusion809/.local/share/wallpapers/nmuODa9.jpg && \
+feh --bg-scale /home/fusion809/.local/share/wallpapers/autumn-scenery.jpg && \
 DEFAULTSESSION=i3
 
 case "$1" in
