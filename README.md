@@ -80,7 +80,7 @@ If you do not want to use these apps (xterm and ImageMagick) and want to use alt
 | <kbd>Win</kbd>+<kbd>2</kbd>                                                     | Switch to workspace 2.                                                                                         |
 | <kbd>Win</kbd>+<kbd>a</kbd>                                                     | Focus the parent container.                                                                                    |
 | <kbd>Win</kbd>+<kbd>c</kbd>                                                     | Launch Chromium browser.                                                                                       |
-| <kbd>Win</kbd>+<kbd>d</kbd>                                                     | Launch dmenu so you can enter in a command to run.                                                             |
+| <kbd>Win</kbd>+<kbd>d</kbd>                                                     | Launch Rofi (run mode) so you can enter in a command to run.                                                             |
 | <kbd>Win</kbd>+<kbd>e</kbd>                                                     | Layout toggle split.                                                                                           |
 | <kbd>Win</kbd>+<kbd>f</kbd>                                                     | Enter full screen for the focused window.                                                                      |
 | <kbd>Win</kbd>+<kbd>g</kbd>                                                     | Launch 0 A.D. with Bumblebee (Optirun).                                                                        |
@@ -125,5 +125,5 @@ If you do not want to use these apps (xterm and ImageMagick) and want to use alt
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>                                    | Launch VLC media player.                                                                                       |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>r</kbd>                                    | Restart i3 (preserves layout and session), can be used to start a newly installed version of i3.               |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>v</kbd>                                    | Launch Oracle VM VirtualBox.                                                                                   |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>w</kbd>                                    | Launch LibreOffice Writer.                                                                                     |
+| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>w</kbd>                                    | Rofi (window option).                                                                                          |
 

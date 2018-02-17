@@ -15,6 +15,7 @@ function checke {
 # Check deps
 checke cp
 checke feh
+checke rofi
 checke firefox
 checke g++
 checke git

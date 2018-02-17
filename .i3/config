@@ -55,7 +55,9 @@ bindsym $mod+g exec optirun-0ad
 bindsym $mod+c exec chromium
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec dmenu_run
+# start Rofi
+bindsym $mod+d exec "rofi -show run"
 
 # Open i3-input
 bindsym $mod+i exec i3-input
@@ -94,7 +96,7 @@ bindsym $mod+Shift+q exec vlc
 bindsym $mod+Shift+v exec virtualbox
 
 # Open LibreOffice writer
-bindsym $mod+Shift+w exec libreoffice-writer
+bindsym $mod+Shift+w exec "rofi -show window"
 
 # change focus
 bindsym $mod+j focus left
