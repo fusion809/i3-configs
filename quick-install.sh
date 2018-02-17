@@ -12,6 +12,14 @@ function checke {
     which $1 >/dev/null 2>&1 || (printf "$1 missing from $PATH" && exit 1)
 }
 
+function checkp {
+    if `cat /etc/os-release | grep "Arch Linux" > /dev/null 2>&1` || `cat /etc/os-release | grep "Manjaro" > /dev/null 2>&1`; then
+         if ! `pacman -Qi ttf-$1 > /dev/null 2>&1`; then
+              printf "ttf-$1 isn't installed!\n" && exit 1
+         fi
+    fi
+}
+
 # Check deps
 checke cp
 checke feh
@@ -29,6 +37,7 @@ checke sudo
 checke tmux
 checke xterm
 checke zsh
+checkp ubuntu-font-family
 
 # Script assumes all deps are installed
 if ! [[ -d $CFG ]]; then
