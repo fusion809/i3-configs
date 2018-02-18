@@ -180,8 +180,9 @@ bindsym $mod+Tab exec xterm
 bindsym $mod+Enter exec xterm
 
 # Set workspace icons; the final one for PCManFM will be put in place if these two actually work, which they don't
-set $workspace1 "1: "
-set $workspace2 "2: "
+set $workspace1 ""
+set $workspace2 ""
+set $workspace3 ""
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1

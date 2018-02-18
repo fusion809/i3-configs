@@ -1,0 +1,11 @@
+#!/bin/bash
+last-update=$(ls -ld /var/lib/pacman | sed 's/drwxr-xr-x 1 root root //g' | sed 's| /var/lib/pacman||g')
+day=$(echo $last-update | cut -d ' ' -f 1)
+month=$(echo $last-update | cut -d ' ' -f 2)
+year=$(echo $last-update | cut -d ' ' -f 3)
+time=$(echo $last-update | cut -d ' ' -f 4)
+hour=$(echo $time | cut -d ':' -f 1)
+minute=$(echo $time | cut -d ':' -f 2)
+
+current-day=$(date | cut -d ' ' -f 3)
+current-month=$(date | cut -d ' ' -f 2)
