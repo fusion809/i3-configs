@@ -1,8 +1,8 @@
 #!/bin/zsh
 update=$(ls -ld /var/lib/pacman | sed 's/drwxr-xr-x 1 root root //g' | sed 's| /var/lib/pacman||g')
-day=$(echo $update | cut -d ' ' -f 1)
+day=$(echo $update | cut -d ' ' -f 3)
 month=$(echo $update | cut -d ' ' -f 2)
-year=$(echo $update | cut -d ' ' -f 3)
+year=$(echo $update | cut -d ' ' -f 1)
 time=$(echo $update | cut -d ' ' -f 4)
 hour=$(echo $time | cut -d ':' -f 1)
 minute=$(echo $time | cut -d ':' -f 2)
