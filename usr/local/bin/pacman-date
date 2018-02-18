@@ -16,4 +16,4 @@ else
 fi
 
 time="$hourp:$minute $ph"
-printf "pacaup: $time $day $month $year\n"
+printf "$time $day $month $year\n"
