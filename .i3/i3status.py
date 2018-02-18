@@ -93,4 +93,9 @@ status.register("shell",
     color="#FFAA00",
     interval=300)
 
+status.register("shell",
+    command="/usr/local/bin/pacman-date",
+    color="#00FFCC",
+    interval=300)
+
 status.run()
