@@ -57,14 +57,17 @@ status.register("uptime",
 
 status.register("shell",
     command="/usr/local/bin/vscoden",
+    color="#0FC0FF",
     interval=300)
 
 status.register("shell",
     command="/usr/local/bin/vimn",
+    color="#99AAFF",
     interval=300)
 
 status.register("shell",
     command="/usr/local/bin/swayn",
+    color="#FF00BB",
     interval=300)
 
 #status.register("shell",
@@ -87,6 +90,7 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/atomn",
+    color="#FFAA00",
     interval=300)
 
 status.run()
