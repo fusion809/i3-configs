@@ -1,8 +1,8 @@
 XTerm*Background: black
 XTerm*Foreground: white
 XTerm*SaveLines: 2000
-XTerm*faceName: Ubuntu mono
-XTerm*faceSize: 12
+XTerm*faceName: "Font Awesome 5 Brands-Regular-400"
+XTerm*faceSize: 9
 XTerm*rightScrollBar: true
 XTerm*ScrollBar: true
 XTerm*scrollTtyOutput: true
