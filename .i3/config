@@ -186,6 +186,7 @@ set $workspace3 ""
 set $workspace4 ""
 set $workspace5 ""
 set $workspace6 ""
+set $workspace7 "7"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1

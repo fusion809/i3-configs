@@ -41,6 +41,8 @@ status.register("network", interface="wlo1", format_up="↓{bytes_recv}KB/s ↑{
 
 status.register("battery")
 
+status.register("pulseaudio")
+
 status.register(
     'weather',
     format='{condition} {current_temp}{temp_unit}',
@@ -48,7 +50,6 @@ status.register(
     hints={'markup': 'pango'},
     backend=weathercom.Weathercom(
         location_code='ASXX0117:1:AS',
-       # locale='en-AU',
         units="metric",
     ))
 
