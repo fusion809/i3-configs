@@ -90,6 +90,11 @@ status.register("shell",
 #    interval=300)
 
 status.register("shell",
+    command="/usr/local/bin/jucippn",
+    color="#F03000",
+    interval=300)
+
+status.register("shell",
     command="/usr/local/bin/atomn",
     color="#FFAA00",
     interval=300)
