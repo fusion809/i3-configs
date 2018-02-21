@@ -10,12 +10,16 @@ The Python-based (or i3pystatus) bar displays the following: weather conditions 
 
 ## What's in the i3bar (Python)
 Presently the following are in the i3bar, from left to right:
+* Last time pacman was run. My way of checking when I last updated my system.
 * Atom update status. 'A OK' means there's no Atom beta channel updates, while if it says 'A' with a package version after it there is a new release and that is the version of the release. 
+* Juci++ update status. 'J OK' means there's no Juci++ updates available. If there is an update available I'd see 'OF' followed by the version of the latest update.
+* OBS format spec file update status. 'OF OK' means there's no updates available. If there is an update available I'd see 'OS' followed by the version of the latest update. 
 * Sway update status. 'S OK' means there's no Sway updates. As above, if a version is given instead of 'OK' that means there's a new version and that is it.
 * Vim update status, formatting/meaning as per above.
 * Visual Studio Code update status, formatting as per above.
 * Uptime, format: h:m:s. Unfortunately I cannot get it to show it in my preferred format of hh:mm:ss. So, for example, you see 0:0:2 if the system has been up two seconds (and no Arch doesn't boot that quickly for me :P), as opposed to how I would like it to the hh:mm:ss format of 00:00:02. Likewise if the system has been up for 13 hours, 12 minutes and 5 seconds it would be formatted as 13:12:5. 
 * Weather conditions, such as 'Partly Cloudy 28°C' (which yes is the condition given at the time of typing).
+* My audio volume, number is the % of the maximum available volume I am at. 
 * Battery status.
 * Download rate, upload rate over the wlo1 interface.
 * Core temperature in °C.
@@ -30,12 +34,15 @@ Presently the following are in the i3bar, from left to right:
 For these configs to work out-of-the-box one needs to have the following installed:
 
 * feh for desktop background.
-* g++ for CPU/RAM information.
+* g++ for CPU/RAM information (only for C++ config). 
 * i3bar.
 * i3pystatus (for Python-based counterpart of the bar)
 * ImageMagick, so that one can take screenshots with <kbd>PrtScrn</kbd> (or <kbd>Print</kbd> or <kbd>PrntScr</kbd>).
-* tmux, for the terminal split views.
-* xterm, for the <kbd>Win</kbd>+<kbd>Tab</kbd> shortcut to open a terminal.
+* pacman, for the last time pacman was run being in the i3 bar. 
+* PulseAudio, for the volume information to be obtainable by i3pystatus. 
+* Rofi, for starting programs from <kbd>Win</kbd>+<kbd>d</kbd>
+* wget, so the latest available version of the tracked package being able to be fetched from the internet. 
+* xterm, for the <kbd>Win</kbd>+<kbd>Tab</kbd> shortcut to open a terminal. Split terminals are made by creating multiple xterm sessions in the one workspace and positioned using Win + arrow key. 
 * Zsh, which is required for the floating point arithmetic used in download/upload calculations. 
 
 ## Quick install
