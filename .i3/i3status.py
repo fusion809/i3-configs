@@ -90,6 +90,16 @@ status.register("shell",
 #    interval=300)
 
 status.register("shell",
+    command="/usr/local/bin/obss",
+    color="#00AF0F",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/obsf",
+    color="#909C09",
+    interval=300)
+
+status.register("shell",
     command="/usr/local/bin/jucippn",
     color="#F03000",
     interval=300)
