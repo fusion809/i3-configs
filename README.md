@@ -34,6 +34,7 @@ Presently the following are in the i3bar, from left to right:
 For these configs to work out-of-the-box one needs to have the following installed:
 
 * feh for desktop background.
+* Font Awesome icon theme, for the sake of getting the workspace icons shown in the above screenshot. 
 * g++ for CPU/RAM information (only for C++ config). 
 * i3bar.
 * i3pystatus (for Python-based counterpart of the bar)
