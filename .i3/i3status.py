@@ -100,11 +100,6 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/obsd",
-    color="#390FCC",
-    interval=300)
-
-status.register("shell",
     command="/usr/local/bin/oscn",
     color="#AA0F39",
     interval=300)
