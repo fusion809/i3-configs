@@ -15,5 +15,31 @@ else
     ph="AM"
 fi
 
+if [[ $month == "Jan" ]]; then
+    month="01"
+elif [[ $month == "Feb" ]]; then
+    month="02"
+elif [[ $month == "Mar" ]]; then
+    month="03"
+elif [[ $month == "Apr" ]]; then
+    month="04"
+elif [[ $month == "May" ]]; then
+    month="05"
+elif [[ $month == "Jun" ]]; then
+    month="06"
+elif [[ $month == "Jul" ]]; then
+    month="07"
+elif [[ $month == "Aug" ]]; then
+    month="08"
+elif [[ $month == "Sep" ]]; then
+    month="09"
+elif [[ $month == "Oct" ]]; then
+    month="10"
+elif [[ $month == "Nov" ]]; then
+    month="11"
+elif [[ $month == "Dec" ]]; then
+    month="12"
+fi
+
 time="$hourp:$minute $ph"
-printf "$time $day $month $year\n"
+printf "$time $day/$month/$year\n"
