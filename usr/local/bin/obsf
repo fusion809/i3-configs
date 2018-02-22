@@ -7,7 +7,7 @@ pkgpver=$(echo "$pkgpnbv-$pkgpbv")
 
 rm /tmp/src*.html
 
-if ! ( [ $pkgver == $pkgpver ] ); then
+if ! [[ $pkgver == $pkgpver ]]; then
     printf "OF$pkgver"
 else
     printf "OF OK"
