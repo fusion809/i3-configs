@@ -1,0 +1,13 @@
+#!/bin/bash
+wget -cqO- http://download.opensuse.org/source/factory/repo/oss/suse/src &> /tmp/src-$(date | sed 's/ /_/g' | sed 's/:[0-9]*_/_/g').html
+pkgver=$(cat /tmp/src*.html | grep obs-service-source_validator | cut -d '"' -f 4 | cut -d '_' -f 2 | sed 's/validator-//g' | sed 's/\.src\.rpm*//g')
+cd $HOME/AUR/obs-service-source_validator
+pkgpnbv=$(sed -n 's/^pkgver=//p' PKGBUILD)
+pkgpbv=$(sed -n 's/_pkgrel=//p' PKGBUILD)
+pkgpver=$(echo "$pkgpnbv-$pkgpbv")
+
+if ! [[ $pkgver == $pkgpver ]]; then
+    printf "OS$pkgver"
+else
+    printf "OS OK"
+fi
