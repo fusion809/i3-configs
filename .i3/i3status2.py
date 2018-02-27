@@ -8,7 +8,7 @@ from i3pystatus import IntervalModule
 status = Status()
 
 status.register("clock",
-    format="%a %-d/%m/%y %r")
+    format="%a %-d %b %y %r")
 
 status.register("disk",
     path="/data",
@@ -32,7 +32,7 @@ status.register("cpu_usage",
     format="{usage}%")
 
 status.register("temp",
-    format="{Core_0}°C {Core_1}°C {Core_2}°C {Core_3}°C",
+    format="{temp}�C",
     hints={"markup": "pango"},
     lm_sensors_enabled=True,
     dynamic_color=True)
@@ -41,8 +41,6 @@ status.register("network", interface="wlo1", format_up="↓{bytes_recv}KB/s ↑{
 
 status.register("battery")
 
-status.register("pulseaudio")
-
 status.register(
     'weather',
     format='{condition} {current_temp}{temp_unit}',
@@ -50,6 +48,7 @@ status.register(
     hints={'markup': 'pango'},
     backend=weathercom.Weathercom(
         location_code='ASXX0117:1:AS',
+       # locale='en-AU',
         units="metric",
     ))
 
@@ -58,17 +57,14 @@ status.register("uptime",
 
 status.register("shell",
     command="/usr/local/bin/vscoden",
-    color="#0FC0FF",
     interval=300)
 
 status.register("shell",
     command="/usr/local/bin/vimn",
-    color="#99AAFF",
     interval=300)
 
 status.register("shell",
     command="/usr/local/bin/swayn",
-    color="#FF00BB",
     interval=300)
 
 #status.register("shell",
@@ -90,33 +86,7 @@ status.register("shell",
 #    interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/obss",
-    color="#00AF0F",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/obsf",
-    color="#909C09",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/obsd",
-    color="#390FCC",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/oscn",
-    color="#AA0F39",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/jucippn",
-    color="#F03000",
-    interval=300)
-
-status.register("shell",
     command="/usr/local/bin/atomn",
-    color="#FFAA00",
     interval=300)
 
 status.run()
