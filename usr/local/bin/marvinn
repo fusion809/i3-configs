@@ -3,11 +3,11 @@ PK=/home/fusion809/GitHub/mine/packaging
 pkgver=$(wget -cqO- https://www.chemaxon.com/products/marvin/download | grep "deb" | head -n 1 | cut -d '"' -f 14 | cut -d '/' -f 5)
 pkgverp=$(sed -n 's/pkgver=//p' $PK/marvin/PKGBUILD | head -n 1 | sed 's/\.r/\-r/g')
 
-echo "$pkgver" > /tmp/marvin
-echo "$pkgverp\n" >> /tmp/marvin
+printf "$pkgver" > /tmp/marvin
+printf "$pkgverp\n" >> /tmp/marvin
 
 if ! [[ "$pkgver" == "$pkgverp" ]]; then
-    echo "M$pkgver"
+    printf "M$pkgver\n"
 else
-    echo "M OK"
+    printf "M OK\n"
 fi

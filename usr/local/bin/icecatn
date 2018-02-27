@@ -6,7 +6,7 @@ echo "$pkgver" > /tmp/icecat
 echo "$pkgverp\n" >> /tmp/icecat
 
 if ! [[ "$pkgver" == "$pkgverp" ]]; then
-    echo "I $pkgver"
+    printf "I$pkgver\n"
 else
-    echo "I OK"
+    printf "I OK\n"
 fi
