@@ -3,11 +3,11 @@ PK=/home/fusion809/GitHub/mine/packaging
 pkgver=$(wget -cqO- https://github.com/swaywm/sway/releases | grep "\.tar\.gz" | head -n 1 | cut -d '"' -f 2 | cut -d '/' -f 6 | sed 's/\.tar\.gz//g')
 pkgverp=$(sed -n 's/pkgver=//p' $PK/sway/PKGBUILD | head -n 1 | sed 's/\.r/\-r/g')
 
-echo "$pkgver" > /tmp/sway
-echo "$pkgverp\n" >> /tmp/sway
+printf "$pkgver" > /tmp/sway
+printf "$pkgverp\n" >> /tmp/sway
 
 if ! [[ "$pkgver" == "$pkgverp"[.0]* ]]; then
-    echo "S $pkgver"
+    printf "S$pkgver\n"
 else
-    echo "S OK"
+    printf "S OK\n"
 fi
