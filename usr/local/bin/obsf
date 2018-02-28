@@ -8,10 +8,6 @@ pkgpnbv=$(sed -n 's/^pkgver=//p' PKGBUILD)
 pkgpbv=$(sed -n 's/_pkgver=//p' PKGBUILD)
 pkgpver=$(echo "$pkgpnbv-$pkgpbv")
 
-if ! [[ -n $1 ]]; then
-    rm /tmp/src*.html
-fi
-
 if ! [[ $pkgver == $pkgpver ]]; then
     printf "OF$pkgver\n"
 else
