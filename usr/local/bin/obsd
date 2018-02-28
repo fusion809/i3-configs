@@ -1,5 +1,5 @@
 #!/bin/bash
-if ! [[ -f /tmp/src*.html ]]; then
+if ! `ls /tmp | grep src > /dev/null 2>&1`; then
      wget -cqO- http://download.opensuse.org/source/factory/repo/oss/suse/src &> /tmp/src-$(date | sed 's/ /_/g' | sed 's/:[0-9]*_/_/g').html
 fi
 
