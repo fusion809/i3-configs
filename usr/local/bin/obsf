@@ -1,14 +1,15 @@
 #!/bin/bash
+if ! `ls /tmp | grep src > /dev/null 2>&1`; then
+     wget -cqO- http://download.opensuse.org/source/factory/repo/oss/suse/src &> /tmp/src-$(date | sed 's/ /_/g' | sed 's/:[0-9]*_/_/g').html
+fi
 pkgver=$(cat /tmp/$(ls /tmp | grep "src-.*html" | tail -n 1) | grep obs-service-format_spec_file | cut -d '"' -f 4 | cut -d '_' -f 3 | sed 's/file-//g' | sed 's/\.src\.rpm*//g')
 cd $HOME/AUR/obs-service-format_spec_file
 pkgpnbv=$(sed -n 's/^pkgver=//p' PKGBUILD)
 pkgpbv=$(sed -n 's/_pkgver=//p' PKGBUILD)
 pkgpver=$(echo "$pkgpnbv-$pkgpbv")
 
-rm /tmp/src*.html
-
 if ! [[ $pkgver == $pkgpver ]]; then
-    printf "OF$pkgver"
+    printf "OF$pkgver\n"
 else
-    printf "OF OK"
+    printf "OF OK\n"
 fi
