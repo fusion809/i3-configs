@@ -8,7 +8,7 @@ cd $HOME/OBS/home:fusion809/obs-service-download_files
 pkgpver=$(sed -n 's/pkgver=//p' PKGBUILD)
 
 if ! [[ -n $1 ]]; then
-    rm /tmp/src*.htl
+    rm /tmp/src*.html
 fi
 
 if ! ( [ $pkgpver == $pkgver ] ); then
