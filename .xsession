@@ -1,1 +1,1 @@
-feh --bg-scale /home/fusion809/.local/share/wallpapers/"blue night 2k.jpg"
+feh --bg-scale /home/fusion809/.local/share/wallpapers/"0axGRcn.jpg"
