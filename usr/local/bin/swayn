@@ -9,5 +9,5 @@ printf "$pkgverp\n" >> /tmp/sway
 if ! [[ "$pkgver" == "$pkgverp"[.0]* ]]; then
     printf "S$pkgver\n"
 else
-    printf "S OK\n"
+    printf "S\n"
 fi
