@@ -11,5 +11,5 @@ pkgpver=$(echo "$pkgpnbv-$pkgpbv")
 if ! [[ $pkgver == $pkgpver ]]; then
     printf "OF$pkgver\n"
 else
-    printf "OF OK\n"
+    printf "OF\n"
 fi

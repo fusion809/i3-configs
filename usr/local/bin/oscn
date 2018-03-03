@@ -6,5 +6,5 @@ pkgpver=$(sed -n 's/pkgver=//p' PKGBUILD)
 if ! ( [ $pkgpver == $pkgver ] ); then
     printf "OC$pkgver\n"
 else
-    printf "OC OK\n"
+    printf "OC\n"
 fi

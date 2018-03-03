@@ -9,5 +9,5 @@ printf "$pkgverp\n" >> /tmp/marvin
 if ! [[ "$pkgver" == "$pkgverp" ]]; then
     printf "M$pkgver\n"
 else
-    printf "M OK\n"
+    printf "M\n"
 fi

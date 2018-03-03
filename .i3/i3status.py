@@ -67,6 +67,16 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
+    command="/usr/local/bin/torn",
+    color="#CA30B2",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/vimn",
+    color="#99AAFF",
+    interval=300)
+
+status.register("shell",
     command="/usr/local/bin/swayn",
     color="#FF00BB",
     interval=300)
