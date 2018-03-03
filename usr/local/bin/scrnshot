@@ -12,4 +12,4 @@ Y=$(calc Y)
 
 OS=$(cat /etc/os-release | grep "^ID" | cut -d '=' -f 2 | head -n 1)
 
-import -window root -frame -silent "/home/fusion809/Pictures/Screenshots/i3/Screenshot_$OS_${Y}${m}${D}_${H}${M}${S}.png"
+import -window root -frame -silent "/home/fusion809/Pictures/Screenshots/i3/Screenshot_${OS}_${Y}${m}${D}_${H}${M}${S}.png"
