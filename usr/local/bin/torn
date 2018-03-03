@@ -1,0 +1,11 @@
+#!/bin/bash
+# Latest available stable release of the Tor Browser
+torblv=$(wget -cqO- https://www.torproject.org/projects/torbrowser.html.en#downloads | grep "en-US.tar.xz.asc" | grep "64" | head -n 1 | cut -d '"' -f 2 | cut -d '/' -f 4)
+# Version in use
+torbuv=$(cat $HOME/.local/share/applications/tor-browser_en-US/Browser/TorBrowser/Docs/ChangeLog.txt | head -n 1 | cut -d ' ' -f 3)
+
+if [[ $torblv == $torbuv ]]; then
+    printf "T\n"
+else
+    printf "T$torblv\n"
+fi

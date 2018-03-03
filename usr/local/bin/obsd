@@ -14,6 +14,6 @@ fi
 if ! ( [ $pkgpver == $pkgver ] ); then
     printf "OD$pkgver\n"
 else
-    printf "OD OK\n"
+    printf "OD\n"
 fi
 

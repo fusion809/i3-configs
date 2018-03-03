@@ -8,5 +8,5 @@ echo "$pkgverp\n" >> /tmp/icecat
 if ! [[ "$pkgver" == "$pkgverp" ]]; then
     printf "I$pkgver\n"
 else
-    printf "I OK\n"
+    printf "I\n"
 fi
