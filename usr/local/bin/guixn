@@ -5,7 +5,7 @@ CURRENT=$(wget -cqO- https://git.savannah.gnu.org/git/guix.git/info/refs | grep 
 CURRENT=$(echo $CURRENT | head -n 1)
 
 if [[ $CURRENT == $BUILT ]]; then
-    printf "G OK\n"
+    printf "G\n"
 else
     printf "New commit is available!\n"
 fi

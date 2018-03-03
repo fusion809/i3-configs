@@ -5,7 +5,7 @@ ver=$(wget -cqO- $URL | grep "$revn" | cut -d '-' -f 1 | cut -d '_' -f 2)
 verl=$(ls $HOME/GitHub/mine/packaging/fusion809-overlay/app-editors/visual-studio-code/*.ebuild | cut -d '/' -f 10 | cut -d '-' -f 4 | sed 's/.ebuild//g')
 
 if [[ $verl == $ver ]]; then
-    printf "VS OK\n"
+    printf "VS\n"
 else
     printf "VS$ver\n"
 fi

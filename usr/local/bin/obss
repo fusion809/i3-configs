@@ -15,5 +15,5 @@ fi
 if ! [[ $pkgver == $pkgpver ]]; then
     printf "OS$pkgver\n"
 else
-    printf "OS OK\n"
+    printf "OS\n"
 fi
