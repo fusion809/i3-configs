@@ -49,10 +49,10 @@ bindsym Print --release exec /usr/local/bin/scrnshot
 bindsym $mod+Print exec /usr/local/bin/vid
 
 # Launch 0 A.D.
-bindsym $mod+g exec optirun-0ad
+bindsym $mod+g exec /usr/bin/0ad
 
 # Launch Chromium
-bindsym $mod+c exec chromium
+bindsym $mod+c exec /usr/bin/chromium
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
@@ -65,14 +65,14 @@ bindsym $mod+i exec i3-input
 # Launch MarvinSketch
 bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
 
-# Launch RuneScape NXT client with Optirun
-bindsym $mod+o exec runescape-launcher
+# Launch RuneScape NXT client
+bindsym $mod+o exec /usr/bin/runescape-launcher
 
 # Launch PCManFM
-bindsym $mod+p exec pcmanfm
+bindsym $mod+p exec /usr/bin/pcmanfm
 
 # Launch Tor browser (en)
-bindsym $mod+t exec tor-browser-en
+bindsym $mod+t exec $HOME/.local/share/applications/tor-browser_en-US/Browser/start-tor-browser
 
 # Open Deluge
 bindsym $mod+Shift+d exec deluge
