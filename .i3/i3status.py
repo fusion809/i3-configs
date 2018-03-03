@@ -110,6 +110,11 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
+    command="/usr/local/bin/openran",
+    color="#FF5F11",
+    interval=300)
+
+status.register("shell",
     command="/usr/local/bin/oscn",
     color="#AA5F6A",
     interval=300)

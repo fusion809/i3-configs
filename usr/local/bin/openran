@@ -1,0 +1,11 @@
+#!/bin/bash
+# OpenRA latest version available
+orlv=$(wget -cqO- https://github.com/OpenRA/OpenRA/releases | grep "all.deb" | head -n 1 | cut -d "/" -f 6 | cut -d '-' -f 2)
+# OpenRA latest packaged version
+orpv=$(cat $HOME/OBS/home:fusion809/openra/openra.spec | grep "Version:" | sed 's/Version:\s*//g')
+
+if [[ $orpv == $orlv ]]; then
+    printf "OR \n"
+else
+    printf "OR${orlv}\n"
+fi
