@@ -8,8 +8,6 @@ The C/C++/Shell-powered bar includes weather conditions (including temperatures;
 
 The Python-based (or i3pystatus) bar displays the following: weather conditions, download/upload rates for wlo1 (not hard to change to another interface by editing `~/.i3/i3status.py`), uptime, disk space (used/total), core temperatures, CPU usage (%), load (average over 1 minute), RAM usage (used/total) and date. 
 
-For my configs on Arch Linux see the [archlinux branch](https://github.com/fusion809/i3-configs/tree/archlinux).
-
 ## Requirements
 For these configs to work out-of-the-box one needs to have the following installed:
 
