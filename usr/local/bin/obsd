@@ -12,8 +12,8 @@ if ! [[ -n $1 ]]; then
 fi
 
 if ! ( [ $pkgpver == $pkgver ] ); then
-    printf "OD$pkgver\n"
+    printf "OBSSDown$pkgver\n"
 else
-    printf "OD\n"
+    printf "OBSSDown\n"
 fi
 

@@ -9,7 +9,7 @@ pkgpbv=$(sed -n 's/_pkgver=//p' PKGBUILD)
 pkgpver=$(echo "$pkgpnbv-$pkgpbv")
 
 if ! [[ $pkgver == $pkgpver ]]; then
-    printf "OF$pkgver\n"
+    printf "OBSFSpec$pkgver\n"
 else
-    printf "OF\n"
+    printf "OBSFSpec\n"
 fi

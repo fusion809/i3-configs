@@ -5,7 +5,7 @@ orlv=$(wget -cqO- https://github.com/OpenRA/OpenRA/releases | grep "all.deb" | h
 orpv=$(cat $HOME/OBS/home:fusion809/openra/openra.spec | grep "Version:" | sed 's/Version:\s*//g')
 
 if [[ $orpv == $orlv ]]; then
-    printf "OR \n"
+    printf "OpenRA \n"
 else
-    printf "OR${orlv}\n"
+    printf "OpenRA${orlv}\n"
 fi

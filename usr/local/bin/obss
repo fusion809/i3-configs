@@ -13,7 +13,7 @@ if [[ -n $1 ]]; then
 fi
  
 if ! [[ $pkgver == $pkgpver ]]; then
-    printf "OS$pkgver\n"
+    printf "OBSSVal$pkgver\n"
 else
-    printf "OS\n"
+    printf "OBSSVal\n"
 fi

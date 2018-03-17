@@ -9,7 +9,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Font Awesome 5 Brands-Regular-400 7
+font pango:Ubuntu 7
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -261,7 +261,8 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
+bar { 
+        position bottom
         #status_command ~/.i3/i3status.sh
         status_command /usr/bin/python3 ~/.i3/i3status.py
         colors {
@@ -274,3 +275,23 @@ bar {
                 inactive_workspace #454545 #212121 #ffffff
         }
 }
+
+bar { 
+        workspace_buttons no
+        tray_output no
+        position top
+        font pango:Font Awesome 5 Brands-Regular-400 7
+
+        #status_command ~/.i3/i3status.sh
+        status_command /usr/bin/python3 ~/.i3/i3status-notifs.py
+        colors {
+                background #000000
+                statusline #ffffff
+
+                #focused_workspace  #ff4500 #000000
+                #inactive_workspace #888888 #000000
+                focused_workspace  #454545 #225577 #ffffff
+                inactive_workspace #454545 #212121 #ffffff
+        }
+}
+
