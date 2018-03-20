@@ -9,7 +9,7 @@ status = Status()
 
 status.register("shell",
     command="/usr/local/bin/zshn",
-    color="#F52624",
+    color="#FA7A94",
     interval=300)
 
 status.register("shell",
@@ -67,12 +67,12 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/openran",
-    color="#FF5F11",
+    color="#FFFFAA",
     interval=300)
 
 status.register("shell",
     command="/usr/local/bin/obsf",
-    color="#909C09",
+    color="#A4AF4A",
     interval=300)
 
 status.register("shell",
@@ -82,7 +82,7 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/oscn",
-    color="#AA5F6A",
+    color="#FFFF00",
     interval=300)
 
 status.register("shell",
