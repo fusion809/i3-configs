@@ -1,7 +1,7 @@
 #!/bin/bash
 pkgver=$(wget -cqO- https://github.com/notepadqq/notepadqq/releases | grep "linux-x64\.tar\.gz" | head -n 1 | cut -d '/' -f 6 | sed 's/v//g')
 cd $HOME/GitHub/mine/packaging/fusion809-overlay/app-editors/notepadqq
-pkgpver=$(ls -ld * | tail -n 1 | sed 's/[a-zA-Z0-9: .]*notepadqq/notepadqq/g' | cut -d '-' -f 5 | sed 's/.ebuild//g')
+pkgpver=$(ls -ld * | tail -n 1 | sed 's/[a-zA-Z0-9: .]*notepadqq/notepadqq/g' | cut -d '-' -f 8 | sed 's/.ebuild//g')
 
 if ! [[ $pkgver == $pkgpver ]]; then
     printf "Notepadqq$pkgver\n"

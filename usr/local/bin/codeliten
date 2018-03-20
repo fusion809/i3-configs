@@ -1,7 +1,7 @@
 #!/bin/bash
 pkgver=$(wget -cqO- https://github.com/eranif/codelite/releases | grep "app\.tar\.gz" | head -n 1 | cut -d '/' -f 6)
 cd $HOME/GitHub/mine/packaging/fusion809-overlay/dev-util/codelite
-pkgpver=$(ls -ld * | head -n 1 | sed 's/[a-zA-Z0-9: .]*codelite/codelite/g' | cut -d '-' -f 5 | sed 's/.ebuild//g')
+pkgpver=$(ls -ld * | head -n 1 | sed 's/[a-zA-Z0-9: .]*codelite/codelite/g' | cut -d '-' -f 8 | sed 's/.ebuild//g')
 
 if ! [[ $pkgver == $pkgpver ]]; then
     printf "CodeLite$pkgver\n"
