@@ -29,7 +29,7 @@ My bottom bar contains other important information like:
 * RAM usage in format used/totalG. for example 2.764/15.606G would indicate that 2.764 GiB is in use, but a total of 15.606 GiB is available. 
 * Disk usage (root partition), in the same format as RAM usage was.
 * Data partition usage, also in the used/totalG format.
-* Date and time by local time in format: %a %-d %b %y %r. For example, Sat 23 Dec 17 07:27:32 PM. 
+* Date and time by local time in format: %A %d %B %Y %r. For example, Saturday 23 December 2017 07:27:32 PM. 
 
 ## Requirements
 For these configs to work out-of-the-box one needs to have the following installed:
