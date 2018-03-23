@@ -1,1 +1,1 @@
-feh --bg-scale ~/.local/share/wallpapers/arch_linux_by_lapapunk.png
+feh --bg-scale /home/fusion809/.local/share/wallpapers/"0axGRcn.jpg"

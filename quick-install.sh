@@ -5,25 +5,39 @@ set -e
 set -x
 
 # Path variables
-CFG="$HOME/GitHub/mine/configs"
+CFG="$HOME/GitHub/mine/config"
 I3="$CFG/i3-configs"
 
 function checke {
     which $1 >/dev/null 2>&1 || (printf "$1 missing from $PATH" && exit 1)
 }
 
+function checkp {
+    if `cat /etc/os-release | grep "Arch Linux" > /dev/null 2>&1` || `cat /etc/os-release | grep "Manjaro" > /dev/null 2>&1`; then
+         if ! `pacman -Qi ttf-$1 > /dev/null 2>&1`; then
+              printf "ttf-$1 isn't installed!\n" && exit 1
+         fi
+    fi
+}
+
 # Check deps
 checke cp
 checke feh
+checke rofi
+checke firefox
 checke g++
 checke git
 checke i3bar
 checke import
 checke ln
 checke mkdir
+checke pip3
+checke python3
 checke sudo
-checke terminology
+checke tmux
+checke xterm
 checke zsh
+checkp ubuntu-font-family
 
 # Script assumes all deps are installed
 if ! [[ -d $CFG ]]; then
@@ -41,7 +55,7 @@ if [[ -d $HOME/.i3 ]]; then
     rm -rf $HOME/.i3
 fi
 
-cp -a $I3/.i3 $HOME
+ln -sf $I3/.i3 $HOME
 
 # Compile C++ programs
 pushd $HOME/.i3
@@ -59,19 +73,24 @@ sudo ln -sf $HOME/.i3/ram.o /usr/local/bin/ram
 ###############################################################################
 ############################## ~/.i3status.conf ###############################
 ###############################################################################
-cp $I3/.i3status.conf $HOME
+ln -sf $I3/.i3status.conf $HOME
 
 ###############################################################################
 ################################ ~/.Xresources ################################
 ###############################################################################
-cp $I3/.Xresources $HOME
+ln -sf $I3/.Xresources $HOME
 
 ###############################################################################
 ################################# ~/.xsession #################################
 ###############################################################################
-cp $I3/.xsession $HOME
+ln -sf $I3/.xsession $HOME
 
 ###############################################################################
 ################################ /usr/local/bin ###############################
 ###############################################################################
-sudo cp $I3/usr/local/bin/* /usr/local/bin
+sudo ln -sf $I3/usr/local/bin/* /usr/local/bin
+
+###############################################################################
+#################################### XTerm ####################################
+###############################################################################
+ln -sf $I3/XTerm $HOME

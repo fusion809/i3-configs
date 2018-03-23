@@ -1,0 +1,9 @@
+#!/bin/bash
+pkgver=$(wget -cqO- http://www.zsh.org/pub/ | grep ".*[0-9].*tar.gz" | tail -n 1 | sed 's/.*"zsh-//g' | sed 's/.tar.gz.*//g')
+pkgpver=$(cat $HOME/OBS/home:fusion809/zsh/zsh.spec | grep Version | cut -d ' ' -f 2)
+
+if [[ $pkgver == $pkgpver ]]; then
+    printf "Zsh \n"
+else
+    printf "Zsh$pkgver\n"
+fi

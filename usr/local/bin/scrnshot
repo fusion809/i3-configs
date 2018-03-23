@@ -10,4 +10,6 @@ D=$(calc d)
 m=$(calc m)
 Y=$(calc Y)
 
-import -window root -frame -silent "/home/fusion809/Pictures/Screenshots/Screenshot_${Y}${m}${D}_${H}${M}${S}.png"
+OS=$(cat /etc/os-release | grep "^ID" | cut -d '=' -f 2 | head -n 1)
+
+/usr/bin/import -window root -frame -silent "/home/fusion809/Pictures/Screenshots/i3/Screenshot_${OS}_${Y}${m}${D}_${H}${M}${S}.png"

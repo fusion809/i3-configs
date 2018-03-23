@@ -1,0 +1,13 @@
+#!/bin/bash
+pkgver=$(wget -cqO- https://github.com/cppit/jucipp/releases | grep "beta" | grep "amd64\.tar\.gz" | head -n 1 | cut -d '"' -f 2 | cut -d '/' -f 6 | sed 's/v//g')
+pkgbv=$(echo $pkgver | cut -d '-' -f 2 | sed 's/beta//g')
+pkgnbv=$(echo $pkgver | cut -d '-' -f 1)
+cd $HOME/AUR/jucipp
+pkgpnbv=$(sed -n 's/_pkgver=//p' PKGBUILD)
+pkgpbv=$(sed -n 's/_pkgrel=//p' PKGBUILD)
+
+if ! ( [ $pkgpnbv == $pkgnbv ] && [ $pkgpbv == $pkgbv ] ); then
+    printf "Juci++$pkgver\n"
+else
+    printf "Juci++\n"
+fi
