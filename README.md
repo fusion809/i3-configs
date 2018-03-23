@@ -51,6 +51,25 @@ For these configs to work out-of-the-box one needs to have the following install
 - psutil
 - pysensors (git+https://github.com/bastienleonard/pysensors.git)
 
+So on Debian 9 something like:
+
+```bash
+sudo apt-fast install python3-pip pulseaudio rofi wget xterm zsh imagemagick i3bar feh fonts-font-awesome git
+pip3 install --user colour netifaces psutil git+https://github.com/bastienleonard/pysensors.git git+https://github.com/enkore/i3pystatus.git
+
+if ! [[ -d $HOME/GitHub/mine/config/i3-configs ]]; then
+    git clone https://github.com/fusion809/i3-configs $HOME/GitHub/mine/config/i3-configs
+elif ! [[ -d $HOME/GitHub/mine/config ]]; then
+    mkdir -p $HOME/GitHub/mine/config
+    git clone https://github.com/fusion809/i3-configs $HOME/GitHub/mine/config/i3-configs
+fi
+
+ln -sf $HOME/GitHub/mine/config/i3-configs/.* $HOME/
+ln -sf $HOME/GitHub/mine/config/i3-configs/XTerm $HOME/
+```
+
+might install it all. I prefer to use symlinks to set up the configs in the right location on my system so that i3 uses them, hence why the later two lines.  
+
 ## Customization
 If you do not want to use these apps (xterm and ImageMagick) and want to use alternative apps edit `~/.i3/config` accordingly. Likewise these configs are set up for PCs with 5 or more cores. If your screen is small and the i3bar does not seem to fit properly on your screen I would suggest editing the font setting line in `~/.i3/config` accordingly. The `~/.i3/i3status.py` also may be customized to track other partitions, other networks, *etc.*
 
