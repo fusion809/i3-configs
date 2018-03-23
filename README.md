@@ -2,7 +2,7 @@
 ![The Python configs as of 23 March 2018 running on Debian 9 with i3 4.13](https://fusion809.github.io/images/i3/i3-4.13-my-debian-configs-20180323.png)
 
 <!--upload/download rates (unfortunately they are incredibly inaccurate, sometimes they will show 0 kB/s even when download/upload rates are > 1,000 kB/s, if you know how to make it accurate please file a new issue or pull request and I will happily accept it!), -->
-This repository contains my i3 configs. There are two main routes of using them. Either you can use the i3pystatus (yes you will need to install i3pystatus, a bleeding-edge, from lastest git snapshot, version of the package is needed!) powered bar or the C/C++/Shell-powered bar. 
+This repository contains my i3 configs. This particular branch (master) is where you can find my Debian configs. There are two main routes of using them. Either you can use the i3pystatus (yes you will need to install i3pystatus, a bleeding-edge, from lastest git snapshot, version of the package is needed!) powered bar or the C/C++/Shell-powered bar. 
 
 The C/C++/Shell-powered bar includes weather conditions (including temperatures; presently calculates it for my location, feel free to edit it in `~/.i3/i3status.sh`), uptime, % CPU used, RAM usage, core temperatures (set up for my system in particular so may not work for others. It is fairly easy to edit `~/.i3/i3status.sh` to set it up for your system) and time. 
 
@@ -18,7 +18,7 @@ My top i3 bar alerts me as to when packages I maintain/use become outdated and n
 * VSCode means Visual Studio Code. 
 
 My bottom bar contains other important information like:
-* Uptime, format: h:m:s. Unfortunately I cannot get it to show it in my preferred format of hh:mm:ss. So, for example, you see 0:0:2 if the system has been up two seconds (and no Arch doesn't boot that quickly for me :P), as opposed to how I would like it to the hh:mm:ss format of 00:00:02. Likewise if the system has been up for 13 hours, 12 minutes and 5 seconds it would be formatted as 13:12:5. 
+* Uptime, format: h:m:s. Unfortunately I cannot get it to show it in my preferred format of hh:mm:ss. So, for example, you see 0:0:2 if the system has been up two seconds (and no Debian doesn't boot that quickly for me :P), as opposed to how I would like it to the hh:mm:ss format of 00:00:02. Likewise if the system has been up for 13 hours, 12 minutes and 5 seconds it would be formatted as 13:12:5. 
 * Weather conditions, such as 'Partly Cloudy 28°C' (which yes is the condition given at the time of typing).
 * My audio volume, number is the % of the maximum available volume I am at. 
 * Battery status.
