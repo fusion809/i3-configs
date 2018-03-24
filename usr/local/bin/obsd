@@ -1,6 +1,6 @@
 #!/bin/bash
 if ! `ls /tmp | grep src > /dev/null 2>&1`; then
-     wget -cqO- http://download.opensuse.org/source/factory/repo/oss/suse/src &> /tmp/src-$(date | sed 's/ /_/g' | sed 's/:[0-9]*_/_/g').html
+     wget -cqO- http://download.opensuse.org/source/tumbleweed/repo/oss/src &> /tmp/src-$(date | sed 's/ /_/g' | sed 's/:[0-9]*_/_/g').html
 fi
 
 pkgver=$(wget -cqO- https://github.com/openSUSE/obs-service-download_files/releases | grep "\.tar\.gz" | head -n 1 | cut -d '"' -f 2 | cut -d '/' -f 5 | sed 's/\.tar\.gz//g')
@@ -12,8 +12,8 @@ if ! [[ -n $1 ]]; then
 fi
 
 if ! ( [ $pkgpver == $pkgver ] ); then
-    printf "OD$pkgver\n"
+    printf "OBSSDown$pkgver\n"
 else
-    printf "OD\n"
+    printf "OBSSDown\n"
 fi
 
