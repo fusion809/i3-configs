@@ -280,7 +280,7 @@ bar {
         workspace_buttons no
         tray_output no
         position top
-        font pango:Font Awesome 5 Brands-Regular-400 7
+        font pango:Font Awesome 5 Brands-Regular-400 9
 
         #status_command ~/.i3/i3status.sh
         status_command /usr/bin/python3 ~/.i3/i3status-notifs.py

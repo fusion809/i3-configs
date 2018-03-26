@@ -23,11 +23,6 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/torn",
-    color="#CA30B2",
-    interval=300)
-
-status.register("shell",
     command="/usr/local/bin/adeptn",
     color="#CFAF32",
     interval=300)
@@ -93,11 +88,6 @@ status.register("shell",
 status.register("shell",
     command="/usr/local/bin/jucippn",
     color="#F03000",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/firefoxn",
-    color="#FF2A33",
     interval=300)
 
 status.register("shell",
