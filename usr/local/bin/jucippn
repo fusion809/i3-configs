@@ -7,7 +7,7 @@ pkgpnbv=$(sed -n 's/_pkgver=//p' PKGBUILD)
 pkgpbv=$(sed -n 's/_pkgrel=//p' PKGBUILD)
 
 if ! ( [ $pkgpnbv == $pkgnbv ] && [ $pkgpbv == $pkgbv ] ); then
-    printf "J$pkgver\n"
+    printf "Juci++$pkgver\n"
 else
-    printf "J\n"
+    printf "Juci++\n"
 fi

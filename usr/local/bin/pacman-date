@@ -1,0 +1,45 @@
+#!/bin/zsh
+update=$(ls -ld /var/lib/pacman | sed 's/drwxr-xr-x 1 root root //g' | sed 's| /var/lib/pacman||g')
+day=$(echo $update | cut -d ' ' -f 3)
+month=$(echo $update | cut -d ' ' -f 2)
+year=$(echo $update | cut -d ' ' -f 1)
+time=$(echo $update | cut -d ' ' -f 4)
+hour=$(echo $time | cut -d ':' -f 1)
+minute=$(echo $time | cut -d ':' -f 2)
+
+if [[ $hour > 12 ]]; then
+    hourp=$(($hour-12))
+    ph="PM"
+else
+    hourp=$hour
+    ph="AM"
+fi
+
+if [[ $month == "Jan" ]]; then
+    month="01"
+elif [[ $month == "Feb" ]]; then
+    month="02"
+elif [[ $month == "Mar" ]]; then
+    month="03"
+elif [[ $month == "Apr" ]]; then
+    month="04"
+elif [[ $month == "May" ]]; then
+    month="05"
+elif [[ $month == "Jun" ]]; then
+    month="06"
+elif [[ $month == "Jul" ]]; then
+    month="07"
+elif [[ $month == "Aug" ]]; then
+    month="08"
+elif [[ $month == "Sep" ]]; then
+    month="09"
+elif [[ $month == "Oct" ]]; then
+    month="10"
+elif [[ $month == "Nov" ]]; then
+    month="11"
+elif [[ $month == "Dec" ]]; then
+    month="12"
+fi
+
+time="$hourp:$minute $ph"
+printf "$time $day/$month/$year\n"

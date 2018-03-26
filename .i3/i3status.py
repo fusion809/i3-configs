@@ -8,28 +8,28 @@ from i3pystatus import IntervalModule
 status = Status()
 
 status.register("clock",
-    format="%a %-d/%m/%y %r")
+    format="%A %d %B %Y %r")
 
 status.register("disk",
     path="/data",
     round_size=1,
-    format="{used}/{total}G")
+    format="/data {used}/{total}G")
 
 status.register("disk",
     path="/",
     round_size=1,
-    format="{used}/{total}G")
+    format="/ {used}/{total}G")
 
 status.register("mem",
-    format="{used_mem}/{total_mem}G",
+    format="RAM {used_mem}/{total_mem}G",
     color="#FFFFFF",
     divisor=1073741824,
     round_size=3)
 
-status.register("load", format="{avg1}")
+status.register("load", format="Load {avg1}")
 
 status.register("cpu_usage",
-    format="{usage}%")
+    format="CPU {usage}%")
 
 status.register("temp",
     format="{Core_0}°C {Core_1}°C {Core_2}°C {Core_3}°C",
@@ -54,74 +54,6 @@ status.register(
     ))
 
 status.register("uptime",
-    format="{hours}:{mins}:{secs}")
-
-status.register("shell",
-    command="/usr/local/bin/vscoden",
-    color="#0FC0FF",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/vimn",
-    color="#99AAFF",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/swayn",
-    color="#FF00BB",
-    interval=300)
-
-#status.register("shell",
-#    command="/usr/local/bin/nixn",
-#    interval=300)
-
-#status.register("shell",
-#    command="/usr/local/bin/marvinn",
-#    interval=300)
-
-# Not really useful now as I've ditched IceCat
-#status.register("shell",
-#    command="/usr/local/bin/icecatn",
-#    interval=300)
-
-# Too many updates for this to be worthwhile
-#status.register("shell",
-#    command="/usr/local/bin/guixn",
-#    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/obss",
-    color="#00AF0F",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/openran",
-    color="#FF5F11",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/obsf",
-    color="#909C09",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/obsd",
-    color="#CA3355",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/oscn",
-    color="#AA5F6A",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/jucippn",
-    color="#F03000",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/atomn",
-    color="#FFAA00",
-    interval=300)
+    format="Up {hours}:{mins}:{secs}")
 
 status.run()
