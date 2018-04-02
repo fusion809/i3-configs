@@ -5,7 +5,7 @@ torblv=$(wget -cqO- https://www.torproject.org/projects/torbrowser.html.en#downl
 torbuv=$(cat $HOME/.local/share/applications/tor-browser_en-US/Browser/TorBrowser/Docs/ChangeLog.txt | head -n 1 | cut -d ' ' -f 3)
 
 if [[ $torblv == $torbuv ]]; then
-    printf "T\n"
+    printf "TorB\n"
 else
-    printf "T$torblv\n"
+    printf "TorB$torblv\n"
 fi

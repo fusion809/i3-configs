@@ -7,7 +7,7 @@ printf "$pkgver" > /tmp/sway
 printf "$pkgverp\n" >> /tmp/sway
 
 if ! [[ "$pkgver" == "$pkgverp"[.0]* ]]; then
-    printf "S$pkgver\n"
+    printf "Sway$pkgver\n"
 else
-    printf "S\n"
+    printf "Sway\n"
 fi

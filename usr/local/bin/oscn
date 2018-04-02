@@ -4,7 +4,7 @@ cd $HOME/OBS/home:fusion809/osc
 pkgpver=$(sed -n 's/pkgver=//p' PKGBUILD)
 
 if ! ( [ $pkgpver == $pkgver ] ); then
-    printf "OC$pkgver\n"
+    printf "osc$pkgver\n"
 else
-    printf "OC\n"
+    printf "osc\n"
 fi
