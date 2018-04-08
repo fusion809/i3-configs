@@ -1,7 +1,7 @@
 #!/bin/bash
 PK=/home/fusion809/GitHub/mine/packaging
 pkgver=$(wget -cqO- https://github.com/swaywm/sway/releases | grep "\.tar\.gz" | head -n 1 | cut -d '"' -f 2 | cut -d '/' -f 6 | sed 's/\.tar\.gz//g')
-pkgverp=$(sed -n 's/pkgver=//p' $PK/sway/PKGBUILD | head -n 1 | sed 's/\.r/\-r/g')
+pkgverp=$(sed -n 's/pkgver=//p' $PK/sway/PKGBUILD | head -n 1 | sed 's/\.r/\-r/g' | sed 's/\.a/\-a/g')
 
 printf "$pkgver" > /tmp/sway
 printf "$pkgverp\n" >> /tmp/sway
