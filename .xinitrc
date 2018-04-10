@@ -1,4 +1,4 @@
-feh --bg-scale /home/fusion809/.local/share/wallpapers/"Void Linux wallpaper".jpg && \
+feh --bg-scale /home/fusion809/.local/share/wallpapers/Void/"Void Linux wallpaper".jpg && \
 DEFAULTSESSION=i3
 
 case "$1" in
