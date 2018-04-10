@@ -6,11 +6,11 @@ function wal {
 }
 
 if [[ $DISTRO == "debian" ]]; then
-    wal "Blue Debian logo on grey background.jpg"
+    wal "Debian/Blue Debian logo on grey background.jpg"
 elif [[ $DISTRO == "arch" ]]; then
-    wal "Arch Linux Wallpapers (3).jpg"
+    wal "Arch/Arch Linux Wallpapers (3).jpg"
 elif [[ $DISTRO == "void" ]]; then
     wal "blue night 2k.jpg"
 elif [[ $DISTRO == "gentoo" ]]; then
-    wal "1833168.jpg"
+    wal "Gentoo/1833168.jpg"
 fi
