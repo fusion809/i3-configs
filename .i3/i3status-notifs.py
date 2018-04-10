@@ -96,11 +96,6 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/firefoxn",
-    color="#FF2A33",
-    interval=300)
-
-status.register("shell",
     command="/usr/local/bin/codeliten",
     color="#22AF9F",
     interval=300)

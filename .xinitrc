@@ -1,4 +1,4 @@
-feh --bg-scale /home/fusion809/.local/share/wallpapers/KghiCz3.jpg && \
+feh --bg-scale "/home/fusion809/.local/share/wallpapers/Blue Debian logo on grey background.jpg" && \
 DEFAULTSESSION=i3
 
 case "$1" in
