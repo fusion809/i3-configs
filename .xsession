@@ -12,5 +12,5 @@ elif [[ $DISTRO == "arch" ]]; then
 elif [[ $DISTRO == "void" ]]; then
     wal "blue night 2k.jpg"
 elif [[ $DISTRO == "gentoo" ]]; then
-    wal "Gentoo/1833168.jpg"
+    wal "Gentoo/Sky blue Gentoo logo (with some variation in colour) on purple (with variation) background.jpg"
 fi
