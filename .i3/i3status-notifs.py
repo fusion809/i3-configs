@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!env python3
 from i3pystatus import Status
 from collections import defaultdict
 from string import Formatter

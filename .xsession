@@ -5,7 +5,7 @@ function wal {
     feh --bg-scale /data/.local/share/wallpapers/"$1"
 }
 
-if [[ $DISTRO == "debian" ]]; then
+if [[ $DISTRO == "debian" ]] || [[ $DISTRO == "nixos" ]]; then
     wal "Socialism/Karl Marx Quote Democracy is the road to socialism.jpg"
 elif [[ $DISTRO == "arch" ]]; then
     wal "Arch/Arch Linux Wallpapers (3).jpg"

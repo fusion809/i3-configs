@@ -2,7 +2,7 @@
 
 killall daemon.o
 cd $HOME/.i3 && ./daemon.o && cd -
-/usr/bin/i3status -c $HOME/.i3status.conf | while :
+i3status -c $HOME/.i3status.conf | while :
 do
     # Read input
     read line
