@@ -180,7 +180,8 @@ bindsym $mod+Tab exec xterm
 bindsym $mod+Enter exec xterm
 
 # Set workspace icons; the final one for PCManFM will be put in place if these two actually work, which they don't
-set $workspace1 "★☭"
+#set $workspace1 "★☭"
+set $workspace1 ""
 set $workspace2 ""
 set $workspace3 ""
 set $workspace4 ""
