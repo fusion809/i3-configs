@@ -1,5 +1,5 @@
 #!/bin/bash
-pkgver=$(wget -cqO- https://foicica.com/textadept/feed | grep -vi "alpha\|beta" | grep "win32.zip" | head -n 1 | cut -d '_' -f 2 | sed 's/.win32.zip.*//g')
+pkgver=$(curl -sL https://foicica.com/textadept/feed | grep -vi "alpha\|beta" | grep "win32.zip" | head -n 1 | cut -d '_' -f 2 | sed 's/.win32.zip.*//g')
 cd $HOME/GitHub/mine/packaging/fusion809-overlay/app-editors/textadept
 pkgpver=$(ls -ld * | tail -n 1 | sed 's/.*textadept-//g' | sed 's/.ebuild//g')
 

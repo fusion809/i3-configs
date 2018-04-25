@@ -1,6 +1,6 @@
 #!/bin/bash
 if ! `ls /tmp | grep src > /dev/null 2>&1`; then
-     wget -cqO- http://download.opensuse.org/source/tumbleweed/repo/oss/src &> /tmp/src-$(date | sed 's/ /_/g' | sed 's/:[0-9]*_/_/g').html
+     curl -sL http://download.opensuse.org/source/tumbleweed/repo/oss/src &> /tmp/src-$(date | sed 's/ /_/g' | sed 's/:[0-9]*_/_/g').html
 fi
 pkgver=$(cat /tmp/$(ls /tmp | grep "src-.*html" | tail -n 1) | grep obs-service-format_spec_file | cut -d '"' -f 4 | cut -d '_' -f 3 | sed 's/file-//g' | sed 's/\.src\.rpm*//g')
 cd $HOME/AUR/obs-service-format_spec_file
