@@ -1,4 +1,4 @@
-feh --bg-scale "/home/fusion809/.local/share/wallpapers/Debian/Blue Debian logo on grey background.jpg" && \
+feh --bg-scale "/data/Pictures/Artwork/'Doxorubicin, imatinib, cyclophosphamide, methotrexate on Mandelbrot fractal.png' && \
 DEFAULTSESSION=i3
 
 case "$1" in
