@@ -93,7 +93,7 @@ bindsym $mod+Shift+p exec /usr/bin/palemoon
 bindsym $mod+Shift+q exec /usr/bin/vlc
 
 # Launch VirtualBox
-bindsym $mod+Shift+v exec /usr/bin/virtualbox
+bindsym $mod+Shift+v exec /usr/bin/VirtualBox
 
 # Open LibreOffice writer
 bindsym $mod+Shift+w exec "/usr/bin/libreoffice --writer"
