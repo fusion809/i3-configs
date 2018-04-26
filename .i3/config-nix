@@ -78,7 +78,7 @@ bindsym $mod+t exec $HOME/.nix-profile/bin/tor-browser
 bindsym $mod+Shift+d exec /usr/bin/deluge
 
 # Open Firefox
-bindsym $mod+Shift+f exec $HOME/.nix-profile/bin/firefox
+bindsym $mod+Shift+f exec /usr/bin/firefox
 
 # Launch virt-manager
 bindsym $mod+Shift+m exec /usr/bin/virt-manager
