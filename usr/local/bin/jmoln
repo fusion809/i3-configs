@@ -1,0 +1,10 @@
+#!/bin/bash
+pkgver=$(curl -sL https://sourceforge.net/projects/jmol/files | grep "binary.zip" | cut -d '-' -f 3 | tail -n 1)
+cd $HOME/OBS/home:fusion809/jmol
+pkgsp=$(cat jmol.spec | grep "Version:" | cut -d ':' -f 2 | sed 's/\s*//g')
+
+if ! [[ $pkgver == $pkgsp ]]; then
+    printf "Jmol$pkgver\n"
+else
+    printf "Jmol\n"
+fi
