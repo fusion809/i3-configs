@@ -91,6 +91,11 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
+    command="/usr/local/bin/jmoln",
+    color="#CF2A00",
+    interval=300)
+
+status.register("shell",
     command="/usr/local/bin/codeliten",
     color="#22AF9F",
     interval=300)
