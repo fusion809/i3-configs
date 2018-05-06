@@ -1,4 +1,4 @@
-#!env python3
+#!/usr/bin/env python3
 from i3pystatus import Status
 from collections import defaultdict
 from string import Formatter
@@ -58,6 +58,11 @@ status.register("shell",
 status.register("shell",
     command="/usr/local/bin/obss",
     color="#00AF0F",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/openrabn",
+    color="#FFCCAA",
     interval=300)
 
 status.register("shell",
