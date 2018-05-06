@@ -61,6 +61,11 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
+    command="/usr/local/bin/openrabn",
+    color="#FFCCAA",
+    interval=300)
+
+status.register("shell",
     command="/usr/local/bin/openran",
     color="#FFFFAA",
     interval=300)
