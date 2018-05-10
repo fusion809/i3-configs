@@ -115,4 +115,9 @@ status.register("shell",
     color="#FFAA00",
     interval=300)
 
+status.register("shell",
+    command="/usr/local/bin/0adn",
+    color="#F0AF23",
+    interval=300)
+
 status.run()
