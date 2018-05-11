@@ -24,7 +24,7 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/adeptn",
-    color="#CFAF32",
+    color="#FFCF76",
     interval=300)
 
 status.register("shell",
@@ -35,6 +35,16 @@ status.register("shell",
 status.register("shell",
     command="/usr/local/bin/subln",
     color="#2F30FF",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/snapdgn",
+    color="#33A0F0",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/snapdn",
+    color="#9F9FC9",
     interval=300)
 
 #status.register("shell",
