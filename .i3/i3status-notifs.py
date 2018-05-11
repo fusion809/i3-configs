@@ -77,7 +77,7 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/obsd",
-    color="#CA3355",
+    color="#FC6688",
     interval=300)
 
 status.register("shell",
@@ -88,12 +88,17 @@ status.register("shell",
     #color="#22FFAA",
 status.register("shell",
     command="/usr/local/bin/jucippn",
-    color="#F03000",
+    color="#F47444",
     interval=300)
 
 status.register("shell",
     command="/usr/local/bin/jmoln",
-    color="#CF2A00",
+    color="#A2F412",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/gsoftn",
+    color="#CC32AA",
     interval=300)
 
 status.register("shell",
