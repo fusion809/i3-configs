@@ -85,11 +85,7 @@ status.register("shell",
     color="#FFFF00",
     interval=300)
 
-status.register("shell",
-    command="/usr/local/bin/notepadqqn",
-    color="#22FFAA",
-    interval=300)
-
+    #color="#22FFAA",
 status.register("shell",
     command="/usr/local/bin/jucippn",
     color="#F03000",
@@ -106,13 +102,13 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/brackn",
-    color="#AAFF0F",
+    command="/usr/local/bin/atomn",
+    color="#FFAA00",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/atomn",
-    color="#FFAA00",
+    command="/usr/local/bin/0adn",
+    color="#AAFF0F",
     interval=300)
 
 status.run()
