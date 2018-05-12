@@ -3,6 +3,7 @@
 atomn; 
 adeptn;
 codeliten;
+gsoftn;
 jmoln; 
 jucippn; 
 openran; 
@@ -11,6 +12,8 @@ obss;
 obsf; 
 obsd; 
 oscn; 
+snapdn;
+snapdgn;
 subln; 
 swayn; 
 vimn; 
