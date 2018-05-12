@@ -15,4 +15,5 @@ function wal {
 #elif [[ $DISTRO == "gentoo" ]]; then
 #    wal "Gentoo/Sky blue Gentoo logo (with some variation in colour) on purple (with variation) background.jpg"
 #fi
-wal "Doxorubicin, imatinib, cyclophosphamide, methotrexate on Mandelbrot fractal.png"
+#wal "Doxorubicin, imatinib, cyclophosphamide, methotrexate on Mandelbrot fractal.png"
+feh --bg-scale "/data/Chem/3D/PNG/Small molecules/Jmol-lomustine-different-perspective2-CID_3950-optimized-white-adjusted-for-wallpaper-usage.png"
