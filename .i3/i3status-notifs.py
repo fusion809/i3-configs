@@ -66,6 +66,11 @@ status.register("shell",
 #    interval=300)
 
 status.register("shell",
+    command="/usr/local/bin/pymoln"
+    color="#02F5AC",
+    interval=300)
+
+status.register("shell",
     command="/usr/local/bin/obss",
     color="#00AF0F",
     interval=300)
