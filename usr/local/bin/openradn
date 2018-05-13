@@ -1,0 +1,13 @@
+#!/bin/bash
+# OpenRA latest version available
+cd /home/fusion809/GitHub/others/DarkReign
+git pull origin master -q
+orlv=$(git rev-list --branches master --count)
+# OpenRA latest packaged version
+orpv=$(cat $HOME/OBS/home:fusion809/openra-dr/openra-dr.spec | grep "Version:" | sed 's/Version:\s*//g')
+
+if [[ $orpv == $orlv ]]; then
+    printf "OpenRA Dark Reign \n"
+else
+    printf "OpenRA Dark Reign${orlv}\n"
+fi

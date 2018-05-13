@@ -117,6 +117,11 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
+    command="/usr/local/bin/openradn",
+    color="#CAF20F",
+    interval=300)
+
+status.register("shell",
     command="/usr/local/bin/codeliten",
     color="#22AF9F",
     interval=300)
