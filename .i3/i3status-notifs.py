@@ -76,6 +76,11 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
+    command="/usr/local/bin/openradn",
+    color="#CAF20F",
+    interval=300)
+
+status.register("shell",
     command="/usr/local/bin/openrabn",
     color="#FFCCAA",
     interval=300)
@@ -114,11 +119,6 @@ status.register("shell",
 status.register("shell",
     command="/usr/local/bin/gsoftn",
     color="#CC32AA",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/openradn",
-    color="#CAF20F",
     interval=300)
 
 status.register("shell",
