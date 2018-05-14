@@ -1,0 +1,13 @@
+#!/bin/bash
+# OpenRA latest version available
+cd /home/fusion809/GitHub/others/ra2
+git pull origin master -q
+orlv=$(git rev-list --branches master --count)
+# OpenRA latest packaged version
+orpv=$(cat $HOME/OBS/home:fusion809/openra-ra2/openra-ra2.spec | grep "Version:" | sed 's/Version:\s*//g')
+
+if [[ $orpv == $orlv ]]; then
+    printf "OpenRA RA2 \n"
+else
+    printf "OpenRA RA2${orlv}\n"
+fi

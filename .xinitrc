@@ -1,4 +1,4 @@
-feh --bg-scale /data/Pictures/Artwork/'Doxorubicin, imatinib, cyclophosphamide, methotrexate on Mandelbrot fractal.png' && \
+feh --bg-scale /data/Pictures/Artwork/IMAG0103-lomustine-arrowed.png && \
 DEFAULTSESSION=i3
 
 case "$1" in

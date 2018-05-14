@@ -71,8 +71,13 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/obss",
-    color="#00AF0F",
+    command="/usr/local/bin/oscn",
+    color="#FFFF00",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/openra2n",
+    color="#CAF20F",
     interval=300)
 
 status.register("shell",
@@ -91,8 +96,8 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/obsf",
-    color="#A4AF4A",
+    command="/usr/local/bin/obss",
+    color="#00AF0F",
     interval=300)
 
 status.register("shell",
@@ -101,8 +106,8 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/oscn",
-    color="#FFFF00",
+    command="/usr/local/bin/obsf",
+    color="#A4AF4A",
     interval=300)
 
     #color="#22FFAA",
@@ -119,6 +124,11 @@ status.register("shell",
 status.register("shell",
     command="/usr/local/bin/gsoftn",
     color="#CC32AA",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/flatn",
+    color="#2CA534",
     interval=300)
 
 status.register("shell",
