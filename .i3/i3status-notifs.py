@@ -9,7 +9,7 @@ status = Status()
 
 status.register("shell",
     command="/usr/local/bin/zshn",
-    color="#FA7A94",
+    color="#FDADB6",
     interval=300)
 
 status.register("shell",
@@ -29,7 +29,7 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/subln",
-    color="#2F30FF",
+    color="#5F74FF",
     interval=300)
 
 status.register("shell",
@@ -39,7 +39,7 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/snapdn",
-    color="#9F9FC9",
+    color="#BFBFEB",
     interval=300)
 
 #status.register("shell",
@@ -97,17 +97,17 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/obss",
-    color="#00AF0F",
+    color="#44EF4F",
     interval=300)
 
 status.register("shell",
     command="/usr/local/bin/obsd",
-    color="#FC6688",
+    color="#FFAACC",
     interval=300)
 
 status.register("shell",
     command="/usr/local/bin/obsf",
-    color="#A4AF4A",
+    color="#E8EF8E",
     interval=300)
 
     #color="#22FFAA",
@@ -128,7 +128,7 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/flatn",
-    color="#2CA534",
+    color="#4EC756",
     interval=300)
 
 status.register("shell",
