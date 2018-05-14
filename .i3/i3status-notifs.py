@@ -28,11 +28,6 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/swayn",
-    color="#FF00BB",
-    interval=300)
-
-status.register("shell",
     command="/usr/local/bin/subln",
     color="#2F30FF",
     interval=300)
@@ -77,12 +72,12 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/openracn",
-    color="#CAF20F",
+    color="#FF669F",
     interval=300)
 
 status.register("shell",
     command="/usr/local/bin/openra2n",
-    color="#CAF20F",
+    color="#FAB0D2",
     interval=300)
 
 status.register("shell",
