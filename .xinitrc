@@ -1,4 +1,4 @@
-feh --bg-scale /data/Pictures/Artwork/IMAG0103-lomustine-arrowed.png && \
+feh --bg-scale /data/Pictures/Artwork/IMAG0105-lomustine-arrowed.png && \
 DEFAULTSESSION=i3
 
 case "$1" in
