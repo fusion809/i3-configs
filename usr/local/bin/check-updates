@@ -1,7 +1,6 @@
 #!/bin/bash
 0adn; 
 atomn; 
-adeptn;
 codeliten;
 flatn;
 gsoftn;
@@ -11,14 +10,13 @@ openran;
 openrabn; 
 openradn;
 openra2n;
-obss; 
-obsf; 
-obsd; 
+obsa; 
 oscn; 
 pymoln;
 snapdn;
 snapdgn;
 subln; 
+adeptn;
 vimn; 
 vscoden; 
 zshn
