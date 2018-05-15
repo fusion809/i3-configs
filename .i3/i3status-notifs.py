@@ -29,7 +29,7 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/subln",
-    color="#5F74FF",
+    color="#9FB8FF",
     interval=300)
 
 status.register("shell",
@@ -41,24 +41,6 @@ status.register("shell",
     command="/usr/local/bin/snapdn",
     color="#BFBFEB",
     interval=300)
-
-#status.register("shell",
-#    command="/usr/local/bin/nixn",
-#    interval=300)
-
-#status.register("shell",
-#    command="/usr/local/bin/marvinn",
-#    interval=300)
-
-# Not really useful now as I've ditched IceCat
-#status.register("shell",
-#    command="/usr/local/bin/icecatn",
-#    interval=300)
-
-# Too many updates for this to be worthwhile
-#status.register("shell",
-#    command="/usr/local/bin/guixn",
-#    interval=300)
 
 status.register("shell",
     command="/usr/local/bin/pymoln",
@@ -110,10 +92,9 @@ status.register("shell",
     color="#E8EF8E",
     interval=300)
 
-    #color="#22FFAA",
 status.register("shell",
     command="/usr/local/bin/jucippn",
-    color="#F47444",
+    color="#F9B999",
     interval=300)
 
 status.register("shell",
@@ -123,7 +104,7 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/gsoftn",
-    color="#CC32AA",
+    color="#FF76DD",
     interval=300)
 
 status.register("shell",
