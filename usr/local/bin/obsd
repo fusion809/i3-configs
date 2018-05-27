@@ -1,8 +1,4 @@
 #!/bin/bash
-if ! `ls /tmp | grep src > /dev/null 2>&1`; then
-     curl -sL http://download.opensuse.org/source/tumbleweed/repo/oss/src &> /tmp/src-$(date | sed 's/ /_/g' | sed 's/:[0-9]*_/_/g').html
-fi
-
 pkgver=$(curl -sL https://github.com/openSUSE/obs-service-download_files/releases | grep "\.tar\.gz" | head -n 1 | cut -d '"' -f 2 | cut -d '/' -f 5 | sed 's/\.tar\.gz//g')
 cd $HOME/OBS/home:fusion809/obs-service-download_files
 pkgpver=$(sed -n 's/pkgver=//p' PKGBUILD)
