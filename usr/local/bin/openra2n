@@ -1,5 +1,5 @@
 #!/bin/bash
-# OpenRA latest version available
+# OpenRA Red Alert 2 mod latest commit available
 cd /home/fusion809/GitHub/others/ra2
 git pull origin master -q
 orlv=$(git rev-list --branches master --count)

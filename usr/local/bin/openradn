@@ -1,5 +1,5 @@
 #!/bin/bash
-# OpenRA latest version available
+# OpenRA Dark Reign latest commit available
 cd /home/fusion809/GitHub/others/DarkReign
 git pull origin master -q
 orlv=$(git rev-list --branches master --count)

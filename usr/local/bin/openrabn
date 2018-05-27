@@ -1,5 +1,5 @@
 #!/bin/bash
-# OpenRA latest version available
+# OpenRA latest commit on the bleed branch available
 cd /home/fusion809/GitHub/others/OpenRA
 git pull origin bleed -q
 orlv=$(git rev-list --branches bleed --count)

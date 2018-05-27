@@ -1,9 +1,9 @@
 #!/bin/bash
-# OpenRA latest version available
+# 0 A.D. latest version available
 cd /home/fusion809/GitHub/others/0ad
 git pull origin master -q
 orlv=$(git rev-list --branches master --count)
-# OpenRA latest packaged version
+# 0 A.D. latest packaged version
 orpv=$(cat $HOME/OBS/home:fusion809/0ad/0ad.spec | grep "Version:" | sed 's/Version:\s*//g')
 
 if [[ $orpv == $orlv ]]; then

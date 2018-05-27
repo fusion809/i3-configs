@@ -1,5 +1,5 @@
 #!/bin/bash
-# OpenRA latest version available
+# OpenRA RAClassic latest commit available
 cd /home/fusion809/GitHub/others/raclassic
 git pull origin master -q
 orlv=$(git rev-list --branches master --count)
