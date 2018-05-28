@@ -124,6 +124,18 @@ fi
 #
 #rm /tmp/src-*.html
 #
+# OpenBabel latest version available
+#cd /home/fusion809/GitHub/others/openbabel
+#git pull origin master -q
+#orlv=$(git rev-list --branches master --count)
+# OpenBabel latest packaged version
+#orpv=$(cat $HOME/OBS/home:fusion809/openbabel/openbabel.spec | grep "Version:" | sed 's/Version:\s*//g')
+
+#if [[ $orpv == $orlv ]]; then
+#    printf "OpenBabel \n"
+#else
+#    printf "OpenBabel${orlv}\n"
+#fi
 ## OpenRA latest version available
 #orlv=$(curl -sL https://github.com/OpenRA/OpenRA/releases | grep "release-.*\.tar\.gz" | head -n 1 | cut -d "/" -f 5 | cut -d '-' -f 2 | sed 's/\.tar.*//g')
 ## OpenRA latest packaged version
