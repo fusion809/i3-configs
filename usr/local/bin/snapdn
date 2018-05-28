@@ -1,9 +1,0 @@
-#!/bin/bash
-pkgver=$(wget -cqO- https://github.com/snapcore/snapd/releases | grep "tar\.gz" | cut -d '/' -f 5 | cut -d '"' -f 1 | sed 's/\.tar\.gz//g' | head -n 1)
-pkgpver=$(cat /data/OBS/home:fusion809/snapd/snapd.spec | grep "Version:" | cut -d ':' -f 2 | sed 's/\s*//g')
-
-if [[ $pkgver == $pkgpver ]]; then
-    printf "snapd\n"
-else
-    printf "snapd${pkgver}\n"
-fi
