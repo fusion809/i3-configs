@@ -39,7 +39,7 @@ status.register("temp",
 
 status.register("network", interface="wlp7s0", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
 
-status.register("battery")
+#status.register("battery")
 
 status.register("pulseaudio")
 
