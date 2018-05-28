@@ -1,2 +1,0 @@
-#!/bin/bash
-su - fusion809 -c "xinit > /tmp/x.log" || echo "xinit failed" >> /tmp/x.log
