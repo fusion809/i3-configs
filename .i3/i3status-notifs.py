@@ -9,7 +9,7 @@ status = Status()
 
 status.register("shell",
     command="/usr/local/bin/zshn",
-    color="#FA7A94",
+    color="#FDADB6",
     interval=300)
 
 status.register("shell",
@@ -24,40 +24,47 @@ status.register("shell",
 
 status.register("shell",
     command="/usr/local/bin/adeptn",
-    color="#CFAF32",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/swayn",
-    color="#FF00BB",
+    color="#FFCF76",
     interval=300)
 
 status.register("shell",
     command="/usr/local/bin/subln",
-    color="#2F30FF",
+    color="#9FB8FF",
     interval=300)
 
-#status.register("shell",
-#    command="/usr/local/bin/nixn",
-#    interval=300)
-
-#status.register("shell",
-#    command="/usr/local/bin/marvinn",
-#    interval=300)
-
-# Not really useful now as I've ditched IceCat
-#status.register("shell",
-#    command="/usr/local/bin/icecatn",
-#    interval=300)
-
-# Too many updates for this to be worthwhile
-#status.register("shell",
-#    command="/usr/local/bin/guixn",
-#    interval=300)
+status.register("shell",
+    command="/usr/local/bin/snapdgn",
+    color="#33A0F0",
+    interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/obss",
-    color="#00AF0F",
+    command="/usr/local/bin/snapdn",
+    color="#BFBFEB",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/pymoln",
+    color="#02F5AC",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/oscn",
+    color="#FFFF00",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/openracn",
+    color="#FF669F",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/openra2n",
+    color="#FAB0D2",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/openradn",
+    color="#CAF20F",
     interval=300)
 
 status.register("shell",
@@ -71,29 +78,43 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/obsf",
-    color="#A4AF4A",
+    command="/usr/local/bin/openbabeln",
+    color="#F32CF5",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/obss",
+    color="#44EF4F",
     interval=300)
 
 status.register("shell",
     command="/usr/local/bin/obsd",
-    color="#CA3355",
+    color="#FFAACC",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/oscn",
-    color="#FFFF00",
+    command="/usr/local/bin/obsf",
+    color="#E8EF8E",
     interval=300)
 
-    #color="#22FFAA",
 status.register("shell",
     command="/usr/local/bin/jucippn",
-    color="#F03000",
+    color="#F9B999",
     interval=300)
 
 status.register("shell",
     command="/usr/local/bin/jmoln",
-    color="#CF2A00",
+    color="#A2F412",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/gsoftn",
+    color="#FF76DD",
+    interval=300)
+
+status.register("shell",
+    command="/usr/local/bin/flatn",
+    color="#4EC756",
     interval=300)
 
 status.register("shell",

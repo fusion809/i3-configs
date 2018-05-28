@@ -1,0 +1,300 @@
+#!/bin/bash
+# 0 A.D. latest version available
+cd /home/fusion809/GitHub/others/0ad
+git pull origin master -q
+orlv=$(git rev-list --branches master --count)
+## latest packaged version
+orpv=$(cat $HOME/OBS/home:fusion809/0ad/0ad.spec | grep "Version:" | sed 's/Version:\s*//g')
+
+if [[ $orpv == $orlv ]]; then
+    printf "0 A.D. "
+else
+    printf "0 A.D.${orlv} "
+fi
+#
+## Atom
+#pkgver=$(curl -sL https://github.com/atom/atom/releases | grep "beta" | grep "amd64\.tar\.gz" | head -n 1 | cut -d '"' -f 2 | cut -d '/' -f 6 | sed 's/v//g')
+#pkgbv=$(echo $pkgver | cut -d '-' -f 2 | sed 's/beta//g')
+#pkgnbv=$(echo $pkgver | cut -d '-' -f 1)
+#cd $HOME/AUR/atom-editor-beta
+#pkgpnbv=$(sed -n 's/_pkgver=//p' PKGBUILD)
+#pkgpbv=$(sed -n 's/_pkgrel=//p' PKGBUILD)
+#
+#if ! ( [ $pkgpnbv == $pkgnbv ] && [ $pkgpbv == $pkgbv ] ); then
+#    printf "Atom$pkgver "
+#else
+#    printf "Atom "
+#fi
+#
+## CodeLite
+#pkgver=$(curl -sL https://github.com/eranif/codelite/releases | grep "app\.tar\.gz" | head -n 1 | cut -d '/' -f 6)
+#cd $HOME/GitHub/mine/packaging/fusion809-overlay/dev-util/codelite
+#pkgpver=$(ls -ld * | head -n 1 | sed 's/[a-zA-Z0-9: .]*codelite/codelite/g' | cut -d '-' -f 8 | sed 's/.ebuild//g')
+#
+#if ! [[ $pkgver == $pkgpver ]]; then
+#    printf "CodeLite$pkgver "
+#else
+#    printf "CodeLite "
+#fi
+#
+## Flatpak
+#pkgver=$(wget -cqO- https://github.com/flatpak/flatpak/releases | grep "tar\.gz" | cut -d '/' -f 5 | cut -d '"' -f 1 | sed 's/\.tar\.gz//g' | head -n 1)
+#pkgpver=$(cat /data/OBS/home:fusion809/flatpak/flatpak.spec | grep "Version:" | cut -d ':' -f 2 | sed 's/\s*//g')
+#
+#if [[ $pkgver == $pkgpver ]]; then
+#    printf "Flatpak "
+#else
+#    printf "Flatpak${pkgver} "
+#fi
+#
+## GNOME Software
+#pkgver=$(wget -cqO- https://github.com/GNOME/gnome-software/releases | grep "tar\.gz" | grep "3\.[02468]*\.[0-9]*" | cut -d '/' -f 5 | cut -d '"' -f 1 | sed 's/\.tar\.gz//g' | head -n 1)
+#pkgpver=$(cat /data/OBS/home:fusion809/gnome-software/gnome-software.spec | grep "Version:" | cut -d ':' -f 2 | sed 's/\s*//g')
+#
+#if [[ $pkgver == $pkgpver ]]; then
+#    printf "GNOME Software "
+#else
+#    printf "GNOME Software${pkgver} "
+#fi
+#
+## Jmol
+#pkgver=$(curl -sL https://sourceforge.net/projects/jmol/files | grep "binary.zip" | cut -d '-' -f 3 | tail -n 1)
+#cd $HOME/OBS/home:fusion809/jmol
+#pkgsp=$(cat jmol.spec | grep "Version:" | cut -d ':' -f 2 | sed 's/\s*//g')
+#
+#if ! [[ $pkgver == $pkgsp ]]; then
+#    printf "Jmol$pkgver "
+#else
+#    printf "Jmol "
+#fi
+#
+## Juci++
+#pkgver=$(wget -cqO- https://github.com/cppit/jucipp/releases | grep "tar\.gz" | cut -d '/' -f 5 | head -n 1 | cut -d '"' -f 1 | sed 's/v//g' | sed 's/\.tar\.gz//g')
+#cd $HOME/AUR/jucipp
+#pkgpver=$(sed -n 's/pkgver=//p' PKGBUILD)
+
+#if ! [[ $pkgver == $pkgpver ]]; then
+#    printf "Juci++$pkgver\n"
+#else
+#    printf "Juci++\n"
+#fi
+#
+
+## OBS Services
+#if ! `ls /tmp | grep src > /dev/null 2>&1`; then
+#     curl -sL http://download.opensuse.org/source/tumbleweed/repo/oss/src &> /tmp/src-$(date | sed 's/ /_/g' | sed 's/:[0-9]*_/_/g').html
+#fi
+#
+## OBS Format Spec File
+#pkgver=$(cat /tmp/$(ls /tmp | grep "src-.*html" | tail -n 1) | grep obs-service-format_spec_file | cut -d '"' -f 4 | cut -d '_' -f 3 | sed 's/file-//g' | sed 's/\.src\.rpm*//g')
+#cd $HOME/AUR/obs-service-format_spec_file
+#pkgpnbv=$(sed -n 's/^pkgver=//p' PKGBUILD)
+#pkgpbv=$(sed -n 's/_pkgver=//p' PKGBUILD)
+#pkgpver=$(echo "$pkgpnbv-$pkgpbv")
+#
+#if ! [[ $pkgver == $pkgpver ]]; then
+#    printf "OBSFSpec$pkgver "
+#else
+#    printf "OBSFSpec "
+#fi
+#
+## OBS Download Files
+#pkgver=$(curl -sL https://github.com/openSUSE/obs-service-download_files/releases | grep "\.tar\.gz" | head -n 1 | cut -d '"' -f 2 | cut -d '/' -f 5 | sed 's/\.tar\.gz//g')
+#cd $HOME/OBS/home:fusion809/obs-service-download_files
+#pkgpver=$(sed -n 's/pkgver=//p' PKGBUILD)
+#
+#if ! ( [ $pkgpver == $pkgver ] ); then
+#    printf "OBSSDown$pkgver "
+#else
+#    printf "OBSSDown "
+#fi
+#
+## OBS Source Validator
+#pkgver=$(cat /tmp/src*.html | grep obs-service-source_validator | cut -d '"' -f 4 | cut -d '_' -f 2 | sed 's/validator-//g' | sed 's/\.src\.rpm*//g')
+#cd $HOME/AUR/obs-service-source_validator
+#pkgpnbv=$(sed -n 's/^pkgver=//p' PKGBUILD)
+#pkgpbv=$(sed -n 's/_pkgrel=//p' PKGBUILD)
+#pkgpver=$(echo "$pkgpnbv-$pkgpbv")
+#
+#if ! [[ $pkgver == $pkgpver ]]; then
+#    printf "OBSSVal$pkgver "
+#else
+#    printf "OBSSVal "
+#fi
+#
+#rm /tmp/src-*.html
+#
+# OpenBabel latest version available
+#cd /home/fusion809/GitHub/others/openbabel
+#git pull origin master -q
+#orlv=$(git rev-list --branches master --count)
+# OpenBabel latest packaged version
+#orpv=$(cat $HOME/OBS/home:fusion809/openbabel/openbabel.spec | grep "Version:" | sed 's/Version:\s*//g')
+
+#if [[ $orpv == $orlv ]]; then
+#    printf "OpenBabel \n"
+#else
+#    printf "OpenBabel${orlv}\n"
+#fi
+## OpenRA latest version available
+#orlv=$(curl -sL https://github.com/OpenRA/OpenRA/releases | grep "release-.*\.tar\.gz" | head -n 1 | cut -d "/" -f 5 | cut -d '-' -f 2 | sed 's/\.tar.*//g')
+## OpenRA latest packaged version
+#orpv=$(cat $HOME/OBS/home:fusion809/openra/openra.spec | grep "Version:" | sed 's/Version:\s*//g')
+#
+#if [[ $orpv == $orlv ]]; then
+#    printf "OpenRA "
+#else
+#    printf "OpenRA${orlv} "
+#fi
+#
+## OpenRA latest commit on the bleed branch available
+#cd /home/fusion809/GitHub/others/OpenRA
+#git pull origin bleed -q
+#orlv=$(git rev-list --branches bleed --count)
+## OpenRA latest packaged version
+#orpv=$(cat $HOME/OBS/home:fusion809/openra-bleed/openra-bleed.spec | grep "Version:" | sed 's/Version:\s*//g')
+#
+#if [[ $orpv == $orlv ]]; then
+#    printf "OpenRA Bleed "
+#else
+#    printf "OpenRA Bleed${orlv} "
+#fi
+#
+## OpenRA Dark Reign mod latest commit available
+#cd ../DarkReign
+#git pull origin master -q
+#orlv=$(git rev-list --branches master --count)
+## OpenRA latest packaged version
+#orpv=$(cat $HOME/OBS/home:fusion809/openra-dr/openra-dr.spec | grep "Version:" | sed 's/Version:\s*//g')
+#
+#if [[ $orpv == $orlv ]]; then
+#    printf "OpenRA Dark Reign "
+#else
+#    printf "OpenRA Dark Reign${orlv} "
+#fi
+#
+## OpenRA Red Alert 2 latest commit available
+#cd ../ra2
+#git pull origin master -q
+#orlv=$(git rev-list --branches master --count)
+## OpenRA latest packaged version
+#orpv=$(cat $HOME/OBS/home:fusion809/openra-ra2/openra-ra2.spec | grep "Version:" | sed 's/Version:\s*//g')
+#
+#if [[ $orpv == $orlv ]]; then
+#    printf "OpenRA RA2 "
+#else
+#    printf "OpenRA RA2${orlv} "
+#fi
+#
+## OpenRA RAClassic latest commit available
+#cd ../raclassic
+#git pull origin master -q
+#orlv=$(git rev-list --branches master --count)
+## OpenRA latest packaged version
+#orpv=$(cat $HOME/OBS/home:fusion809/openra-raclassic/openra-raclassic.spec | grep "Version:" | sed 's/Version:\s*//g')
+#
+#if [[ $orpv == $orlv ]]; then
+#    printf "OpenRA RA Classic "
+#else
+#    printf "OpenRA RA Classic${orlv} "
+#fi
+#
+## OBS Commander
+#pkgver=$(curl -sL https://github.com/openSUSE/osc/releases | grep "\.tar\.gz" | head -n 1 | cut -d '"' -f 2 | cut -d '/' -f 5 | sed 's/\.tar\.gz//g')
+#cd $HOME/OBS/home:fusion809/osc
+#pkgpver=$(sed -n 's/pkgver=//p' PKGBUILD)
+#
+#if ! ( [ $pkgpver == $pkgver ] ); then
+#    printf "osc$pkgver "
+#else
+#    printf "osc "
+#fi
+#
+## PyMOL
+#pkgver=$(wget -cqO- http://sourceforge.net/projects/pymol | grep "\.tar\.bz2" | cut -d '"' -f 4 | cut -d ' ' -f 2 | sed 's/pymol\-v//g' | sed 's/\.tar\.bz2//g')
+#pkgpver=$(cat /data/OBS/home:fusion809/pymol/pymol.spec | grep "Version:" | cut -d ':' -f 2 | sed 's/\s*//g' | sed 's/\.svn[0-9]*//g')
+#
+#if [[ $pkgver == $pkgpver ]]; then
+#    printf "PyMOL "
+#else
+#    printf "PyMOL${pkgver} "
+#fi
+#
+## snapd
+#pkgver=$(wget -cqO- https://github.com/snapcore/snapd/releases | grep "tar\.gz" | cut -d '/' -f 5 | cut -d '"' -f 1 | sed 's/\.tar\.gz//g' | head -n 1)
+#pkgpver=$(cat /data/OBS/home:fusion809/snapd/snapd.spec | grep "Version:" | cut -d ':' -f 2 | sed 's/\s*//g')
+#
+#if [[ $pkgver == $pkgpver ]]; then
+#    printf "snapd "
+#else
+#    printf "snapd${pkgver} "
+#fi
+#
+## snapd-glib, needed for GNOME Software to run with snapd support
+#pkgver=$(wget -cqO- https://github.com/snapcore/snapd-glib/releases | grep "tar\.gz" | cut -d '/' -f 5 | cut -d '"' -f 1 | sed 's/\.tar\.gz//g' | head -n 1)
+#pkgpver=$(cat /data/OBS/home:fusion809/snapd-glib/snapd-glib.spec | grep "Version:" | cut -d ':' -f 2 | sed 's/\s*//g')
+#
+#if [[ $pkgver == $pkgpver ]]; then
+#    printf "snapd-glib "
+#else
+#    printf "snapd-glib${pkgver} "
+#fi
+#
+## Sublime Text
+#pkgver=$(curl -sL http://www.sublimetext.com/3 | grep "dmg" | sed 's/.*Build //g' | sed 's/.dmg.*//g')
+#cd $HOME/GitHub/mine/packaging/fusion809-overlay/app-editors/sublime-text
+#pkgpver=$(ls -ld * | tail -n 1 | sed 's/[a-zA-Z0-9: .]*sublime-text//g' | cut -d '-' -f 8 | sed 's/.ebuild//g')
+#
+#if ! [[ $pkgver == $pkgpver ]]; then
+#    printf "Sublime$pkgver "
+#else
+#    printf "Sublime "
+#fi
+#
+## TextAdept
+#pkgver=$(curl -sL https://foicica.com/textadept/feed | grep -vi "alpha\|beta" | grep "win32.zip" | head -n 1 | cut -d '_' -f 2 | sed 's/.win32.zip.*//g')
+#cd $HOME/GitHub/mine/packaging/fusion809-overlay/app-editors/textadept
+#pkgpver=$(ls -ld * | tail -n 1 | sed 's/.*textadept-//g' | sed 's/.ebuild//g')
+#
+#if ! [[ $pkgver == $pkgpver ]]; then
+#    printf "Textadept$pkgver "
+#else
+#    printf "Textadept "
+#fi
+#
+## Vim
+#cd $HOME/OBS/home:fusion809/vim
+#pkgver=$(wget -q https://github.com/vim/vim/releases -O - | grep "tar\.gz" | head -n 1 | cut -d '/' -f 5 | cut -d '"' -f 1 | sed 's/v//g' | sed 's/\.tar\.gz//g')
+#baseversion=$(echo $pkgver | sed 's/\.[0-9]*$//g')
+#patchversion=$(echo $pkgver | sed "s/$baseversion//g" | sed 's/\.//g')
+#vim_baseversion=$(cat vim.spec | grep "%define.*baseversion" | sed 's/%define.*baseversion\s*//g' | head -n 1)
+#vim_patchversion=$(cat vim.spec | grep "%define.*patchlevel" | sed 's/%define.*patchlevel\s*//g' | head -n 1)
+#
+#if [ $pkgver == ${vim_baseversion}.${vim_patchversion} ]; then
+#     printf "Vim "
+#else
+#     printf "Vim$pkgver "
+#fi
+#
+## Visual Studio Code
+#URL="https://packages.microsoft.com/repos/vscode/pool/main/c/code"
+#revn=$(curl -sL $URL | grep "deb" | cut -d '-' -f 3 | cut -d '_' -f 1 | sort -n | tail -n 1)
+#ver=$(curl -sL $URL | grep "$revn" | cut -d '-' -f 1 | cut -d '_' -f 2)
+#verl=$(ls $HOME/GitHub/mine/packaging/fusion809-overlay/app-editors/visual-studio-code/*.ebuild | cut -d '/' -f 10 | cut -d '-' -f 4 | sed 's/.ebuild//g')
+#
+#if [[ $verl == $ver ]]; then
+#    printf "VSCode "
+#else
+#    printf "VSCode$ver "
+#fi
+# 
+## Zsh
+#pkgver=$(curl -sL http://www.zsh.org/pub/ | grep ".*[0-9].*tar.gz" | tail -n 1 | sed 's/.*"zsh-//g' | sed 's/.tar.gz.*//g')
+#pkgpver=$(cat $HOME/OBS/home:fusion809/zsh/zsh.spec | grep Version | cut -d ' ' -f 2)
+#
+#if [[ $pkgver == $pkgpver ]]; then
+#    printf "Zsh "
+#else
+#    printf "Zsh$pkgver "
+#fi
+#
