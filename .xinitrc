@@ -1,4 +1,4 @@
-feh --bg-scale /data/GitHub/mine/artwork/PDB-5J2T/5J2T-PyMOL-chain-colouring-legend-labelled-white-bg.png && \
+feh --bg-scale /data/GitHub/mine/artwork/PDB-5J2T/5J2T-PyMOL-chain-colouring-legend-labelled-white-bg-i3.png && \
 DEFAULTSESSION=i3
 
 case "$1" in
