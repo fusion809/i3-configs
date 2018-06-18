@@ -19,6 +19,6 @@ function wal {
 feh --bg-scale /data/GitHub/mine/artwork/PDB-5J2T/5J2T-PyMOL-chain-colouring-legend-labelled-white-bg-i3.png 
 
 # Run check updates
-if ! `ps ax | grep check-updates | grep -v grep > /dev/null 2>&1`; then
+if ! `ps ax | grep i3 | grep -v grep > /dev/null 2>&1` && ! `ps ax | grep check-updates | grep -v grep > /dev/null 2>&1`; then
     /usr/local/bin/check-updates-popup-loop
 fi

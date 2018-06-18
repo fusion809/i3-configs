@@ -53,6 +53,11 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
+    command="/usr/local/bin/openrauran",
+    color="#F3AC56",
+    interval=300)
+
+status.register("shell",
     command="/usr/local/bin/openracn",
     color="#FF669F",
     interval=300)
@@ -85,7 +90,7 @@ status.register("shell",
 status.register("shell",
     command="/usr/local/bin/obss",
     color="#44EF4F",
-    interval=300)
+    interval=1200)
 
 status.register("shell",
     command="/usr/local/bin/obsd",
@@ -95,7 +100,7 @@ status.register("shell",
 status.register("shell",
     command="/usr/local/bin/obsf",
     color="#E8EF8E",
-    interval=300)
+    interval=1200)
 
 status.register("shell",
     command="/usr/local/bin/jucippn",
