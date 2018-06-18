@@ -36,6 +36,7 @@ For these configs to work out-of-the-box one needs to have the following install
 
 * feh for desktop background.
 * Font Awesome icon theme (e.g. the `fonts-font-awesome` package for Debian, best to use the unstable branch), for the sake of getting the workspace icons shown in the above screenshot. 
+* [common-scripts](https://github.com/fusion809/common-scripts) set up with symlinks in /usr/local/bin. 
 * g++ for CPU/RAM information (only for C++ config). 
 * i3bar.
 * i3pystatus (for Python-based counterpart of the bar, preferably from the latest git snapshot git+https://github.com/enkore/i3pystatus.git)
