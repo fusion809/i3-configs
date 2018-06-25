@@ -48,6 +48,11 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
+    command="/usr/local/bin/ostreen",
+    color="#FF6F6F",
+    interval=300)
+
+status.register("shell",
     command="/usr/local/bin/oscn",
     color="#FFFF00",
     interval=300)
