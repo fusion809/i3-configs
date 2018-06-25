@@ -283,7 +283,7 @@ bar {
         font pango:Font Awesome 5 Brands-Regular-400 7
 
         #i3status ~/.i3/i3status.sh
-        i3status python3 ~/.i3/i3status-notifs.py
+        status_command /usr/bin/python3 /data/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
         colors {
                 background #000000
                 statusline #ffffff
