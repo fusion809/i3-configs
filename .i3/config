@@ -285,7 +285,7 @@ bar {
         #i3status ~/.i3/i3status.sh
         status_command /usr/bin/python3 /data/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
         colors {
-                background #000000
+                background #222222
                 statusline #ffffff
 
                 #focused_workspace  #ff4500 #000000
