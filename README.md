@@ -8,6 +8,8 @@ The C/C++/Shell-powered bar includes weather conditions (including temperatures;
 
 The Python-based (or i3pystatus) bar displays the following: weather conditions (although sometimes it botches it and labels the temperature in Farenheit as degrees Celsius), download/upload rates for wlo1 (not hard to change to another interface by editing `~/.i3/i3status.py`), uptime, disk space (used/total), core temperatures, CPU usage (%), load (average over 1 minute), RAM usage (used/total) and date. 
 
+The conky config in this repository has been adapted (albeit with only minor modification) from https://github.com/andrea-rosa/conky-config. 
+
 ## What's in the i3bar (Python)
 My top i3 bar alerts me as to when packages I maintain/use become outdated and need to be updated. It is fairly self-explanatory; the thumbs up tells me all is well and up-to-date, otherwise I will see the version of the latest release available next to the package's, sometimes abbreviated, name. 
 
@@ -146,4 +148,3 @@ If you do not want to use these apps (xterm and ImageMagick) and want to use alt
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>r</kbd>                                    | Restart i3 (preserves layout and session), can be used to start a newly installed version of i3.               |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>v</kbd>                                    | Launch Oracle VM VirtualBox.                                                                                   |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>w</kbd>                                    | Rofi (window option).                                                                                          |
-
