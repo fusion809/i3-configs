@@ -296,3 +296,4 @@ bar {
         }
 }
 
+exec "bash ~/.xsession"
