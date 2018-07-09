@@ -1,1 +1,0 @@
-/home/fusion809/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
