@@ -1,7 +1,7 @@
 xterm*termName: xterm-256color
-XTerm*background: #272822
+XTerm*background: #0f0f0f
 XTerm*foreground: #ffffff
-XTerm*cursorColor: #606060
+XTerm*cursorColor: #ffaaaa
 #XTerm*Background: black
 #XTerm*Foreground: white
 XTerm*SaveLines: 2000
