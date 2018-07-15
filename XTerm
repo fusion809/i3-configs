@@ -1,7 +1,11 @@
-XTerm*Background: black
-XTerm*Foreground: white
+xterm*termName: xterm-256color
+XTerm*background: #272822
+XTerm*foreground: #ffffff
+XTerm*cursorColor: #606060
+#XTerm*Background: black
+#XTerm*Foreground: white
 XTerm*SaveLines: 2000
-XTerm*faceName: "Font Awesome 5 Brands-Regular-400"
+XTerm*faceName: "Font Awesome 5 Free Regular"
 XTerm*faceSize: 8
 XTerm*rightScrollBar: true
 XTerm*ScrollBar: true
