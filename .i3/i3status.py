@@ -37,9 +37,7 @@ status.register("temp",
     lm_sensors_enabled=True,
     dynamic_color=True)
 
-status.register("network", interface="wlo1", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
-
-status.register("battery")
+status.register("network", interface="wlp7s0", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
 
 status.register("pulseaudio")
 
