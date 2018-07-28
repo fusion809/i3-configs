@@ -14,6 +14,8 @@ font pango:'Font Awesome 5 Free Solid' 7
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Firefox launch
+exec /usr/local/bin/firefox
 ##################################################################################################
 ################################### Change to workspace with app #################################
 ##################################################################################################
@@ -66,7 +68,7 @@ bindsym $mod+i exec /usr/bin/i3-input
 bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
 
 # Launch RuneScape NXT client
-bindsym $mod+o exec $HOME/Programs/Deb/runescape-launcher/usr/bin/runescape-launcher
+bindsym $mod+o exec /usr/local/bin/runescape-launcher
 
 # Launch PCManFM
 bindsym $mod+p exec /usr/bin/pcmanfm
