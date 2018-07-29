@@ -18,7 +18,20 @@ function wal {
 #wal "Doxorubicin, imatinib, cyclophosphamide, methotrexate on Mandelbrot fractal.png"
 feh --bg-scale /data/GitHub/mine/artwork/PDB-5J2T/5J2T-PyMOL-chain-colouring-legend-labelled-white-bg-i3.png 
 
+# Check if a command is running
+function checkrun {
+    ps ax | grep "$@" | grep -v grep > /dev/null 2>&1
+}
+
 # Run check updates
-if ! `ps ax | grep i3 | grep -v grep > /dev/null 2>&1` && ! `ps ax | grep check-updates | grep -v grep > /dev/null 2>&1`; then
+if ! checkrun i3 && ! checkrun check-updates; then
     /usr/local/bin/check-updates-popup-loop
+fi
+
+if ! checkrun plasmashell && ! checkrun hexchat ; then
+    /usr/bin/hexchat
+fi
+
+if checkrun plasmashel && ! checkrun konversation ; then
+    /usr/bin/konversation
 fi

@@ -14,8 +14,6 @@ font pango:'Font Awesome 5 Free Solid' 7
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# Firefox launch
-exec /usr/local/bin/firefox
 ##################################################################################################
 ################################### Change to workspace with app #################################
 ##################################################################################################
