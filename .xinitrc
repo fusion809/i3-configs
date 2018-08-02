@@ -1,4 +1,4 @@
-feh --bg-scale /home/fusion809/.local/share/wallpapers/Void/"Void Linux wallpaper".jpg && \
+bash ~/.xsession && start-pulseaudio-x11 && \
 DEFAULTSESSION=i3
 
 case "$1" in

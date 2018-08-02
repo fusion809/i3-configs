@@ -54,7 +54,10 @@ bindsym $mod+g exec optirun-0ad
 bindsym $mod+c exec chromium
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec dmenu_run
+# start Rofi
+bindsym $mod+d exec "rofi -show drun -drun-icon-theme MacBuntu-Remix"
+
 
 # Open i3-input
 bindsym $mod+i exec i3-input
@@ -75,7 +78,7 @@ bindsym $mod+t exec tor-browser-en
 bindsym $mod+Shift+d exec deluge
 
 # Open Firefox
-bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+f exec /usr/bin/firefox
 
 # Launch virt-manager
 bindsym $mod+Shift+m exec virt-manager
@@ -146,32 +149,55 @@ bindsym $mod1+d focus child
 bindsym $mod+q kill
 
 # switch to workspace
-bindsym F1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym F3 workspace 3
-bindsym F4 workspace 4
-bindsym F5 workspace 5
-bindsym F6 workspace 6
-bindsym F7 workspace 7
-bindsym F8 workspace 8
-bindsym F9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym F1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym F3 workspace $workspace3
+bindsym F4 workspace $workspace4
+bindsym F5 workspace $workspace5
+#bindsym F6 workspace $workspace6
+bindsym F7 workspace $workspace7
+bindsym F8 workspace $workspace8
+bindsym F9 workspace $workspace9
+bindsym $mod+0 workspace $workspace10
 
 # 11-20
-bindsym $mod+F1 workspace 11
-bindsym $mod+F2 workspace 12
-bindsym $mod+F3 workspace 13
-bindsym $mod+F4 workspace 14
-bindsym $mod+F5 workspace 15
-bindsym $mod+F6 workspace 16
-bindsym $mod+F7 workspace 17
-bindsym $mod+F8 workspace 18
-bindsym $mod+F9 workspace 19
-bindsym $mod+$mod1+0 workspace 20
+bindsym $mod+F1 workspace $workspace11
+bindsym $mod+F2 workspace $workspace12
+bindsym $mod+F3 workspace $workspace13
+bindsym $mod+F4 workspace $workspace14
+bindsym $mod+F5 workspace $workspace15
+bindsym $mod+F6 workspace $workspace16
+bindsym $mod+F7 workspace $workspace17
+bindsym $mod+F8 workspace $workspace18
+bindsym $mod+F9 workspace $workspace19
+bindsym $mod+$mod1+0 workspace $workspace20
 
 # Terminal
 bindsym $mod+Tab exec xterm
 bindsym $mod+Enter exec xterm
+
+# Set workspace icons; the final one for PCManFM will be put in place if these two actually work, which they don't
+set $workspace1 ""
+set $workspace2 ""
+set $workspace3 ""
+set $workspace4 ""
+set $workspace5 ""
+set $workspace6 ""
+set $workspace7 "7"
+set $workspace8 "8"
+set $workspace9 "9"
+set $workspace10 "10"
+set $workspace11 "11"
+set $workspace12 "12"
+set $workspace12 "12"
+set $workspace12 "13"
+set $workspace12 "14"
+set $workspace12 "15"
+set $workspace12 "16"
+set $workspace12 "17"
+set $workspace12 "18"
+set $workspace12 "19"
+set $workspace12 "20"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -245,3 +271,23 @@ bar {
                 inactive_workspace #454545 #212121 #ffffff
         }
 }
+
+bar { 
+        workspace_buttons no
+        tray_output no
+        position top
+        font pango:Font Awesome 5 Brands-Regular-400 7
+
+        #status_command ~/.i3/i3status.sh
+        status_command /usr/bin/python3 /data/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
+        colors {
+                background #222222
+                statusline #ffffff
+
+                #focused_workspace  #ff4500 #000000
+                #inactive_workspace #888888 #000000
+                focused_workspace  #454545 #225577 #ffffff
+                inactive_workspace #454545 #212121 #ffffff
+        }
+}
+

@@ -37,9 +37,7 @@ status.register("temp",
     lm_sensors_enabled=True,
     dynamic_color=True)
 
-status.register("network", interface="wlo1", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
-
-status.register("battery")
+status.register("network", interface="wlp7s0", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
 
 status.register(
     'weather',
@@ -54,39 +52,5 @@ status.register(
 
 status.register("uptime",
     format="{hours}:{mins}:{secs}")
-
-status.register("shell",
-    command="/usr/local/bin/vscoden",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/vimn",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/swayn",
-    interval=300)
-
-#status.register("shell",
-#    command="/usr/local/bin/nixn",
-#    interval=300)
-
-#status.register("shell",
-#    command="/usr/local/bin/marvinn",
-#    interval=300)
-
-# Not really useful now as I've ditched IceCat
-#status.register("shell",
-#    command="/usr/local/bin/icecatn",
-#    interval=300)
-
-# Too many updates for this to be worthwhile
-#status.register("shell",
-#    command="/usr/local/bin/guixn",
-#    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/atomn",
-    interval=300)
 
 status.run()
