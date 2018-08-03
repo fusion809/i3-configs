@@ -58,7 +58,7 @@ bindsym $mod+c exec /usr/bin/chromium
 #bindsym $mod+d exec dmenu_run
 # start Rofi
 # Provides a better application menu than dmenu, and on some platforms (Tumbleweed doesn't seem to be one) this includes icons
-bindsym $mod+d exec "/usr/bin/rofi -show drun -drun-icon-theme MacBuntu-Remix"
+bindsym $mod+d exec "/usr/bin/rofi -show drun -drun-icon-theme MacBuntu-Remix -show-icons"
 
 # Open i3-input
 bindsym $mod+i exec /usr/bin/i3-input
