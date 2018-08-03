@@ -57,7 +57,7 @@ bindsym $mod+c exec /usr/bin/chromium
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 # start Rofi
-bindsym $mod+d exec "/usr/bin/rofi -show drun -drun-icon-theme MacBuntu-Remix"
+bindsym $mod+d exec "/usr/bin/rofi -show drun -drun-icon-theme MacBuntu-Remix -show-icons"
 
 # Open i3-input
 bindsym $mod+i exec /usr/bin/i3-input
