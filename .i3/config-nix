@@ -57,6 +57,7 @@ bindsym $mod+c exec /usr/bin/chromium
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 # start Rofi
+# Provides a better application menu than dmenu, and on some platforms (Tumbleweed doesn't seem to be one) this includes icons
 bindsym $mod+d exec "/usr/bin/rofi -show drun -drun-icon-theme MacBuntu-Remix"
 
 # Open i3-input
@@ -71,9 +72,6 @@ bindsym $mod+o exec /usr/local/bin/runescape-launcher
 # Launch PCManFM
 bindsym $mod+p exec /usr/bin/pcmanfm
 
-# Launch Tor browser (en)
-bindsym $mod+t exec $HOME/.nix-profile/bin/tor-browser
-
 # Open Deluge
 bindsym $mod+Shift+d exec /usr/bin/deluge
 
@@ -83,20 +81,11 @@ bindsym $mod+Shift+f exec /usr/bin/firefox
 # Launch virt-manager
 bindsym $mod+Shift+m exec /usr/bin/virt-manager
 
-# Launch OpenRA Red Alert
-bindsym $mod+Shift+o exec /usr/games/openra-ra
-
-# Launch Pale Moon
-bindsym $mod+Shift+p exec /usr/bin/palemoon
-
-# Launch VLC
-bindsym $mod+Shift+q exec /usr/bin/vlc
+# Launch qBittorrent
+bindsym $mod+Shift+q exec /usr/bin/qbittorrent
 
 # Launch VirtualBox
 bindsym $mod+Shift+v exec /usr/bin/VirtualBox
-
-# Open LibreOffice writer
-bindsym $mod+Shift+w exec "/usr/bin/libreoffice --writer"
 
 # change focus
 bindsym $mod+j focus left
