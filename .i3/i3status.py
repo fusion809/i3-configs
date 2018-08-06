@@ -54,4 +54,9 @@ status.register(
 status.register("uptime",
     format="Up {hours}:{mins}:{secs}")
 
+status.register("shell",
+    command="/usr/local/bin/obs-error",
+    color="#F3AC29",
+    interval=300)
+
 status.run()
