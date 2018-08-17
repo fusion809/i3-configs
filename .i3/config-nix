@@ -9,7 +9,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Ubuntu 8
+font pango:Ubuntu 7
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -57,10 +57,10 @@ bindsym $mod+c exec /usr/bin/chromium
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 # start Rofi
-bindsym $mod+d exec /usr/local/bin/rof
+bindsym $mod+d exec "/usr/bin/rofi -show drun -drun-icon-theme MacBuntu-Remix -show-icons"
 
 # Open i3-input
-bindsym $mod+i exec i3-input
+bindsym $mod+i exec /usr/bin/i3-input
 
 # Launch MarvinSketch
 bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
@@ -72,31 +72,31 @@ bindsym $mod+o exec /usr/bin/runescape-launcher
 bindsym $mod+p exec /usr/bin/pcmanfm
 
 # Launch Tor browser (en)
-bindsym $mod+t exec $HOME/.local/share/applications/tor-browser_en-US/Browser/start-tor-browser
+bindsym $mod+t exec $HOME/.nix-profile/bin/tor-browser
 
 # Open Deluge
-bindsym $mod+Shift+d exec deluge
+bindsym $mod+Shift+d exec /usr/bin/deluge
 
 # Open Firefox
-bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+f exec $HOME/.nix-profile/bin/firefox
 
 # Launch virt-manager
-bindsym $mod+Shift+m exec virt-manager
+bindsym $mod+Shift+m exec /usr/bin/virt-manager
 
-# Launch OpenRA
-bindsym $mod+Shift+o exec openra-ra
+# Launch OpenRA Red Alert
+bindsym $mod+Shift+o exec /usr/games/openra-ra
 
 # Launch Pale Moon
-bindsym $mod+Shift+p exec palemoon
+bindsym $mod+Shift+p exec /usr/bin/palemoon
 
 # Launch VLC
-bindsym $mod+Shift+q exec vlc
+bindsym $mod+Shift+q exec /usr/bin/vlc
 
 # Launch VirtualBox
-bindsym $mod+Shift+v exec virtualbox
+bindsym $mod+Shift+v exec /usr/bin/virtualbox
 
 # Open LibreOffice writer
-bindsym $mod+Shift+w exec "rofi -show window"
+bindsym $mod+Shift+w exec "/usr/bin/libreoffice --writer"
 
 # change focus
 bindsym $mod+j focus left
@@ -180,12 +180,12 @@ bindsym $mod+Tab exec xterm
 bindsym $mod+Enter exec xterm
 
 # Set workspace icons; the final one for PCManFM will be put in place if these two actually work, which they don't
-set $workspace1 ""
+set $workspace1 "★☭"
 set $workspace2 ""
 set $workspace3 ""
 set $workspace4 ""
 set $workspace5 ""
-set $workspace6 ""
+set $workspace6 "⚑"
 set $workspace7 "7"
 set $workspace8 "8"
 set $workspace9 "9"
@@ -283,9 +283,9 @@ bar {
         font pango:Font Awesome 5 Brands-Regular-400 7
 
         #status_command ~/.i3/i3status.sh
-        status_command /usr/bin/python3 ~/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
+        status_command /usr/bin/python3 /data/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
         colors {
-                background #000000
+                background #222222
                 statusline #ffffff
 
                 #focused_workspace  #ff4500 #000000
