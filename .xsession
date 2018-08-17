@@ -28,10 +28,6 @@ if ! checkrun i3 && ! checkrun check-updates; then
     /usr/local/bin/check-updates-popup-loop
 fi
 
-if ! checkrun plasmashell && ! checkrun hexchat ; then
-    /usr/bin/hexchat
-fi
-
-if checkrun plasmashel && ! checkrun konversation ; then
+if checkrun plasmashell && ! checkrun konversation ; then
     /usr/bin/konversation
 fi
