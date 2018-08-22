@@ -22,3 +22,7 @@ feh --bg-scale /data/GitHub/mine/artwork/PDB-5J2T/5J2T-PyMOL-chain-colouring-leg
 #if ! `ps ax | grep i3 | grep -v grep > /dev/null 2>&1` && ! `ps ax | grep check-updates | grep -v grep > /dev/null 2>&1`; then
 #    /usr/local/bin/check-updates-popup-loop
 #fi
+/usr/bin/firefox
+if zenity --title "HexChat" --question --text "Firefox is starting in this workspace; would you like to start HexChat now?" ; then
+    /usr/bin/hexchat
+fi
