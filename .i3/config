@@ -78,7 +78,7 @@ bindsym $mod+t exec $HOME/.local/share/applications/tor-browser_en-US/Browser/st
 bindsym $mod+Shift+d exec deluge
 
 # Open Firefox
-bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+f exec /usr/bin/firefox
 
 # Launch virt-manager
 bindsym $mod+Shift+m exec virt-manager
