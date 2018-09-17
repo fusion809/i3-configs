@@ -1,0 +1,17 @@
+XTerm*Background: black
+XTerm*Foreground: white
+XTerm*SaveLines: 2000
+XTerm*faceName: "Font Awesome 5 Brands-Regular-400"
+XTerm*faceSize: 8
+XTerm*rightScrollBar: true
+XTerm*ScrollBar: true
+XTerm*scrollTtyOutput: true
+XTerm*VT100.Translations: #override \
+      Ctrl<Key>V: insert-selection(CLIPBOARD) \n\ 
+      Ctrl<Key>V: insert-selection(PRIMARY) \n\ 
+      Shift<Btn1Down>: select-start() \n\ 
+      Shift<Btn1Motion>: select-extend() \n\ 
+      Shift<Btn1Up>: select-end(CLIPBOARD) \n\
+Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
+Ctrl <Key>V: insert-selection(CLIPBOARD)
+

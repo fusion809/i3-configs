@@ -1,0 +1,7 @@
+uxterm*VT100.Translations: #override \
+                 Ctrl <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl <Key>C:    copy-selection(CLIPBOARD)
+xterm*VT100.Translations: #override \
+                 Ctrl <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl <Key>C:    copy-selection(CLIPBOARD)
+rofi.modi: window,run,ssh,drun

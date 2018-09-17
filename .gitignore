@@ -1,0 +1,8 @@
+*.o
+*.swp
+octave-workspace
+'='
+*.log
+*.txt
+__pycache__
+.ropeproject
