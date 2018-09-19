@@ -6,3 +6,4 @@ octave-workspace
 *.txt
 __pycache__
 .ropeproject
+github.py
