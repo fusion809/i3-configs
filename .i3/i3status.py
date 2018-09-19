@@ -52,9 +52,3 @@ status.register("shell",
     command="/usr/local/bin/obs-error",
     color="#F3AC29",
     interval=300)
-
-status.register("github",
-    access_token="4a4b27082a611a9fa24c432a14d43da6cb7268b2",
-    format='Unread {unread}')
-
-status.run()
