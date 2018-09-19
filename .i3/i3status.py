@@ -55,6 +55,6 @@ status.register("shell",
 
 status.register("github",
     access_token="4a4b27082a611a9fa24c432a14d43da6cb7268b2",
-    format='{status}, unread {unread}')
+    format='Unread {unread}')
 
 status.run()
