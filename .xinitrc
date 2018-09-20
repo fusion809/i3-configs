@@ -1,4 +1,4 @@
-feh --bg-scale /home/fusion809/.local/share/wallpapers/autumn-scenery.jpg && \
+feh --bg-scale /data/.local/share/wallpapers/"Starry Nebula 147.png" && \
 DEFAULTSESSION=i3
 
 case "$1" in
