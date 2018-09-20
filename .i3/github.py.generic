@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+from i3status import status
+
+status.register("github",
+    access_token="ADD THIS YOURSELF FROM https://github.com/settings/tokens/new",
+    format="Unread {unread}")
+
+status.run()
