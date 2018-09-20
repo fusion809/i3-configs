@@ -1,4 +1,4 @@
-feh --bg-scale /data/.local/share/wallpapers/"Starry Nebula 147.png" && \
+feh --bg-scale "/data/.local/share/wallpapers/Helium wallpaper v2.jpg" && \
 DEFAULTSESSION=i3
 
 case "$1" in

@@ -16,7 +16,7 @@ function wal {
 #    wal "Gentoo/Sky blue Gentoo logo (with some variation in colour) on purple (with variation) background.jpg"
 #fi
 #wal "Doxorubicin, imatinib, cyclophosphamide, methotrexate on Mandelbrot fractal.png"
-feh --bg-scale /data/GitHub/mine/artwork/PDB-5J2T/5J2T-PyMOL-chain-colouring-legend-labelled-white-bg-i3.png 
+feh --bg-scale /data/.local/share/wallpapers/Helium wallpaper v2.jpg" 
 
 # Run check updates
 #if ! `ps ax | grep i3 | grep -v grep > /dev/null 2>&1` && ! `ps ax | grep check-updates | grep -v grep > /dev/null 2>&1`; then
