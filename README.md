@@ -9,7 +9,7 @@ The C/C++/Shell-powered bar includes weather conditions (including temperatures;
 The Python-based (or i3pystatus) bar displays the following: weather conditions (although sometimes it botches it and labels the temperature in Farenheit as degrees Celsius), download/upload rates for wlo1 (not hard to change to another interface by editing `~/.i3/i3status.py`), uptime, disk space (used/total), core temperatures, CPU usage (%), load (average over 1 minute), RAM usage (used/total) and date. 
 
 ## What's in the bottom bar
-The top bar is controlled by i3pystatus-notifs.py in the [common-scripts](https://github.com/fusion809/common-scripts) repository. The bottom war contains:
+The top bar is controlled by i3pystatus-notifs.py in the [common-scripts](https://github.com/fusion809/common-scripts) repository. The bottom bar contains:
 
 * Date in `%A %d %B %Y %r` format in your system's timezone. 
 * Root filesystem usage in GB. If you have a separate home partition (which I don't, I use /data instead and symlink what I need to into /home).
