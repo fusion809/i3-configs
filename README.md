@@ -1,5 +1,5 @@
 # i3-configs
-![i3 Arch configs 4.15 commit b12291b](https://fusion809.github.io/images/i3/i3-4.15-Tumbleweed-20180802.png)
+![i3 Arch configs 4.15 commit b12291b](https://fusion809.github.io/images/i3/i3-4.15-my-configs-arch-branch-20-Sep-2018.png)
 **Figure 1: [Arch Linux branch](https://github.com/fusion809/i3-configs/tree/archlinux) configs as of 20 September 2018, wallpaper is from [openDesktop.org](https://www.opendesktop.org/p/1261475/).**
 <!--upload/download rates (unfortunately they are incredibly inaccurate, sometimes they will show 0 kB/s even when download/upload rates are > 1,000 kB/s, if you know how to make it accurate please file a new issue or pull request and I will happily accept it!), -->
 
