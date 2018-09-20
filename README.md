@@ -1,6 +1,6 @@
 # i3-configs
 ![i3 Arch configs 4.15 commit b12291b](https://fusion809.github.io/images/i3/i3-4.15-my-configs-arch-branch-20-Sep-2018.png)
-**Figure 1: [Arch Linux branch](https://github.com/fusion809/i3-configs/tree/archlinux) configs as of 20 September 2018, wallpaper is from [openDesktop.org](https://www.opendesktop.org/p/1261475/).**
+**Figure 1: [Arch Linux branch](https://github.com/fusion809/i3-configs/tree/archlinux) configs as of 20 September 2018 (commit b12291b), wallpaper is from [openDesktop.org](https://www.opendesktop.org/p/1261475/).** (I choose that branch and not this one as this one is kind of outdated)
 <!--upload/download rates (unfortunately they are incredibly inaccurate, sometimes they will show 0 kB/s even when download/upload rates are > 1,000 kB/s, if you know how to make it accurate please file a new issue or pull request and I will happily accept it!), -->
 
 This repository contains my i3 configs. This particular branch (master) is where you can find my Debian configs. There are two main routes of using them. Either you can use the i3pystatus (yes you will need to install i3pystatus, a bleeding-edge, from lastest git snapshot, version of the package is needed!) powered bar or the C/C++/Shell-powered bar. 
