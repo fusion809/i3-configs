@@ -66,7 +66,7 @@ bindsym $mod+i exec i3-input
 bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
 
 # Launch RuneScape NXT client
-bindsym $mod+o exec /usr/bin/runescape-launcher
+bindsym $mod+o exec /usr/local/bin/runescape-launcher
 
 # Launch PCManFM
 bindsym $mod+p exec /usr/bin/pcmanfm
