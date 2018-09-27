@@ -1,0 +1,2 @@
+# i3 configs for FreeBSD
+Most of the branches of this repository are dedicated to Linux distributions, which are quite distinct, especially with respect to how they report CPU, disk and RAM usage and core temperatures. i3pystatus is pretty useless for these things on FreeBSD, so instead i3status.sh is dedicated to determining them the ol' fashion way. No top bar as I can only update my packagtes from Linux so there's no point to them on FreeBSD. 
