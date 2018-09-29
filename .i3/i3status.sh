@@ -33,5 +33,5 @@ do
 	DISK_USED=$(df -h / | tail -n 1 | tr ' ' '\n' | sed '/^$/d' | tail -n 5 | head -n 3 | head -n 2 | tail -n 1)
 	# CPU
 	CPU_TOTAL=$(octave --eval "$(iostat | tr ' ' '\n' | sed '/^$/d' | tail -n 5 | head -n 4 | tr '\n' '+' | sed 's/+$//g')" | cut -d ' ' -f 4)
-	printf "%s\n" "CPU: ${CPU_TOTAL}% | /: ${DISK_USED}/${DISK_AVAIL} | Av(T): $TEMP | RAM: $RAM/${RAM_AVAILABLE} | Up $uptime | $DATE"
+	printf "%s\n" "CPU: ${CPU_TOTAL}% | / ${DISK_USED}/${DISK_AVAIL} | Av(T): $TEMP | RAM: $RAM/${RAM_AVAILABLE} | Up $uptime | $DATE"
 done
