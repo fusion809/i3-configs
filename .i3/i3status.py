@@ -31,7 +31,7 @@ status.register("shell",
     interval=20)
 
 status.register("shell",
-    command="/usr/local/bin/uptime",
+    command="/usr/local/bin/UP",
     color="#aaffaa",
     interval=20)
 
