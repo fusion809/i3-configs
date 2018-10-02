@@ -1,4 +1,4 @@
-feh --bg-scale "/data/.local/share/wallpapers/Helium wallpaper v2.jpg" && \
+bash ~/.xsession && \
 DEFAULTSESSION=i3
 
 case "$1" in
