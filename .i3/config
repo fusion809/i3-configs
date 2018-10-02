@@ -93,7 +93,7 @@ bindsym $mod+Shift+p exec palemoon
 bindsym $mod+Shift+q exec vlc
 
 # Launch VirtualBox
-bindsym $mod+Shift+v exec virtualbox
+bindsym $mod+Shift+v exec /usr/local/bin/vbox
 
 # Open LibreOffice writer
 bindsym $mod+Shift+w exec "rofi -show window"
@@ -157,7 +157,7 @@ bindsym $mod+2 workspace $workspace2
 bindsym F3 workspace $workspace3
 bindsym F4 workspace $workspace4
 bindsym F5 workspace $workspace5
-bindsym F6 workspace $workspace6
+#bindsym F6 workspace $workspace6
 bindsym F7 workspace $workspace7
 bindsym F8 workspace $workspace8
 bindsym F9 workspace $workspace9
