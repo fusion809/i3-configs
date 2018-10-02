@@ -15,10 +15,10 @@ status.register("disk",
     round_size=1,
     format="/data {used}/{total}G")
 
-status.register("disk",
-    path="/",
-    round_size=1,
-    format="/ {used}/{total}G")
+status.register("shell",
+    command="/usr/local/bin/btrfs-rfs",
+    color="#FFFFFF",
+    interval=300)
 
 status.register("mem",
     format="RAM {used_mem}/{total_mem}G",
