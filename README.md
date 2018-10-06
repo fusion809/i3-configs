@@ -1,6 +1,6 @@
 # i3-configs
 ![The Python configs as of 07 October 2018 running on openSUSE Tumbleweed (Desktop) with i3 4.15](https://fusion809.github.io/images/i3/i3-4.15-Tumbleweed-Desktop-ebf1f490-CS-a290a48.png)
-
+**Figure 1: these configs at commit eb1f490** (Wallpaper is by CHANU007, licensed under CC-0, source: https://www.opendesktop.org/p/1262109/)
 <!--upload/download rates (unfortunately they are incredibly inaccurate, sometimes they will show 0 kB/s even when download/upload rates are > 1,000 kB/s, if you know how to make it accurate please file a new issue or pull request and I will happily accept it!), -->
 This repository contains my i3 configs. There are two main routes of using them. Either you can use the i3pystatus (yes you will need to install i3pystatus, a bleeding-edge, from lastest git snapshot, version of the package is needed!) powered bar or the C/C++/Shell-powered bar. 
 
