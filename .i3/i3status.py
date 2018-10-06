@@ -31,15 +31,7 @@ status.register("load", format="Load {avg1}")
 status.register("cpu_usage",
     format="CPU {usage}%")
 
-status.register("temp",
-    format="{Core_0}°C {Core_1}°C {Core_2}°C {Core_3}°C",
-    hints={"markup": "pango"},
-    lm_sensors_enabled=True,
-    dynamic_color=True)
-
-status.register("network", interface="wlp7s0", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
-
-#status.register("battery")
+status.register("network", interface="enp24s0", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
 
 status.register("pulseaudio")
 
@@ -56,4 +48,7 @@ status.register(
 status.register("uptime",
     format="Up {hours}:{mins}:{secs}")
 
-status.run()
+status.register("shell",
+    command="/usr/local/bin/obs-error",
+    color="#F3AC29",
+    interval=300)
