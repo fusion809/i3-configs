@@ -56,4 +56,4 @@ status.register("shell",
 status.register("shell",
     command="curl -Ss 'https://wttr.in/Townsville?0&T&Q' | cut -c 16- | head -2 | xargs echo",
     color="#AAFFFF",
-    interval=3600)
+    interval=1800)
