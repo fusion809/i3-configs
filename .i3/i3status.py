@@ -18,7 +18,7 @@ status.register("disk",
 status.register("shell",
     command="/usr/local/bin/btrfs-rfs",
     color="#FFFFFF",
-    interval=300)
+    interval=60)
 
 status.register("mem",
     format="RAM {used_mem}/{total_mem}G",
@@ -52,3 +52,8 @@ status.register("shell",
     command="/usr/local/bin/obs-error",
     color="#F3AC29",
     interval=300)
+
+status.register("shell",
+    command="curl -Ss 'https://wttr.in/Townsville?0&T&Q' | cut -c 16- | head -2 | xargs echo",
+    color="#AAFFFF",
+    interval=3600)

@@ -17,7 +17,7 @@ function wal {
 #fi
 #wal "Doxorubicin, imatinib, cyclophosphamide, methotrexate on Mandelbrot fractal.png"
 #feh --bg-scale "/data/.local/share/wallpapers/Helium wallpaper v2.jpg" 
-feh --bg-scale "/data/.local/share/wallpapers/127(FHD).jpg"
+feh --bg-scale "/home/fusion809/.local/share/wallpapers/467027.jpg"
 $HOME/.local/bin/appimaged
 
 # Run check updates
