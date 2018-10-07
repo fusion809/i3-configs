@@ -54,6 +54,6 @@ status.register("shell",
     interval=300)
 
 status.register("shell",
-    command="curl -Ss 'https://wttr.in/Townsville?0&T&Q' | cut -c 16- | head -2 | xargs echo",
+    command="/usr/local/bin/tville-weather",
     color="#AAFFFF",
     interval=1800)
