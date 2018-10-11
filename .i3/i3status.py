@@ -31,7 +31,7 @@ status.register("load", format="Load {avg1}")
 status.register("cpu_usage",
     format="CPU {usage}%")
 
-status.register("network", interface="enp24s0", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
+status.register("network", interface="wlp0s20f3", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
 
 status.register("pulseaudio")
 

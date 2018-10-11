@@ -277,23 +277,4 @@ bar {
         }
 }
 
-bar { 
-        workspace_buttons no
-        tray_output no
-        position top
-        font pango:Font Awesome 5 Brands-Regular-400 9
-
-        #status_command ~/.i3/i3status.sh
-        status_command /usr/bin/python3 $HOME/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
-        colors {
-                background #222222
-                statusline #ffffff
-
-                #focused_workspace  #ff4500 #000000
-                #inactive_workspace #888888 #000000
-                focused_workspace  #454545 #225577 #ffffff
-                inactive_workspace #454545 #212121 #ffffff
-        }
-}
-
 exec ~/.xsession
