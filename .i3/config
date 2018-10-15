@@ -57,7 +57,7 @@ bindsym $mod+c exec /usr/bin/chromium
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 # start Rofi
-bindsym $mod+d exec "rofi -show drun -drun-icon-theme ePapirus -show-icons"
+bindsym $mod+d exec "rofi -show drun -drun-icon-theme Yosa Max -show-icons"
 
 # Open i3-input
 bindsym $mod+i exec i3-input
