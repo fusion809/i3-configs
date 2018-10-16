@@ -6,7 +6,7 @@ XTerm*cursorColor: #ffaaaa
 #XTerm*Foreground: white
 XTerm*SaveLines: 2000
 XTerm*faceName: "Font Awesome 5 Free Regular"
-XTerm*faceSize: 8
+XTerm*faceSize: 11
 XTerm*rightScrollBar: true
 XTerm*ScrollBar: true
 XTerm*scrollTtyOutput: true
