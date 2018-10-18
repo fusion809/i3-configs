@@ -71,6 +71,9 @@ bindsym $mod+o exec /usr/local/bin/runescape-launcher
 # Launch PCManFM
 bindsym $mod+p exec /usr/bin/pcmanfm
 
+# Launch HexChat
+bindsym $mod+Shift+h /usr/bin/hexchat
+
 # Launch Tor browser (en)
 bindsym $mod+t exec $HOME/.local/share/applications/tor-browser_en-US/Browser/start-tor-browser
 
