@@ -299,3 +299,4 @@ bar {
         }
 }
 
+exec $HOME/.local/bin/appimaged

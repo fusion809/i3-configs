@@ -23,4 +23,3 @@ feh --bg-scale "/home/fusion809/.local/share/wallpapers/330-FHD.jpg"
 #if ! `ps ax | grep i3 | grep -v grep > /dev/null 2>&1` && ! `ps ax | grep check-updates | grep -v grep > /dev/null 2>&1`; then
 #    /usr/local/bin/check-updates-popup-loop
 #fi
-exec $HOME/.local/bin/appimaged
