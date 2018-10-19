@@ -39,8 +39,8 @@ bindsym F10 [class="Pcmanfm"] focus
 # Switch to VLC
 bindsym F11 [class="Vlc"] focus
 
-# Switch to xterm
-bindsym F12 [class="XTerm"] focus
+# Switch to gnome-terminal
+bindsym F12 [class="Gnome-terminal"] focus
 
 # Take a screenshot
 bindsym Print --release exec /usr/local/bin/scrnshot
@@ -179,8 +179,8 @@ bindsym $mod+F9 workspace $workspace19
 bindsym $mod+$mod1+0 workspace $workspace20
 
 # Terminal
-bindsym $mod+Tab exec xterm
-bindsym $mod+Enter exec xterm
+bindsym $mod+Tab exec gnome-terminal
+bindsym $mod+Enter exec gnome-terminal
 
 # Set workspace icons; the final one for PCManFM will be put in place if these two actually work, which they don't
 set $workspace1 ""
