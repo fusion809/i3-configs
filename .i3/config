@@ -300,3 +300,4 @@ bar {
 }
 
 exec ~/.xsession
+exec ~/.local/bin/appimaged

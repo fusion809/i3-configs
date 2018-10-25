@@ -19,7 +19,7 @@ Example abbreviated names include:
 * OBF means the OBS format spec file service.
 * OBV means the OBS source validator service.
 * ORA means OpenRA.
-* VSCode means Visual Studio Code.
+* VSC means Visual Studio Code.
 
 My bottom bar contains important information like:
 
