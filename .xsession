@@ -16,7 +16,7 @@ function wal {
 #    wal "Gentoo/Sky blue Gentoo logo (with some variation in colour) on purple (with variation) background.jpg"
 #fi
 #wal "Doxorubicin, imatinib, cyclophosphamide, methotrexate on Mandelbrot fractal.png"
-feh --bg-scale "/home/fusion809/.local/share/wallpapers/61(Full HD).jpg"
+feh --bg-scale "/home/fusion809/.local/share/wallpapers/beautiful-blur-bright-326055.jpg"
 
 # Check if a command is running
 function checkrun {

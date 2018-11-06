@@ -179,6 +179,7 @@ bindsym $mod+F9 workspace $workspace19
 bindsym $mod+$mod1+0 workspace $workspace20
 
 # Terminal
+bindsym $mod+u exec urxvt
 bindsym $mod+Tab exec xterm
 bindsym $mod+Enter exec xterm
 
@@ -189,9 +190,9 @@ set $workspace3 ""
 set $workspace4 ""
 set $workspace5 ""
 set $workspace6 ""
-set $workspace7 "7"
-set $workspace8 "8"
-set $workspace9 "9"
+set $workspace7 ""
+set $workspace8 ""
+set $workspace9 ""
 set $workspace10 "10"
 set $workspace11 "11"
 set $workspace12 "12"
@@ -301,3 +302,27 @@ bar {
 
 exec ~/.xsession
 exec ~/.local/bin/appimaged
+
+# These tricks to place apps in their own workspace and start a few on start up comes from
+# https://unix.stackexchange.com/a/479969
+# Firefox
+assign [class="^Firefox$"] $workspace1
+exec --no-startup-id /usr/local/bin/firefox
+# RuneScape NXT Client
+assign [class="^RuneScape$"] $workspace2
+exec --no-startup-id /usr/local/bin/runescape-launcher
+assign [class="^Runescape$"] $workspace2
+# XTerm
+#assign [class="^XTerm$"] $workspace3
+#exec --no-startup-id xterm
+# PCManFM
+assign [class="^Pcmanfm$"] $workspace4
+exec --no-startup-id pcmanfm
+# VirtualBox
+assign [class="^VirtualBox Manager$"] $workspace7
+exec --no-startup-id VirtualBox
+# OpenRA mods
+assign [class="^openra.*$"] $workspace8
+# HexChat
+assign [class="^Hexchat$"] $workspace9
+exec --no-startup-id hexchat
