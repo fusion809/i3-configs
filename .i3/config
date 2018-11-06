@@ -75,7 +75,7 @@ bindsym $mod+p exec /usr/bin/pcmanfm
 bindsym $mod+Shift+h /usr/bin/hexchat
 
 # Launch Tor browser (en)
-bindsym $mod+t exec $HOME/.local/share/applications/tor-browser_en-US/Browser/start-tor-browser
+bindsym $mod+t exec /usr/local/bin/torbrowser
 
 # Open Deluge
 bindsym $mod+Shift+d exec deluge
@@ -83,13 +83,13 @@ bindsym $mod+Shift+d exec deluge
 # Open Firefox
 bindsym $mod+Shift+f exec /usr/local/bin/firefox
 
-# Launch virt-manager
+# Launch Virt Manager, second-rate VM manager IMO
 bindsym $mod+Shift+m exec virt-manager
 
 # Launch OpenRA
 bindsym $mod+Shift+o exec openra-ra
 
-# Launch Pale Moon
+# Launch Pale Moon (deprecated as I don't use it anymore)
 bindsym $mod+Shift+p exec palemoon
 
 # Launch VLC
@@ -98,7 +98,7 @@ bindsym $mod+Shift+q exec vlc
 # Launch VirtualBox
 bindsym $mod+Shift+v exec /usr/local/bin/vbox
 
-# Open LibreOffice writer
+# Show open windows Rofi interface
 bindsym $mod+Shift+w exec "rofi -show window"
 
 # change focus
@@ -160,7 +160,8 @@ bindsym $mod+2 workspace $workspace2
 bindsym F3 workspace $workspace3
 bindsym F4 workspace $workspace4
 bindsym F5 workspace $workspace5
-bindsym $mod+6 workspace $workspace6
+#bindsym $mod+6 workspace $workspace6
+bindsym F6 workspace $workspace6
 bindsym F7 workspace $workspace7
 bindsym F8 workspace $workspace8
 bindsym F9 workspace $workspace9
@@ -300,7 +301,10 @@ bar {
         }
 }
 
+# Execute xsession, which starts feh for the desktop background
 exec ~/.xsession
+
+# Starting AppImage daemon, cannot be done in xsession
 exec ~/.local/bin/appimaged
 
 # These tricks to place apps in their own workspace and start a few on start up comes from
