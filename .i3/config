@@ -327,6 +327,7 @@ assign [class="^VirtualBox Manager$"] $workspace7
 exec --no-startup-id VirtualBox
 # OpenRA mods
 assign [class="^openra.*$"] $workspace8
+assign [class="^mono-sgen$"] $workspace8
 # HexChat
 assign [class="^Hexchat$"] $workspace9
 exec --no-startup-id hexchat
