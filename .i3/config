@@ -197,15 +197,15 @@ set $workspace9 ""
 set $workspace10 ""
 set $workspace11 ""
 set $workspace12 ""
-set $workspace12 "12"
-set $workspace12 "13"
-set $workspace12 "14"
-set $workspace12 "15"
-set $workspace12 "16"
-set $workspace12 "17"
-set $workspace12 "18"
-set $workspace12 "19"
-set $workspace12 "20"
+set $workspace13 "13"
+set $workspace14 "14"
+set $workspace15 "15"
+set $workspace16 "16"
+set $workspace17 "17"
+set $workspace18 "18"
+set $workspace19 "19"
+set $workspace20 "20"
+set $workspace21 "21"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -324,7 +324,7 @@ assign [class="^Pcmanfm$"] $workspace4
 exec --no-startup-id pcmanfm
 # VirtualBox
 assign [class="^VirtualBox Manager$"] $workspace7
-exec --no-startup-id VirtualBox
+#exec --no-startup-id VirtualBox
 # OpenRA mods
 assign [class="^openra.*$"] $workspace8
 assign [class="^mono-sgen$"] $workspace8
