@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/run/current-system/sw/bin/zsh
 
 # band function
 function band {

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/run/current-system/sw/bin/zsh
 
 killall daemon.o
 cd $HOME/.i3 && ./daemon.o && cd -
