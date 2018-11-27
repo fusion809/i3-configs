@@ -1,27 +1,13 @@
 # i3-configs
-![The Python configs as of 20 September 2018 running on Arch Linux with i3 4.15](https://fusion809.github.io/images/i3/i3-4.15-archlinux-configs-d883fce-20180920.png)
+![The Python configs as of 28 November 2018, with i3 4.16](https://fusion809.github.io/images/i3/i3-4.16-opensuse-tumbleweed-configs-20181128.png)
 
-<!--upload/download rates (unfortunately they are incredibly inaccurate, sometimes they will show 0 kB/s even when download/upload rates are > 1,000 kB/s, if you know how to make it accurate please file a new issue or pull request and I will happily accept it!), -->
-This repository contains my i3 configs. There are two main routes of using them. Either you can use the i3pystatus (yes you will need to install i3pystatus, a bleeding-edge, from lastest git snapshot, version of the package is needed!) powered bar or the C/C++/Shell-powered bar. 
+**Figure 1: My Python configured i3 set up as of 28 November 2018 (commit no 448, hash [151654c](https://github.com/fusion809/i3-configs/tree/151654c1e7bb6ac767de70febe2b192422d67252)), the wallpaper is in the public domain and from https://www.opendesktop.org/p/1276706/**
+
+This repository contains my i3 configs. There are two main routes of using them. Either you can use the i3pystatus (yes you will need to install i3pystatus from the latest git snapshot) powered bar or the C/C++/Shell-powered bar. 
 
 The C/C++/Shell-powered bar includes weather conditions (including temperatures; presently calculates it for my location, feel free to edit it in `~/.i3/i3status.sh`), uptime, % CPU used, RAM usage, core temperatures (set up for my system in particular so may not work for others. It is fairly easy to edit `~/.i3/i3status.sh` to set it up for your system) and time. 
 
 The Python-based (or i3pystatus) bar displays the following: weather conditions (although sometimes it botches it and labels the temperature in Farenheit as degrees Celsius), download/upload rates for wlo1 (not hard to change to another interface by editing `~/.i3/i3status.py`), uptime, disk space (used/total), core temperatures, CPU usage (%), load (average over 1 minute), RAM usage (used/total) and date. 
-
-## What's in the bottom bar
-The top bar is controlled by i3pystatus-notifs.py in the [common-scripts](https://github.com/fusion809/common-scripts) repository. The bottom bar contains:
-
-* Date in `%A %d %B %Y %r` format in your system's timezone. 
-* Root filesystem usage in GB. If you have a separate home partition (which I don't, I use /data instead and symlink what I need to into /home).
-* /data filesystem usage in GB.
-* RAM usage in GB.
-* CPU load.
-* CPU usage in %.
-* Upload/download rates in KB/s.
-* Audio volume in %.
-* Uptime in hours, mins and seconds.
-* List of openSUSE Build Service errors for my [home project](https://build.opensuse.org/project/show/home:fusion809). I sometimes edit it so that certain package errors are ignored, this is usually the case when the issue is coming from upstream (whether that be OBS maintainers, distro repo maintainers or the upstream developers of the program I am packaging) and I have either filed a bug report to the appropriate upstream party or have posted a complaint to a mailing list and am waiting for upstream to fix things. 
-* My unread GitHub notifications, this one needs a [github.py](https://github.com/fusion809/i3-configs/blob/archlinux/.i3/github.py.generic) script that I have included in generic form, not including my own access token, which is something that must be generated ([here](https://github.com/settings/tokens/new) is where you do that, you must be logged into GitHub in order to do this) and not uploaded to GitHub (it will revoke it). github.py.generic needs to be copied to ~/.i3/github.py and edited accordingly (incorporating said token) in order for these configs to work.
 
 ## Requirements
 For these configs to work out-of-the-box one needs to have the following installed:
@@ -30,7 +16,7 @@ For these configs to work out-of-the-box one needs to have the following install
 * Font Awesome icon theme (e.g. the `otf-font-awesome` package for Arch Linux), for the sake of getting the workspace icons shown in the above screenshot. 
 * g++ for CPU/RAM information (only for C++ config). 
 * i3bar.
-* i3pystatus (for Python-based counterpart of the bar)
+* i3pystatus (for Python-based counterpart of the bar).
 * ImageMagick, so that one can take screenshots with <kbd>PrtScrn</kbd> (or <kbd>Print</kbd> or <kbd>PrntScr</kbd>).
 * pacman, for the last time pacman was run being in the i3 bar. 
 * PulseAudio, for the volume information to be obtainable by i3pystatus. 
