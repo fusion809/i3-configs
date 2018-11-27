@@ -194,9 +194,9 @@ set $workspace6 ""
 set $workspace7 ""
 set $workspace8 ""
 set $workspace9 ""
-set $workspace10 "10"
-set $workspace11 "11"
-set $workspace12 "12"
+set $workspace10 ""
+set $workspace11 ""
+set $workspace12 ""
 set $workspace12 "12"
 set $workspace12 "13"
 set $workspace12 "14"
@@ -269,7 +269,7 @@ bindsym $mod+r mode "resize"
 bar { 
         position bottom
         #status_command ~/.i3/i3status.sh
-        status_command /usr/bin/python3 ~/GitHub/mine/scripts/common-scripts/.i3/github.py
+        status_command ~/anaconda3/bin/python3 ~/GitHub/mine/scripts/common-scripts/.i3/github.py
         font pango:Font Awesome 5 Brands-Regular-400 9
         colors {
                 background #000000
@@ -289,7 +289,7 @@ bar {
         font pango:Font Awesome 5 Brands-Regular-400 10
 
         #status_command ~/.i3/i3status.sh
-        status_command /usr/bin/python3 $HOME/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
+        status_command ~/anaconda3/bin/python3 $HOME/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
         colors {
                 background #222222
                 statusline #ffffff
@@ -314,7 +314,7 @@ assign [class="^Firefox$"] $workspace1
 exec --no-startup-id /usr/local/bin/firefox
 # RuneScape NXT Client
 assign [class="^RuneScape$"] $workspace2
-exec --no-startup-id /usr/local/bin/runescape-launcher
+#exec --no-startup-id /usr/local/bin/runescape-launcher
 assign [class="^Runescape$"] $workspace2
 # XTerm
 #assign [class="^XTerm$"] $workspace3
@@ -331,3 +331,15 @@ assign [class="^mono-sgen$"] $workspace8
 # HexChat
 assign [class="^Hexchat$"] $workspace9
 exec --no-startup-id hexchat
+# Atom
+assign [class="^Atom$"] $workspace10
+assign [class="^matplotlib$"] $workspace10
+#exec --no-startup-id atom /data/GitHub/mine/scripts/julia-scripts
+# VLC
+assign [class="^vlc$"] $workspace5
+# VSCode
+assign [class="^Code$"] $workspace11
+assign [class="^Code - Insiders$"] $workspace11
+# GVim
+assign [class="^Gvim$"] $workspace12
+#exec --no-startup-id code
