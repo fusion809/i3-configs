@@ -2,7 +2,7 @@ XTerm*Background: black
 XTerm*Foreground: white
 XTerm*SaveLines: 2000
 XTerm*faceName: "Font Awesome 5 Brands-Regular-400"
-XTerm*faceSize: 8
+XTerm*faceSize: 10
 XTerm*rightScrollBar: true
 XTerm*ScrollBar: true
 XTerm*scrollTtyOutput: true

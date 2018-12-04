@@ -43,10 +43,10 @@ bindsym F11 [class="Vlc"] focus
 bindsym F12 [class="XTerm"] focus
 
 # Take a screenshot
-bindsym Print --release exec /usr/local/bin/scrnshot
+bindsym Print --release exec /data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/scrnshot
 
 # Take a screencast
-bindsym $mod+Print exec /usr/local/bin/vid
+bindsym $mod+Print exec /data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/vid
 
 # Launch 0 A.D.
 bindsym $mod+g exec 0ad
@@ -63,7 +63,8 @@ bindsym $mod+d exec "rofi -show drun -drun-icon-theme MacBuntu-Remix"
 bindsym $mod+i exec i3-input
 
 # Launch MarvinSketch
-bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
+# Commented out as Marvin doesn't exist on NixOS (yet)
+#bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
 
 # Launch RuneScape NXT client
 bindsym $mod+o exec runescape-launcher
@@ -72,19 +73,20 @@ bindsym $mod+o exec runescape-launcher
 bindsym $mod+p exec pcmanfm
 
 # Launch Tor browser (en)
-bindsym $mod+t exec $HOME/.nix-profile/bin/tor-browser
+bindsym $mod+t exec tor-browser
 
 # Open Deluge
 bindsym $mod+Shift+d exec deluge
 
 # Open Firefox
-bindsym $mod+Shift+f exec $HOME/.nix-profile/bin/firefox
+bindsym $mod+Shift+f exec firefox
 
 # Launch virt-manager
 bindsym $mod+Shift+m exec virt-manager
 
 # Launch OpenRA Red Alert
-bindsym $mod+Shift+o exec /usr/games/openra-ra
+# Only works after PR #51404 (https://github.com/NixOS/nixpkgs/pull/51404)
+bindsym $mod+Shift+o exec openra-ra
 
 # Launch Pale Moon
 bindsym $mod+Shift+p exec palemoon
@@ -157,6 +159,7 @@ bindsym $mod+2 workspace $workspace2
 bindsym F3 workspace $workspace3
 bindsym F4 workspace $workspace4
 bindsym F5 workspace $workspace5
+#bindsym $mod+6 workspace $workspace6
 bindsym F6 workspace $workspace6
 bindsym F7 workspace $workspace7
 bindsym F8 workspace $workspace8
@@ -176,22 +179,23 @@ bindsym $mod+F9 workspace $workspace19
 bindsym $mod+$mod1+0 workspace $workspace20
 
 # Terminal
+bindsym $mod+u exec urxvt
 bindsym $mod+Tab exec xterm
 bindsym $mod+Enter exec xterm
 
 # Set workspace icons; the final one for PCManFM will be put in place if these two actually work, which they don't
-set $workspace1 "★☭"
-set $workspace2 ""
-set $workspace3 ""
-set $workspace4 ""
+set $workspace1 ""
+set $workspace2 ""
+set $workspace3 ""
+set $workspace4 ""
 set $workspace5 ""
-set $workspace6 "⚑"
-set $workspace7 "7"
-set $workspace8 "8"
-set $workspace9 "9"
-set $workspace10 "10"
-set $workspace11 "11"
-set $workspace12 "12"
+set $workspace6 ""
+set $workspace7 ""
+set $workspace8 ""
+set $workspace9 ""
+set $workspace10 ""
+set $workspace11 ""
+set $workspace12 ""
 set $workspace12 "12"
 set $workspace12 "13"
 set $workspace12 "14"
@@ -264,7 +268,7 @@ bindsym $mod+r mode "resize"
 bar { 
         position bottom
         #i3status ~/.i3/i3status.sh
-        i3status python3 ~/.i3/i3status.py
+        i3status python3 /data/GitHub/mine/scripts/common-scripts/.i3/github.py
         colors {
                 background #000000
                 statusline #ffffff
@@ -283,7 +287,7 @@ bar {
         font pango:Font Awesome 5 Brands-Regular-400 7
 
         #i3status ~/.i3/i3status.sh
-        status_command /usr/bin/python3 /data/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
+        status_command python3 /data/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
         colors {
                 background #222222
                 statusline #ffffff
