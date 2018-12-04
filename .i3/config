@@ -57,7 +57,7 @@ bindsym $mod+c exec chromium
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 # start Rofi
-bindsym $mod+d exec "rofi -show drun -drun-icon-theme MacBuntu-Remix"
+bindsym $mod+d exec "rofi -show drun -drun-icon-theme MacBuntu-Remix -show-icons"
 
 # Open i3-input
 bindsym $mod+i exec i3-input
@@ -67,10 +67,13 @@ bindsym $mod+i exec i3-input
 #bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
 
 # Launch RuneScape NXT client
-bindsym $mod+o exec runescape-launcher
+bindsym $mod+o exec /data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/runescape-launcher
 
 # Launch PCManFM
 bindsym $mod+p exec pcmanfm
+
+# Launch HexChat
+bindsym $mod+Shift+h hexchat
 
 # Launch Tor browser (en)
 bindsym $mod+t exec tor-browser
@@ -81,24 +84,24 @@ bindsym $mod+Shift+d exec deluge
 # Open Firefox
 bindsym $mod+Shift+f exec firefox
 
-# Launch virt-manager
+# Launch Virt Manager, second-rate VM manager IMO
 bindsym $mod+Shift+m exec virt-manager
 
 # Launch OpenRA Red Alert
 # Only works after PR #51404 (https://github.com/NixOS/nixpkgs/pull/51404)
 bindsym $mod+Shift+o exec openra-ra
 
-# Launch Pale Moon
+# Launch Pale Moon (deprecated as I don't use it anymore)
 bindsym $mod+Shift+p exec palemoon
 
 # Launch VLC
 bindsym $mod+Shift+q exec vlc
 
 # Launch VirtualBox
-bindsym $mod+Shift+v exec virtualbox
+bindsym $mod+Shift+v exec /data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/vbox
 
-# Open LibreOffice writer
-bindsym $mod+Shift+w exec "libreoffice --writer"
+# Show open windows Rofi interface
+bindsym $mod+Shift+w exec "rofi -show window"
 
 # change focus
 bindsym $mod+j focus left
@@ -267,8 +270,14 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar { 
         position bottom
+#<<<<<<< HEAD
         #i3status ~/.i3/i3status.sh
         i3status python3 /data/GitHub/mine/scripts/common-scripts/.i3/github.py
+#=======
+        #status_command ~/.i3/i3status.sh
+#        status_command ~/anaconda3/bin/python3 ~/GitHub/mine/scripts/nixos-scripts/.i3/github.py
+#        font pango:Font Awesome 5 Brands-Regular-400 9
+#>>>>>>> cecf26ce1310b7d48f2c649e01fee27461bab885
         colors {
                 background #000000
                 statusline #ffffff
@@ -280,14 +289,12 @@ bar {
         }
 }
 
-bar { 
-        workspace_buttons no
-        tray_output no
-        position top
-        font pango:Font Awesome 5 Brands-Regular-400 7
+# Execute xsession, which starts feh for the desktop background
+exec ~/.xsession
 
+bar {
         #i3status ~/.i3/i3status.sh
-        status_command python3 /data/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
+        i3status python3 /data/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
         colors {
                 background #222222
                 statusline #ffffff
@@ -299,3 +306,38 @@ bar {
         }
 }
 
+# These tricks to place apps in their own workspace and start a few on start up comes from
+# https://unix.stackexchange.com/a/479969
+# Firefox
+assign [class="^Firefox$"] $workspace1
+exec --no-startup-id firefox
+# RuneScape NXT Client
+assign [class="^RuneScape$"] $workspace2
+assign [class="^Runescape$"] $workspace2
+# XTerm
+#assign [class="^XTerm$"] $workspace3
+#exec --no-startup-id xterm
+# PCManFM
+assign [class="^Pcmanfm$"] $workspace4
+exec --no-startup-id pcmanfm
+# VirtualBox
+assign [class="^VirtualBox Manager$"] $workspace7
+#exec --no-startup-id VirtualBox
+# OpenRA mods
+assign [class="^openra.*$"] $workspace8
+assign [class="^mono-sgen$"] $workspace8
+# HexChat
+assign [class="^Hexchat$"] $workspace9
+exec --no-startup-id hexchat
+# Atom
+assign [class="^Atom$"] $workspace10
+assign [class="^matplotlib$"] $workspace10
+#exec --no-startup-id atom /data/GitHub/mine/scripts/julia-scripts
+# VLC
+assign [class="^vlc$"] $workspace5
+# VSCode
+assign [class="^Code$"] $workspace11
+assign [class="^Code - Insiders$"] $workspace11
+# GVim
+assign [class="^Gvim$"] $workspace12
+#exec --no-startup-id code
