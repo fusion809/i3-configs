@@ -18,7 +18,6 @@ For these configs to work out-of-the-box one needs to have the following install
 * i3bar.
 * i3pystatus (for Python-based counterpart of the bar).
 * ImageMagick, so that one can take screenshots with <kbd>PrtScrn</kbd> (or <kbd>Print</kbd> or <kbd>PrntScr</kbd>).
-* pacman, for the last time pacman was run being in the i3 bar. 
 * PulseAudio, for the volume information to be obtainable by i3pystatus. 
 * Rofi, for starting programs from <kbd>Win</kbd>+<kbd>d</kbd>
 * wget, so the latest available version of the tracked package being able to be fetched from the internet. 
