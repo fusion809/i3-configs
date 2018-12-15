@@ -89,7 +89,7 @@ int main()
 {
     FILE *cpulog= NULL; FILE *downlog= NULL; FILE *uplog= NULL;
     system("pidof -s i3bar > /tmp/pid-of-i3bar");
-    pid_t process_id = popen("/bin/cat /tmp/pid-of-i3bar", "r");
+    pid_t process_id = popen("/run/current-system/sw/bin/cat /tmp/pid-of-i3bar", "r");
 
     pid_t sid = 0;
     // Create child process

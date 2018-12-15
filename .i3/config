@@ -272,7 +272,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar { 
         position bottom
-        status_command python3 ~/.i3/github.py
+#        status_command python3 ~/.i3/github.py
+	status_command ~/.i3/i3status.sh
         colors {
                 background #000000
                 statusline #ffffff
@@ -289,7 +290,7 @@ bar {
 #        tray_output no
 #	position top
 	
-        #i3status ~/.i3/i3status.sh
+#        status_command ~/.i3/i3status-notifs.sh
 #        status_command python3 ~/.i3/i3status-notifs.py
 #        colors {
 #                background #222222
