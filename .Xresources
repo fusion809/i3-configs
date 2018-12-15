@@ -10,12 +10,12 @@ URxvt.keysym.Shift-V: eval:paste_clipboard
 URxvt.keysym.Shift-C: eval:selection_to_clipboard
 URxvt.font: xft:monaco:size=12
 URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.url-launcher: /run/current-system/sw/bin/xdg-open
 URxvt.matcher.button: 1
 urxvt*foreground: white
 urxvt*background: black
 URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.url-launcher: /run/current-system/sw/bin/xdg-open
 URxvt.matcher.button: 1
 *color0:  #2E3436
 *color1:  #a40000

@@ -41,7 +41,7 @@ bindsym F10 [class="Pcmanfm"] focus
 bindsym F11 [class="Vlc"] focus
 
 # Switch to xterm
-bindsym F12 [class="XTerm"] focus
+bindsym F12 [class="konsole"] focus
 
 # Take a screenshot
 bindsym Print --release exec /data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/scrnshot
@@ -184,8 +184,9 @@ bindsym $mod+$mod1+0 workspace $workspace20
 
 # Terminal
 bindsym $mod+u exec urxvt
-bindsym $mod+Tab exec xterm
-bindsym $mod+Enter exec xterm
+#bindsym $mod+Tab exec xterm
+bindsym $mod+Tab exec konsole
+bindsym $mod+Enter exec konsole
 
 # Set workspace icons; the final one for PCManFM will be put in place if these two actually work, which they don't
 set $workspace1 ""
