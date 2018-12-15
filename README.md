@@ -1,7 +1,7 @@
 # i3-configs
 ![The Python configs as of 28 November 2018, with i3 4.16](https://fusion809.github.io/images/i3/i3-4.16-opensuse-tumbleweed-configs-20181128.png)
 
-**Figure 1: My Python configured i3 set up as of 28 November 2018 (commit no 448, hash [151654c](https://github.com/fusion809/i3-configs/tree/151654c1e7bb6ac767de70febe2b192422d67252)), the wallpaper is in the public domain and from https://www.opendesktop.org/p/1276706/**
+**Figure 1: My Python configured i3 set up on openSUSE Tumbleweed as of 28 November 2018 (commit no 448, hash [151654c](https://github.com/fusion809/i3-configs/tree/151654c1e7bb6ac767de70febe2b192422d67252)), the wallpaper is in the public domain and from https://www.opendesktop.org/p/1276706/**
 
 This repository contains my i3 configs. There are two main routes of using them. Either you can use the i3pystatus (yes you will need to install i3pystatus from the latest git snapshot) powered bar or the C/C++/Shell-powered bar. 
 
