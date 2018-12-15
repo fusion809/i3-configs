@@ -49,54 +49,54 @@ bindsym Print --release exec /usr/local/bin/scrnshot
 bindsym $mod+Print exec /usr/local/bin/vid
 
 # Launch 0 A.D.
-bindsym $mod+g exec /usr/bin/0ad
+bindsym $mod+g exec /run/current-system/sw/bin/0ad
 
 # Launch Chromium
-bindsym $mod+c exec /usr/bin/chromium
+bindsym $mod+c exec /run/current-system/sw/bin/chromium
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 # start Rofi
-bindsym $mod+d exec "/usr/bin/rofi -show drun -drun-icon-theme MacBuntu-Remix"
+bindsym $mod+d exec "/run/current-system/sw/bin/rofi -show drun -drun-icon-theme MacBuntu-Remix"
 
 # Open i3-input
-bindsym $mod+i exec /usr/bin/i3-input
+bindsym $mod+i exec /run/current-system/sw/bin/i3-input
 
 # Launch MarvinSketch
 bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
 
 # Launch RuneScape NXT client
-bindsym $mod+o exec /usr/bin/runescape-launcher
+bindsym $mod+o exec /run/current-system/sw/bin/runescape-launcher
 
 # Launch PCManFM
-bindsym $mod+p exec /usr/bin/pcmanfm
+bindsym $mod+p exec /run/current-system/sw/bin/pcmanfm
 
 # Launch Tor browser (en)
 bindsym $mod+t exec $HOME/.nix-profile/bin/tor-browser
 
 # Open Deluge
-bindsym $mod+Shift+d exec /usr/bin/deluge
+bindsym $mod+Shift+d exec /run/current-system/sw/bin/deluge
 
 # Open Firefox
 bindsym $mod+Shift+f exec $HOME/.nix-profile/bin/firefox
 
 # Launch virt-manager
-bindsym $mod+Shift+m exec /usr/bin/virt-manager
+bindsym $mod+Shift+m exec /run/current-system/sw/bin/virt-manager
 
 # Launch OpenRA Red Alert
-bindsym $mod+Shift+o exec /usr/games/openra-ra
+bindsym $mod+Shift+o exec /run/current-system/sw/games/openra-ra
 
 # Launch Pale Moon
-bindsym $mod+Shift+p exec /usr/bin/palemoon
+bindsym $mod+Shift+p exec /run/current-system/sw/bin/palemoon
 
 # Launch VLC
-bindsym $mod+Shift+q exec /usr/bin/vlc
+bindsym $mod+Shift+q exec /run/current-system/sw/bin/vlc
 
 # Launch VirtualBox
-bindsym $mod+Shift+v exec /usr/bin/virtualbox
+bindsym $mod+Shift+v exec /run/current-system/sw/bin/virtualbox
 
 # Open LibreOffice writer
-bindsym $mod+Shift+w exec "/usr/bin/libreoffice --writer"
+bindsym $mod+Shift+w exec "/run/current-system/sw/bin/libreoffice --writer"
 
 # change focus
 bindsym $mod+j focus left
@@ -264,7 +264,7 @@ bindsym $mod+r mode "resize"
 bar { 
         position bottom
         #status_command ~/.i3/i3status.sh
-        status_command /usr/bin/python3 ~/.i3/i3status.py
+        status_command /run/current-system/sw/bin/python3 ~/.i3/i3status.py
         colors {
                 background #000000
                 statusline #ffffff
@@ -283,7 +283,7 @@ bar {
         font pango:Font Awesome 5 Brands-Regular-400 7
 
         #status_command ~/.i3/i3status.sh
-        status_command /usr/bin/python3 ~/.i3/i3status-notifs.py
+        status_command /run/current-system/sw/bin/python3 ~/.i3/i3status-notifs.py
         colors {
                 background #000000
                 statusline #ffffff

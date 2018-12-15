@@ -1,18 +1,39 @@
+#uxterm*VT100.Translations: #override \
+#                 Ctrl <Key>V:    insert-selection(CLIPBOARD) \n\
+#                 Ctrl <Key>C:    copy-selection(CLIPBOARD)
+#xterm*VT100.Translations: #override \
+#                 Ctrl <Key>V:    insert-selection(CLIPBOARD) \n\
+#                 Ctrl <Key>C:    copy-selection(CLIPBOARD)
 rofi.modi: window,run,ssh,drun
+URxvt.perl-ext-common: selection-to-clipboard
+URxvt.keysym.Shift-V: eval:paste_clipboard
+URxvt.keysym.Shift-C: eval:selection_to_clipboard
+URxvt.font: xft:monaco:size=12
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+urxvt*foreground: white
+urxvt*background: black
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+*color0:  #2E3436
+*color1:  #a40000
+*color2:  #4E9A06
+# Yellow
+*color3:  #C4A000
+*color4:  #3465A4
+*color5:  #75507B
+# Orange
+*color6:  #ce5c00
+*color7:  #babdb9
+*color8:  #555753
+*color9:  #EF2929
+*color10: #8AE234
+*color11: #FCE94F
+*color12: #729FCF
+*color13: #AD7FA8
+# Orange
+*color14: #fcaf3e
+*color15: #EEEEEC
 
-XTerm*Background: black
-XTerm*Foreground: white
-XTerm*SaveLines: 2000
-XTerm*faceName: "Font Awesome 5 Brands-Regular-400"
-XTerm*faceSize: 8
-XTerm*rightScrollBar: true
-XTerm*ScrollBar: true
-XTerm*scrollTtyOutput: true
-XTerm*VT100.Translations: #override \
-      Ctrl<Key>V: insert-selection(CLIPBOARD) \n\ 
-      Ctrl<Key>V: insert-selection(PRIMARY) \n\ 
-      Shift<Btn1Down>: select-start() \n\ 
-      Shift<Btn1Motion>: select-extend() \n\ 
-      Shift<Btn1Up>: select-end(CLIPBOARD) \n\
-Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
-Ctrl <Key>V: insert-selection(CLIPBOARD)

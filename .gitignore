@@ -6,3 +6,4 @@ octave-workspace
 *.txt
 __pycache__
 .ropeproject
+my-new-python-venv

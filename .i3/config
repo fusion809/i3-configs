@@ -4,6 +4,7 @@
 # It will not be overwritten, so edit it as you like.
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+#export PATH=/home/fusion809/.nix-profile/bin:/run/wrappers/bin:/run/current-system/sw/bin
 # If you edit this file you should also edit README.md
 set $mod Mod4
 
@@ -270,14 +271,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar { 
         position bottom
-#<<<<<<< HEAD
-        #i3status ~/.i3/i3status.sh
-        i3status python3 /data/GitHub/mine/scripts/common-scripts/.i3/github.py
-#=======
-        #status_command ~/.i3/i3status.sh
-#        status_command ~/anaconda3/bin/python3 ~/GitHub/mine/scripts/nixos-scripts/.i3/github.py
-#        font pango:Font Awesome 5 Brands-Regular-400 9
-#>>>>>>> cecf26ce1310b7d48f2c649e01fee27461bab885
+        status_command python3 ~/.i3/github.py
         colors {
                 background #000000
                 statusline #ffffff
@@ -289,22 +283,23 @@ bar {
         }
 }
 
-# Execute xsession, which starts feh for the desktop background
-exec ~/.xsession
-
-bar {
+#bar {
+#        workspace_buttons no
+#        tray_output no
+#	position top
+	
         #i3status ~/.i3/i3status.sh
-        i3status python3 /data/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
-        colors {
-                background #222222
-                statusline #ffffff
+#        status_command python3 ~/.i3/i3status-notifs.py
+#        colors {
+#                background #222222
+#                statusline #ffffff
 
                 #focused_workspace  #ff4500 #000000
                 #inactive_workspace #888888 #000000
-                focused_workspace  #454545 #225577 #ffffff
-                inactive_workspace #454545 #212121 #ffffff
-        }
-}
+#                focused_workspace  #454545 #225577 #ffffff
+#                inactive_workspace #454545 #212121 #ffffff
+#        }
+#}
 
 # These tricks to place apps in their own workspace and start a few on start up comes from
 # https://unix.stackexchange.com/a/479969
