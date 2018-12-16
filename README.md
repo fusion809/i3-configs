@@ -1,7 +1,7 @@
 # i3-configs
 ![The Python configs as of 28 November 2018, with i3 4.16](https://fusion809.github.io/images/i3/i3-4.16-opensuse-tumbleweed-configs-20181128.png)
 
-**Figure 1: My Python configured i3 set up as of 28 November 2018 (commit no 448, hash [151654c](https://github.com/fusion809/i3-configs/tree/151654c1e7bb6ac767de70febe2b192422d67252)), the wallpaper is in the public domain and from https://www.opendesktop.org/p/1276706/**
+**Figure 1: My Python-configured i3 set up, running on openSUSE Tumbleweed on 28 November 2018 (commit no 448, hash [151654c](https://github.com/fusion809/i3-configs/tree/151654c1e7bb6ac767de70febe2b192422d67252)), the wallpaper is in the public domain and from https://www.opendesktop.org/p/1276706/**
 
 This repository contains my i3 configs. There are two main routes of using them. Either you can use the i3pystatus (yes you will need to install i3pystatus from the latest git snapshot) powered bar or the C/C++/Shell-powered bar. 
 
@@ -21,7 +21,7 @@ For these configs to work out-of-the-box one needs to have the following install
 * pacman, for the last time pacman was run being in the i3 bar. 
 * PulseAudio, for the volume information to be obtainable by i3pystatus. 
 * Rofi, for starting programs from <kbd>Win</kbd>+<kbd>d</kbd>
-* wget, so that the latest available version of the tracked packages (in the top bar) can be determined from the internet. cURL may also work, to find out you can inspect the scripts at https://github.com/fusion809/common-scripts/tree/master/usr/local/bin).
+* git and wget, so that the latest available version of the tracked packages (in the top bar) can be determined from the internet. cURL may also work in place of wget, to find out you can inspect the scripts at https://github.com/fusion809/common-scripts/tree/master/usr/local/bin).
 * xterm, for the <kbd>Win</kbd>+<kbd>Tab</kbd> shortcut to open a terminal. Split terminals are made by creating multiple xterm sessions in the one workspace and positioned using Win + arrow key. urxvt and other emulators can be used instead, although you will have to edit ~/.i3/config accordingly. 
 * Zsh, which is required for the floating point arithmetic used in download/upload calculations (C++ config only).
 
