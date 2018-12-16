@@ -21,7 +21,7 @@ For these configs to work out-of-the-box one needs to have the following install
 * pacman, for the last time pacman was run being in the i3 bar. 
 * PulseAudio, for the volume information to be obtainable by i3pystatus. 
 * Rofi, for starting programs from <kbd>Win</kbd>+<kbd>d</kbd>
-* wget, so that the latest available version of the tracked packages (in the top bar) can be determined from the internet. cURL may also work, to find out you can inspect the scripts at https://github.com/fusion809/common-scripts/tree/master/usr/local/bin).
+* git and wget, so that the latest available version of the tracked packages (in the top bar) can be determined from the internet. cURL may also work in place of wget, to find out you can inspect the scripts at https://github.com/fusion809/common-scripts/tree/master/usr/local/bin).
 * xterm, for the <kbd>Win</kbd>+<kbd>Tab</kbd> shortcut to open a terminal. Split terminals are made by creating multiple xterm sessions in the one workspace and positioned using Win + arrow key. urxvt and other emulators can be used instead, although you will have to edit ~/.i3/config accordingly. 
 * Zsh, which is required for the floating point arithmetic used in download/upload calculations (C++ config only).
 
