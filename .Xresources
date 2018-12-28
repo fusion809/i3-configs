@@ -5,6 +5,7 @@ rofi.modi: window,run,ssh,drun
 URxvt.perl-ext-common: selection-to-clipboard
 URxvt.keysym.C-Shift-V: eval:paste_clipboard
 URxvt.keysym.C-Shift-C: eval:selection_to_clipboard
+# Determine avialable fonts with xfontsel (from xorg-xfontsel)
 URxvt.font: xft:liberation mono:size=10
 URxvt.letterSpace: -1
 # font-size perl module is from https://github.com/majutsushi/urxvt-font-size
