@@ -305,7 +305,7 @@ bar {
 exec ~/.xsession
 
 # Starting AppImage daemon, cannot be done in xsession
-exec ~/.local/bin/appimaged
+#exec ~/.local/bin/appimaged
 
 # These tricks to place apps in their own workspace and start a few on start up comes from
 # https://unix.stackexchange.com/a/479969
