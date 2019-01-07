@@ -95,6 +95,9 @@ bindsym $mod+Shift+p exec palemoon
 # Launch VLC
 bindsym $mod+Shift+q exec vlc
 
+# Launch urxvt
+bindsym $mod+u exec urxvt
+
 # Launch VirtualBox
 bindsym $mod+Shift+v exec /usr/local/bin/vbox
 
