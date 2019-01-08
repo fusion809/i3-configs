@@ -1,5 +1,0 @@
-#!/bin/bash
-export DIR=$HOME/Documents/CodeLite/CPP-Math-Projects
-pushd $DIR
-/usr/bin/gvim
-popd
