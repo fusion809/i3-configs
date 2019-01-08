@@ -7,7 +7,7 @@ do
     # Read input
     read line
 
-    # cd into ~/.i3
+    # cd into ~/GitHub/mine/scripts/common-scripts/.i3
     cd $HOME/.i3
 
     ##########################################################################################

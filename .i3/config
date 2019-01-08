@@ -268,7 +268,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar { 
         position bottom
-        #status_command ~/.i3/i3status.sh
+        #status_command ~/GitHub/mine/scripts/common-scripts/.i3/i3status.sh
         status_command ~/anaconda3/bin/python3 ~/GitHub/mine/scripts/common-scripts/.i3/github.py
         font pango:Font Awesome 5 Brands-Regular-400 9
         colors {
@@ -288,7 +288,7 @@ bar {
         position top
         font pango:Font Awesome 5 Brands-Regular-400 10
 
-        #status_command ~/.i3/i3status.sh
+        #status_command ~/GitHub/mine/scripts/common-scripts/.i3/i3status.sh
         status_command ~/anaconda3/bin/python3 $HOME/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
         colors {
                 background #222222
