@@ -24,12 +24,12 @@ For these configs to work out-of-the-box one needs to have the following install
 * PulseAudio, for the volume information to be obtainable by i3pystatus.
 * Rofi, for starting programs from <kbd>Win</kbd>+<kbd>d</kbd>
 * git and wget, so that the latest available version of the tracked packages (in the top bar) can be determined from the internet. cURL may also work in place of wget, to find out you can inspect the scripts at https://github.com/fusion809/common-scripts/tree/master/usr/local/bin).
-* xterm, for the <kbd>Win</kbd>+<kbd>Tab</kbd> shortcut to open a terminal. Split terminals are made by creating multiple xterm sessions in the one workspace and positioned using Win + arrow key. urxvt and other emulators can be used instead, although you will have to edit ~/.i3/config accordingly.
+* xterm, for the <kbd>Win</kbd>+<kbd>Tab</kbd> shortcut to open a terminal. Split terminals are made by creating multiple xterm sessions in the one workspace and positioned using Win + arrow key. urxvt and other emulators can be used instead, although you will have to edit ~/GitHub/mine/scripts/common-scripts/.i3/config accordingly.
 * Zsh, which is required for the floating point arithmetic used in download/upload calculations (C++ config only).
 
 ## Customization
 
-If you do not want to use these apps (xterm and ImageMagick) and want to use alternative apps edit `~/.i3/config` accordingly. Likewise these configs are set up for PCs with 5 or more cores. If your screen is small and the i3bar does not seem to fit properly on your screen I would suggest editing the font setting line in `~/.i3/config` accordingly. If you use some other internet connection than wlo1 you will need to edit the `~/.i3/download.sh` and `~/.i3/upload.sh` files to use your network connection.
+If you do not want to use these apps (xterm and ImageMagick) and want to use alternative apps edit `~/GitHub/mine/scripts/common-scripts/.i3/config` accordingly. Likewise these configs are set up for PCs with 5 or more cores. If your screen is small and the i3bar does not seem to fit properly on your screen I would suggest editing the font setting line in `~/GitHub/mine/scripts/common-scripts/.i3/config` accordingly. If you use some other internet connection than wlo1 you will need to edit the `~/GitHub/mine/scripts/common-scripts/.i3/download.sh` and `~/GitHub/mine/scripts/common-scripts/.i3/upload.sh` files to use your network connection.
 
 ## Shortcuts
 
