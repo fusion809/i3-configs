@@ -6,7 +6,7 @@
 
 This repository contains my i3 configs. There are two main routes of using them. Either you can use the i3pystatus (yes you will need to install i3pystatus from the latest git snapshot) powered bar or the C/C++/Shell-powered bar.
 
-The C/C++/Shell-powered bar includes weather conditions (including temperatures; presently calculates it for my location, feel free to edit it in `~/.i3/i3status.sh`), uptime, % CPU used, RAM usage, core temperatures (set up for my system in particular so may not work for others. It is fairly easy to edit `~/.i3/i3status.sh` to set it up for your system) and time.
+The C/C++/Shell-powered bar includes weather conditions (including temperatures; presently calculates it for my location, feel free to edit it in `~/GitHub/mine/scripts/common-scripts/.i3/i3status.sh`), uptime, % CPU used, RAM usage, core temperatures (set up for my system in particular so may not work for others. It is fairly easy to edit `~/GitHub/mine/scripts/common-scripts/.i3/i3status.sh` to set it up for your system) and time.
 
 The Python-based (or i3pystatus) bar displays the following: weather conditions (although sometimes it botches it and labels the temperature in Farenheit as degrees Celsius), download/upload rates for enp24s0 (easy to tweak by editing i3status.py), uptime, disk space (used/total), core temperatures, CPU usage (%), load (average over 1 minute), RAM usage (used/total) and date. Because my Python configs are shared across all the distros I use and this repo has different branches for different distros, I felt the Python configs should be placed in my [common-scripts](https://github.com/fusion809/common-scripts/tree/master/.i3) repository.
 
@@ -24,12 +24,12 @@ For these configs to work out-of-the-box one needs to have the following install
 * PulseAudio, for the volume information to be obtainable by i3pystatus.
 * Rofi, for starting programs from <kbd>Win</kbd>+<kbd>d</kbd>
 * git and wget, so that the latest available version of the tracked packages (in the top bar) can be determined from the internet. cURL may also work in place of wget, to find out you can inspect the scripts at https://github.com/fusion809/common-scripts/tree/master/usr/local/bin).
-* xterm, for the <kbd>Win</kbd>+<kbd>Tab</kbd> shortcut to open a terminal. Split terminals are made by creating multiple xterm sessions in the one workspace and positioned using Win + arrow key. urxvt and other emulators can be used instead, although you will have to edit ~/.i3/config accordingly.
+* xterm, for the <kbd>Win</kbd>+<kbd>Tab</kbd> shortcut to open a terminal. Split terminals are made by creating multiple xterm sessions in the one workspace and positioned using Win + arrow key. urxvt and other emulators can be used instead, although you will have to edit ~/GitHub/mine/scripts/common-scripts/.i3/config accordingly.
 * Zsh, which is required for the floating point arithmetic used in download/upload calculations (C++ config only).
 
 ## Customization
 
-If you do not want to use these apps (xterm and ImageMagick) and want to use alternative apps edit `~/.i3/config` accordingly. Likewise these configs are set up for PCs with 5 or more cores. If your screen is small and the i3bar does not seem to fit properly on your screen I would suggest editing the font setting line in `~/.i3/config` accordingly. If you use some other internet connection than wlo1 you will need to edit the `~/.i3/download.sh` and `~/.i3/upload.sh` files to use your network connection.
+If you do not want to use these apps (xterm and ImageMagick) and want to use alternative apps edit `~/GitHub/mine/scripts/common-scripts/.i3/config` accordingly. Likewise these configs are set up for PCs with 5 or more cores. If your screen is small and the i3bar does not seem to fit properly on your screen I would suggest editing the font setting line in `~/GitHub/mine/scripts/common-scripts/.i3/config` accordingly. If you use some other internet connection than wlo1 you will need to edit the `~/GitHub/mine/scripts/common-scripts/.i3/download.sh` and `~/GitHub/mine/scripts/common-scripts/.i3/upload.sh` files to use your network connection.
 
 ## Shortcuts
 

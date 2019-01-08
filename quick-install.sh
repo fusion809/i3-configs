@@ -5,7 +5,7 @@ sudo pip3 install colour psutil netifaces git+https://github.com/bastienleonard/
 sudo ln -sf /etc/sv/consolekit /var/service/
 sudo ln -sf /etc/sv/slim /var/service/
 ln -sf /data/{AUR,GitHub,Documents,OBS,Pictures,Videos,"VirtualBox VMs",.VirtualBox} $HOME/
-ln -sf /data/GitHub/mine/config/i3-configs/.i3 ~/.i3
+ln -sf /data/GitHub/mine/config/i3-configs/.i3 ~/GitHub/mine/scripts/common-scripts/.i3
 ln -sf /data/Github/mine/config/i3-configs/.x* ~/
 sudo ln -sf /data/GitHub/mine/config/i3-configs/usr/local/bin/* /usr/local/bin/
 mkdir -p $HOME/.local/share/wallpapers && cd $HOME/.local/share/wallpapers && \
