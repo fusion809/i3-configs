@@ -57,7 +57,7 @@ bindsym $mod+c exec /usr/bin/chromium
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 # start Rofi
-bindsym $mod+d exec "rofi -show drun -drun-icon-theme MacBuntu-Remix -show-icons"
+bindsym $mod+d exec "rofi -show drun -drun-icon-theme ePapirus -show-icons"
 
 # Open i3-input
 bindsym $mod+i exec i3-input
@@ -94,6 +94,9 @@ bindsym $mod+Shift+p exec palemoon
 
 # Launch VLC
 bindsym $mod+Shift+q exec vlc
+
+# Launch SuperTux
+bindsym $mod+Shift+s exec supertux2
 
 # Launch VirtualBox
 bindsym $mod+Shift+v exec /usr/local/bin/vbox
@@ -161,7 +164,7 @@ bindsym F3 workspace $workspace3
 bindsym F4 workspace $workspace4
 bindsym F5 workspace $workspace5
 #bindsym $mod+6 workspace $workspace6
-bindsym F6 workspace $workspace6
+#bindsym F6 workspace $workspace6
 bindsym F7 workspace $workspace7
 bindsym F8 workspace $workspace8
 bindsym F9 workspace $workspace9
@@ -310,8 +313,8 @@ exec ~/.xsession
 # These tricks to place apps in their own workspace and start a few on start up comes from
 # https://unix.stackexchange.com/a/479969
 # Firefox
-assign [class="^Firefox$"] $workspace1
-exec --no-startup-id /usr/local/bin/firefox
+#assign [class="^Firefox$"] $workspace1
+exec --no-startup-id brave
 # RuneScape NXT Client
 assign [class="^RuneScape$"] $workspace2
 #exec --no-startup-id /usr/local/bin/runescape-launcher
@@ -320,14 +323,14 @@ assign [class="^Runescape$"] $workspace2
 #assign [class="^XTerm$"] $workspace3
 #exec --no-startup-id xterm
 # PCManFM
-assign [class="^Pcmanfm$"] $workspace4
-exec --no-startup-id pcmanfm
+#assign [class="^Pcmanfm$"] $workspace4
+#exec --no-startup-id pcmanfm
 # VirtualBox
 assign [class="^VirtualBox Manager$"] $workspace7
 exec --no-startup-id VirtualBox
 # OpenRA mods
-assign [class="^openra.*$"] $workspace8
-assign [class="^mono-sgen$"] $workspace8
+#assign [class="^openra.*$"] $workspace8
+#assign [class="^mono-sgen$"] $workspace8
 # HexChat
 assign [class="^Hexchat$"] $workspace9
 exec --no-startup-id hexchat
@@ -336,9 +339,9 @@ assign [class="^Atom$"] $workspace10
 assign [class="^matplotlib$"] $workspace10
 #exec --no-startup-id atom ~/GitHub/mine/scripts/julia-scripts
 # VLC
-assign [class="^vlc$"] $workspace5
+#assign [class="^vlc$"] $workspace5
 # VSCode
-assign [class="^Code$"] $workspace11
+#assign [class="^Code$"] $workspace11
 assign [class="^Code - Insiders$"] $workspace11
 # GVim
 assign [class="^Gvim$"] $workspace12

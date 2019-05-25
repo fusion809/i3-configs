@@ -17,8 +17,9 @@ function wal {
 #fi
 #wal "Doxorubicin, imatinib, cyclophosphamide, methotrexate on Mandelbrot fractal.png"
 #feh --bg-scale "/data/.local/share/wallpapers/Helium wallpaper v2.jpg" 
-feh --bg-scale "~/.local/share/wallpapers/wallp1.png"
-
+#feh --bg-scale "$HOME/.local/share/wallpapers/Lake Surrounded By Trees HD.jpg"
+#feh --bg-scale "/home/fusion809/Pictures/Parliament House/Parliament_House_Canberra_(281004929).jpg"
+feh --bg-scale "/home/fusion809/Pictures/Parliament House/gettyimages-1653377701.jpg"
 # Run check updates
 #if ! `ps ax | grep i3 | grep -v grep > /dev/null 2>&1` && ! `ps ax | grep check-updates | grep -v grep > /dev/null 2>&1`; then
 #    /usr/local/bin/check-updates-popup-loop
