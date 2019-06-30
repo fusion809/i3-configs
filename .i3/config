@@ -272,7 +272,7 @@ bindsym $mod+r mode "resize"
 bar { 
         position bottom
         #status_command ~/GitHub/mine/scripts/common-scripts/.i3/i3status.sh
-        status_command /usr/bin/python3 ~/GitHub/mine/scripts/common-scripts/.i3/github.py
+        status_command /usr/bin/python3 ~/GitHub/mine/scripts/common-scripts/.i3/i3status.py
         font pango:Font Awesome 5 Brands-Regular-400 9
         colors {
                 background #000000
@@ -335,8 +335,8 @@ exec --no-startup-id VirtualBox
 assign [class="^Hexchat$"] $workspace9
 exec --no-startup-id hexchat
 # Atom
-assign [class="^Atom$"] $workspace10
-assign [class="^matplotlib$"] $workspace10
+#assign [class="^Atom$"] $workspace10
+#assign [class="^matplotlib$"] $workspace10
 #exec --no-startup-id atom ~/GitHub/mine/scripts/julia-scripts
 # VLC
 #assign [class="^vlc$"] $workspace5
@@ -346,5 +346,5 @@ assign [class="^Code - Insiders$"] $workspace11
 # GVim
 assign [class="^Gvim$"] $workspace12
 # Google Earth
-assign [class="^Google Earth Pro$"] $workspace13
+#assign [class="^Google Earth Pro$"] $workspace13
 #exec --no-startup-id code
