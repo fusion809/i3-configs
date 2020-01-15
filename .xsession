@@ -1,10 +1,10 @@
 #!/bin/bash
-export DISTRO=$(cat /etc/os-release | grep "^ID=" | cut -d '=' -f 2 | sed 's/"//g')
+#export DISTRO=$(cat /etc/os-release | grep "^ID=" | cut -d '=' -f 2 | sed 's/"//g')
 
-function wal {
+#function wal {
 #    feh --bg-scale /data/.local/share/wallpapers/"$1"
-    feh --bg-scale ~/Pictures/Artwork/"$1"
-}
+#    feh --bg-scale ~/Pictures/Artwork/"$1"
+#}
 
 #if [[ $DISTRO == "debian" ]]; then
 #    wal "Socialism/Karl Marx Quote Democracy is the road to socialism.jpg"
@@ -19,7 +19,16 @@ function wal {
 #feh --bg-scale "/data/.local/share/wallpapers/Helium wallpaper v2.jpg" 
 #feh --bg-scale "$HOME/.local/share/wallpapers/Lake Surrounded By Trees HD.jpg"
 #feh --bg-scale "/home/fusion809/Pictures/Parliament House/Parliament_House_Canberra_(281004929).jpg"
-feh --bg-scale "/home/fusion809/Pictures/Parliament House/gettyimages-1653377701.jpg"
+#feh --bg-scale "/home/fusion809/Pictures/Parliament House/gettyimages-1653377701.jpg"
+if ! [[ -d /home/fusion809/.local/share/wallpapers ]]; then
+	mkdir /home/fusion809/.local/share/wallpapers
+fi
+
+if ! [[ -f /home/fusion809/.local/share/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg ]]; then
+	wget -cq "https://unsplash.com/photos/JgOeRuGD_Y4/download?force=true" -O john-towner-JgOeRuGD_Y4-unsplash.jpg	
+fi
+
+feh --bg-scale "/home/fusion809/.local/share/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg"
 # Run check updates
 #if ! `ps ax | grep i3 | grep -v grep > /dev/null 2>&1` && ! `ps ax | grep check-updates | grep -v grep > /dev/null 2>&1`; then
 #    /usr/local/bin/check-updates-popup-loop
