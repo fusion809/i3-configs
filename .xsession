@@ -21,11 +21,11 @@
 #feh --bg-scale "/home/fusion809/Pictures/Parliament House/Parliament_House_Canberra_(281004929).jpg"
 #feh --bg-scale "/home/fusion809/Pictures/Parliament House/gettyimages-1653377701.jpg"
 if ! [[ -d /home/fusion809/.local/share/wallpapers ]]; then
-	mkdir /home/fusion809/.local/share/wallpapers
+	mkdir -p /home/fusion809/.local/share/wallpapers
 fi
 
 if ! [[ -f /home/fusion809/.local/share/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg ]]; then
-	wget -cq "https://unsplash.com/photos/JgOeRuGD_Y4/download?force=true" -O john-towner-JgOeRuGD_Y4-unsplash.jpg	
+	wget -cq "https://unsplash.com/photos/JgOeRuGD_Y4/download?force=true" -O /home/fusion809/.local/share/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg	
 fi
 
 feh --bg-scale "/home/fusion809/.local/share/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg"
