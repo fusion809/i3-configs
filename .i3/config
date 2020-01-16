@@ -332,7 +332,7 @@ assign [class="^VirtualBox Manager$"] $workspace7
 #assign [class="^mono-sgen$"] $workspace8
 # HexChat
 assign [class="^Hexchat$"] $workspace9
-exec --no-startup-id hexchat
+#exec --no-startup-id hexchat
 # Atom
 #assign [class="^Atom$"] $workspace10
 #assign [class="^matplotlib$"] $workspace10
