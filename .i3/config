@@ -272,7 +272,7 @@ bindsym $mod+r mode "resize"
 bar { 
         position bottom
         #status_command ~/GitHub/mine/scripts/common-scripts/.i3/i3status.sh
-        status_command /usr/bin/python3 ~/GitHub/mine/scripts/common-scripts/.i3/github.py
+        status_command /usr/bin/python3 ~/GitHub/mine/scripts/common-scripts/.i3/i3status.py
         font pango:Font Awesome 5 Brands-Regular-400 9
         colors {
                 background #000000
@@ -285,24 +285,24 @@ bar {
         }
 }
 
-bar { 
-        workspace_buttons no
-        tray_output no
-        position top
-        font pango:Font Awesome 5 Brands-Regular-400 10
+#bar { 
+#        workspace_buttons no
+#        tray_output no
+#        position top
+#        font pango:Font Awesome 5 Brands-Regular-400 10
 
         #status_command ~/GitHub/mine/scripts/common-scripts/.i3/i3status.sh
-        status_command /usr/bin/python3 $HOME/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
-        colors {
-                background #222222
-                statusline #ffffff
+        #status_command /usr/bin/python3 $HOME/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
+#        colors {
+#                background #222222
+#                statusline #ffffff
 
                 #focused_workspace  #ff4500 #000000
                 #inactive_workspace #888888 #000000
-                focused_workspace  #454545 #225577 #ffffff
-                inactive_workspace #454545 #212121 #ffffff
-        }
-}
+#                focused_workspace  #454545 #225577 #ffffff
+#                inactive_workspace #454545 #212121 #ffffff
+#        }
+#}
 
 # Execute xsession, which starts feh for the desktop background
 exec ~/.xsession
