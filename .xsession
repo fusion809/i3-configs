@@ -25,7 +25,7 @@ if ! [[ -d /home/fusion809/.local/share/wallpapers ]]; then
 fi
 
 if ! [[ -f /home/fusion809/.local/share/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg ]]; then
-	wget -cq "https://unsplash.com/photos/JgOeRuGD_Y4/download?force=true" -O john-towner-JgOeRuGD_Y4-unsplash.jpg	
+	wget -cq "https://unsplash.com/photos/JgOeRuGD_Y4/download?force=true" -O /home/fusion809/.local/share/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg	
 fi
 
 feh --bg-scale "/home/fusion809/.local/share/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg"
