@@ -273,7 +273,7 @@ bindsym $mod+r mode "resize"
 bar { 
         position bottom
 #        status_command python3 ~/.i3/github.py
-	status_command zsh ~/.i3/i3status.sh
+	status_command python3 ~/.i3/i3status.py
         colors {
                 background #000000
                 statusline #ffffff
