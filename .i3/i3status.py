@@ -33,8 +33,6 @@ status.register("cpu_usage",
 
 status.register("network", interface="enp24s0", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
 
-#status.register("pulseaudio")
-
 status.register(
     'weather',
     format='{condition} {current_temp}{temp_unit}',

@@ -304,8 +304,6 @@ bar {
 # These tricks to place apps in their own workspace and start a few on start up comes from
 # https://unix.stackexchange.com/a/479969
 # Firefox
-assign [class="^Firefox$"] $workspace1
-exec --no-startup-id firefox
 # RuneScape NXT Client
 assign [class="^RuneScape$"] $workspace2
 assign [class="^Runescape$"] $workspace2
@@ -313,8 +311,8 @@ assign [class="^Runescape$"] $workspace2
 #assign [class="^XTerm$"] $workspace3
 #exec --no-startup-id xterm
 # PCManFM
-assign [class="^Pcmanfm$"] $workspace4
-exec --no-startup-id pcmanfm
+#assign [class="^Pcmanfm$"] $workspace4
+#exec --no-startup-id pcmanfm
 # VirtualBox
 assign [class="^VirtualBox Manager$"] $workspace7
 #exec --no-startup-id VirtualBox
@@ -329,10 +327,10 @@ assign [class="^Atom$"] $workspace10
 assign [class="^matplotlib$"] $workspace10
 #exec --no-startup-id atom /data/GitHub/mine/scripts/julia-scripts
 # VLC
-assign [class="^vlc$"] $workspace5
+#assign [class="^vlc$"] $workspace5
 # VSCode
-assign [class="^Code$"] $workspace11
-assign [class="^Code - Insiders$"] $workspace11
+#assign [class="^Code$"] $workspace11
+#assign [class="^Code - Insiders$"] $workspace11
 # GVim
 assign [class="^Gvim$"] $workspace12
 #exec --no-startup-id code
