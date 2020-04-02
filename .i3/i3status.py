@@ -31,6 +31,11 @@ status.register("load", format="Load {avg1}")
 status.register("cpu_usage",
     format="CPU {usage}%")
 
+status.register("shell",
+    command="\printf 'L: ' && amixer | grep 'Front Left:' | head -n 1 | cut -d '[' -f 2 | cut -d ']' -f 1 && printf '. R: ' && amixer | grep 'Front Right:' | head -n 1 | cut -d '[' -f 2 | cut -d ']' -f 1",
+    color="#F9F0CA",
+    interval=1)
+
 status.register("network", interface="enp24s0", format_up="↓{bytes_recv}KB/s ↑{bytes_sent}KB/s")
 
 status.register(
@@ -50,11 +55,6 @@ status.register("shell",
     command="/data/GitHub/mine/scripts/nixos-scripts/.local/bin/obs-error",
     color="#F3AC29",
     interval=300)
-
-#status.register("shell",
-#    command="/data/GitHub/mine/scripts/nixos-scripts/.local/bin/tville-weather",
-#    color="#AAFFFF",
-#    interval=1800)
 
 status.register("shell",
     command="/data/GitHub/mine/scripts/nixos-scripts/.local/bin/operating-system",

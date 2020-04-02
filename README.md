@@ -23,11 +23,16 @@ imagemagick rofi konsole pcmanfm lxappearance konsole
 
 in line #3 in the above snippet. [This](https://github.com/fusion809/NixOS-configs/blob/20.09-pre/configuration.nix) is my full `/etc/nixos/configuration.nix` file.
 
+Likewise [`nixos-scripts`](https://github.com/fusion809/nixos-scripts) must be present in `/data/GitHub/mine/scripts/`. 
+
 ## Customization
 If you do not want to use these apps (Konsole and ImageMagick) and want to use alternative apps edit `~/.i3/config` accordingly. Likewise these configs are set up for PCs with 5 or more cores. If your screen is small and the i3bar does not seem to fit properly on your screen I would suggest editing the font setting line in `~/.i3/config` accordingly.
 
 ## Backgrounds
 To set your desktop background, you must set `~/.background-image`.
+
+## Limitations
+It appears that the `pulseaudio` module does not work on NixOS, even with `pulseaudio` enabled in `/etc/nixos/configuration.nix`, as it returns the error: `pulseaudio: Fatal Error - OSError(libpulse.so.0: cannot open shared object file: No such file or directory`). The closest that appears possible is a shell script that displays current audio volume.
 
 ## Shortcuts
 | Shortcut                                                                        | Action                                                                                                         |
