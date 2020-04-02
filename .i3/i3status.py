@@ -32,7 +32,7 @@ status.register("cpu_usage",
     format="CPU {usage}%")
 
 status.register("shell",
-    command="\printf 'L: ' && amixer | grep 'Front Left:' | head -n 1 | cut -d '[' -f 2 | cut -d ']' -f 1 && printf '. R: ' && amixer | grep 'Front Right:' | head -n 1 | cut -d '[' -f 2 | cut -d ']' -f 1",
+    command="\printf 'L: ' && amixer | grep 'Front Left:' | head -n 1 | cut -d '[' -f 2 | cut -d ']' -f 1 && printf ' R: ' && amixer | grep 'Front Right:' | head -n 1 | cut -d '[' -f 2 | cut -d ']' -f 1",
     color="#F9F0CA",
     interval=1)
 
