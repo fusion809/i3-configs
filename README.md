@@ -1,4 +1,7 @@
 # i3-configs (nixos branch)
+[Screenshot of i3 set up using these configs as of 3 April 2020 (a39c362922218171a95dc7e0e7394057098de598)](https://fusion809.github.io/images/i3/i3-4.18-nixos-configs-20200403-a39c362922218171a95dc7e0e7394057098de598.png)
+
+***Figure 1: this is what my i3 desktop, using these configs (specifically commit a39c362922218171a95dc7e0e7394057098de598.png), looks like.***
 
 This repository contains my i3 configs. There are some shell/C/C++ powered scripts in this repository that are redundant, they are kepted in `.redundant/` in case they become useful some time in the future, but for now they are broken.
 
@@ -21,7 +24,7 @@ at an absolute minimum. Although, if you want a comfortable experience, I sugges
 imagemagick rofi konsole pcmanfm lxappearance konsole
 ```
 
-in line #3 in the above snippet. [This](https://github.com/fusion809/NixOS-configs/blob/20.09-pre/configuration.nix) is my full `/etc/nixos/configuration.nix` file.
+in line #3 in the above snippet. [This](https://github.com/fusion809/NixOS-configs/blob/20.09-pre/configuration.nix) is my full `/etc/nixos/configuration.nix` file, it provides a very comfortable experience. 
 
 Likewise [`nixos-scripts`](https://github.com/fusion809/nixos-scripts) must be present in `/data/GitHub/mine/scripts/`. 
 
