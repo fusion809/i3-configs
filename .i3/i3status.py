@@ -16,7 +16,7 @@ status.register("disk",
     format="/data {used}/{total}G")
 
 status.register("shell",
-    command="/data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/rfs-usage",
+    command="/data/GitHub/mine/scripts/nixos-scripts/.local/bin/rfs-usage",
     color="#FFFFFF",
     interval=60)
 
@@ -49,16 +49,18 @@ status.register("uptime",
     format="Up {hours}:{mins}:{secs}")
 
 status.register("shell",
-    command="/data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/obs-error",
+    command="/data/GitHub/mine/scripts/nixos-scripts/.local/bin/obs-error",
     color="#F3AC29",
     interval=300)
 
 #status.register("shell",
-#    command="/data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/tville-weather",
+#    command="/data/GitHub/mine/scripts/nixos-scripts/.local/bin/tville-weather",
 #    color="#AAFFFF",
 #    interval=1800)
 
 status.register("shell",
-    command="/data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/operating-system",
+    command="/data/GitHub/mine/scripts/nixos-scripts/.local/bin/operating-system",
     color="#FFCA99",
     interval=10000000)
+
+status.run()

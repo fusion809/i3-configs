@@ -8,178 +8,183 @@ from i3pystatus import IntervalModule
 status = Status()
 
 status.register("shell",
-    command="/usr/local/bin/zshn",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/zshn",
     color="#FDCDD9",
     interval=300)
 
 #status.register("shell",
-#    command="/usr/local/bin/vscoden",
+#    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/vscoden",
 #    color="#9FC9FF",
 #    interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/vimn",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/vimn",
     color="#AACCFF",
     interval=300)
 
 #status.register("shell",
-#    command="/usr/local/bin/subln",
+#    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/subln",
 #    color="#FFFF44",
 #    interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/spglibn",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/spglibn",
     color="#F9C755",
     interval=300)
 
-status.register("shell",
-    command="/usr/local/bin/snapdgn",
-    color="#33A0F0",
-    interval=300)
+#status.register("shell",
+#    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/snapdgn",
+#    color="#33A0F0",
+#    interval=300)
+
+#status.register("shell",
+#    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/snapdn",
+#    color="#AFAFEF",
+#    interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/snapdn",
-    color="#AFAFEF",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/rofin",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/rofin",
     color="#CCFFAA",
     interval=300)
 
 #status.register("shell",
-#    command="/usr/local/bin/ostreen",
+#    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/ostreen",
 #    color="#FF9F9F",
 #    interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/oscn",
-    color="#FFFF00",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/openrayn",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openrayn",
     color="#FFAAFF",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/openrauran",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openravsn",
+    color="#FAC90F",
+    interval=300)
+
+status.register("shell",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openrauran",
     color="#F3AC56",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/openraspn",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openrassn",
+    color="#AACCFF",
+    interval=300)
+
+status.register("shell",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openraspn",
+    color="#AAFFFF",
+    interval=300)
+
+status.register("shell",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openrarvn",
     color="#AAFFCC",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/openramwn",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openramwn",
+    color="#AACCFF",
+    interval=300)
+
+status.register("shell",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openrakn",
     color="#FFCCAA",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/openragn",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openragn",
     color="#9FCF9F",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/openradn",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openradot5n",
+    color="#AC9F20F",
+    interval=300)
+
+status.register("shell",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openradn",
+    color="#CAF20F",
+    interval=300)
+status.register("shell",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openradn",
     color="#CAF20F",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/openrad2n",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openrad2n",
     color="#FAF695",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/openracan",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openracan",
     color="#F9A5CF",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/openracn",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openracn",
     color="#FFAACF",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/openrabn",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openrabn",
     color="#FFCCAA",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/openra2n",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openra2n",
     color="#FAB0D2",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/openran",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/openraplusn",
     color="#FFAA99",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/obss",
-    color="#44EF4F",
-    interval=1200)
-
-status.register("shell",
-    command="/usr/local/bin/obsd",
-    color="#FFAACC",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/obsf",
-    color="#E8EF8E",
-    interval=1200)
-
-status.register("shell",
-    command="/usr/local/bin/openbabeln",
-    color="#F65FF8",
-    interval=300)
-
-status.register("shell",
-    command="/usr/local/bin/notepadqqn",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/notepadqqn",
     color="#CFCFCC",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/molen",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/molen",
     color="#F3C200",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/libmsymn",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/libmsymn",
     color="#33F233",
     interval=300)
 
+#status.register("shell",
+#    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/komodon",
+#    color="#9FCCFF",
+#    interval=300)
+
 status.register("shell",
-    command="/usr/local/bin/komodon",
-    color="#9FCCFF",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/jupytern",
+    color="#8EC756",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/jmoln",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/jmoln",
     color="#A2F412",
     interval=300)
 
-status.register("shell",
-    command="/usr/local/bin/flatn",
-    color="#4EC756",
-    interval=300)
+#status.register("shell",
+#    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/flatn",
+#    color="#4EC756",
+#    interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/avogadroln",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/avogadroln",
     color="#F3FF22",
     interval=300)
 
 status.register("shell",
-    command="/usr/local/bin/avogadron",
+    command="/data/GitHub/mine/scripts/NixOS-scripts/.local/bin/avogadron",
     color="#F3C200",
     interval=300)
 
-status.register("shell",
-    command="/usr/local/bin/0adn",
-    color="#AAFF0F",
-    interval=300)
-
 status.run()
+
