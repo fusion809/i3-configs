@@ -44,10 +44,10 @@ bindsym F11 [class="Vlc"] focus
 bindsym F12 [class="konsole"] focus
 
 # Take a screenshot
-bindsym Print --release exec /data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/scrnshot
+bindsym Print --release exec /data/GitHub/mine/scripts/nixos-scripts/.local/bin/scrnshot
 
 # Take a screencast
-bindsym $mod+Print exec /data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/vid
+bindsym $mod+Print exec /data/GitHub/mine/scripts/nixos-scripts/.local/bin/vid
 
 # Launch 0 A.D.
 bindsym $mod+g exec 0ad
@@ -68,7 +68,7 @@ bindsym $mod+i exec i3-input
 #bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
 
 # Launch RuneScape NXT client
-bindsym $mod+o exec /data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/runescape-launcher
+bindsym $mod+o exec /data/GitHub/mine/scripts/nixos-scripts/.local/bin/runescape-launcher
 
 # Launch PCManFM
 bindsym $mod+p exec pcmanfm
@@ -99,7 +99,7 @@ bindsym $mod+Shift+p exec palemoon
 bindsym $mod+Shift+q exec vlc
 
 # Launch VirtualBox
-bindsym $mod+Shift+v exec /data/GitHub/mine/scripts/nixos-scripts/usr/local/bin/vbox
+bindsym $mod+Shift+v exec /data/GitHub/mine/scripts/nixos-scripts/.local/bin/vbox
 
 # Show open windows Rofi interface
 bindsym $mod+Shift+w exec "rofi -show window"

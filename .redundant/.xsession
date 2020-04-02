@@ -1,4 +1,4 @@
-#!/run/current-system/sw/bin/bash
+#!/usr/bin/env bash
 export DISTRO=$(cat /etc/os-release | grep "^ID=" | cut -d '=' -f 2 | sed 's/"//g')
 
 function wal {

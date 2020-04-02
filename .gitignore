@@ -7,3 +7,4 @@ octave-workspace
 __pycache__
 .ropeproject
 my-new-python-venv
+github.py
