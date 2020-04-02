@@ -26,6 +26,9 @@ in line #3 in the above snippet. [This](https://github.com/fusion809/NixOS-confi
 ## Customization
 If you do not want to use these apps (Konsole and ImageMagick) and want to use alternative apps edit `~/.i3/config` accordingly. Likewise these configs are set up for PCs with 5 or more cores. If your screen is small and the i3bar does not seem to fit properly on your screen I would suggest editing the font setting line in `~/.i3/config` accordingly.
 
+## Backgrounds
+To set your desktop background, you must set `~/.background-image`.
+
 ## Shortcuts
 | Shortcut                                                                        | Action                                                                                                         |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
