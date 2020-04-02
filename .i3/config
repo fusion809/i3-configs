@@ -284,29 +284,29 @@ bar {
         }
 }
 
-bar {
-        workspace_buttons no
-        tray_output no
-	position top
-	
-        status_command python3 ~/.i3/i3status-notifs.py
-        colors {
-                background #222222
-                statusline #ffffff
+#bar {
+#        workspace_buttons no
+#        tray_output no
+#	position top
+#	
+#        status_command python3 ~/.i3/i3status-notifs.py
+#        colors {
+#                background #222222
+#                statusline #ffffff
 
                 #focused_workspace  #ff4500 #000000
                 #inactive_workspace #888888 #000000
-                focused_workspace  #454545 #225577 #ffffff
-                inactive_workspace #454545 #212121 #ffffff
-        }
-}
+#                focused_workspace  #454545 #225577 #ffffff
+#                inactive_workspace #454545 #212121 #ffffff
+#        }
+#}
 
 # These tricks to place apps in their own workspace and start a few on start up comes from
 # https://unix.stackexchange.com/a/479969
 # Firefox
 # RuneScape NXT Client
-assign [class="^RuneScape$"] $workspace2
-assign [class="^Runescape$"] $workspace2
+#assign [class="^RuneScape$"] $workspace2
+#assign [class="^Runescape$"] $workspace2
 # XTerm
 #assign [class="^XTerm$"] $workspace3
 #exec --no-startup-id xterm
@@ -314,11 +314,11 @@ assign [class="^Runescape$"] $workspace2
 #assign [class="^Pcmanfm$"] $workspace4
 #exec --no-startup-id pcmanfm
 # VirtualBox
-assign [class="^VirtualBox Manager$"] $workspace7
+#assign [class="^VirtualBox Manager$"] $workspace7
 #exec --no-startup-id VirtualBox
 # OpenRA mods
-assign [class="^openra.*$"] $workspace8
-assign [class="^mono-sgen$"] $workspace8
+#assign [class="^openra.*$"] $workspace8
+#assign [class="^mono-sgen$"] $workspace8
 # HexChat
 assign [class="^Hexchat$"] $workspace9
 exec --no-startup-id hexchat
