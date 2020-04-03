@@ -68,7 +68,7 @@ bindsym $mod+i exec i3-input
 #bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
 
 # Launch RuneScape NXT client
-bindsym $mod+o exec /data/GitHub/mine/scripts/nixos-scripts/.local/bin/runescape-launcher
+bindsym $mod+o exec flatpak run com.jagex.RuneScape
 
 # Launch PCManFM
 bindsym $mod+p exec pcmanfm
@@ -309,7 +309,7 @@ bar {
 #assign [class="^Runescape$"] $workspace2
 # XTerm
 #assign [class="^XTerm$"] $workspace3
-#exec --no-startup-id xterm
+exec --no-startup-id google-chrome-stable
 # PCManFM
 #assign [class="^Pcmanfm$"] $workspace4
 #exec --no-startup-id pcmanfm
