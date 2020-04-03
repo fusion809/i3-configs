@@ -49,7 +49,8 @@ status.register(
     ))
 
 status.register("uptime",
-    format="Up {hours}:{mins}:{secs}")
+    format="Up {hours}:{mins}:{secs}",
+    interval=1)
 
 status.register("shell",
     command="/data/GitHub/mine/scripts/nixos-scripts/.local/bin/operating-system",
