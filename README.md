@@ -1,5 +1,5 @@
 # i3-configs (nixos branch)
-[Screenshot of i3 set up using these configs as of 3 April 2020 (a39c362922218171a95dc7e0e7394057098de598)](https://fusion809.github.io/images/i3/i3-4.18-nixos-configs-20200403-a39c362922218171a95dc7e0e7394057098de598.png)
+![Screenshot of i3 set up using these configs as of 3 April 2020 (a39c362922218171a95dc7e0e7394057098de598)](https://fusion809.github.io/images/i3/i3-4.18-nixos-configs-20200403-a39c362922218171a95dc7e0e7394057098de598.png)
 
 ***Figure 1: this is what my i3 desktop, using these configs (specifically commit a39c362922218171a95dc7e0e7394057098de598.png), looks like.***
 
