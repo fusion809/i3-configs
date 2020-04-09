@@ -21,7 +21,7 @@ The following must be in your `/etc/nixos/configuration.nix` file:
 at an absolute minimum. Although, if you want a comfortable experience, I suggest also having:
 
 ```bash
-imagemagick rofi konsole pcmanfm lxappearance konsole
+imagemagick rofi konsole pcmanfm lxappearance konsole moka-icon-theme
 ```
 
 in line #3 in the above snippet. [This](https://github.com/fusion809/NixOS-configs/blob/20.09-pre/configuration.nix) is my full `/etc/nixos/configuration.nix` file, it provides a very comfortable experience. 
@@ -59,11 +59,10 @@ To set your desktop background, you must set `~/.background-image`.
 | <kbd>Win</kbd>+<kbd>0</kbd>                                                     | Switch to workspace 10.                                                                                        |
 | <kbd>Win</kbd>+<kbd>2</kbd>                                                     | Switch to workspace 2.                                                                                         |
 | <kbd>Win</kbd>+<kbd>a</kbd>                                                     | Focus the parent container.                                                                                    |
-| <kbd>Win</kbd>+<kbd>c</kbd>                                                     | Launch Chromium browser.                                                                                       |
+| <kbd>Win</kbd>+<kbd>c</kbd>                                                     | Reload i3 config.                                                                        |
 | <kbd>Win</kbd>+<kbd>d</kbd>                                                     | Launch Rofi (drun mode) so you can enter in a command to run.                                                             |
 | <kbd>Win</kbd>+<kbd>e</kbd>                                                     | Layout toggle split.                                                                                           |
 | <kbd>Win</kbd>+<kbd>f</kbd>                                                     | Enter full screen for the focused window.                                                                      |
-| <kbd>Win</kbd>+<kbd>g</kbd>                                                     | Launch 0 A.D..                                                                        |
 | <kbd>Win</kbd>+<kbd>h</kbd>                                                     | Split horizontally.                                                                                            |
 | <kbd>Win</kbd>+<kbd>i</kbd>                                                     | Launch i3-input.                                                                                               |
 | <kbd>Win</kbd>+<kbd>j</kbd>                                                     | Focus left.                                                                                                    |
@@ -72,7 +71,8 @@ To set your desktop background, you must set `~/.background-image`.
 | <kbd>Win</kbd>+<kbd>m</kbd>                                                     | Launch MarvinSketch (installed from [fusion809-overlay](https://github.com/fusion809/fusion809-overlay))       |
 | <kbd>Win</kbd>+<kbd>o</kbd>                                                     | Launch RuneScape NXT Client.                                                          |
 | <kbd>Win</kbd>+<kbd>p</kbd>                                                     | Launch PCManFM (LXDE's file manager).                                                                          |
-| <kbd>Win</kbd>+<kbd>q</kbd>                                                     | Kill focused window.                                                                                           |
+| <kbd>Win</kbd>+<kbd>q</kbd>                                                     | Kill focused window.
+| <kbd>Win</kbd>+<kbd>r</kbd>                                                     | Restart i3 (preserves layout and session), can be used to start a newly installed version of i3.               |                                                                                           |
 | <kbd>Win</kbd>+<kbd>s</kbd>                                                     | Layout stacking.                                                                                               |
 | <kbd>Win</kbd>+<kbd>t</kbd>                                                     | Launch Tor Browser (en).                                                                                       |
 | <kbd>Win</kbd>+<kbd>v</kbd>                                                     | Split vertically.                                                                                              |
@@ -102,7 +102,12 @@ To set your desktop background, you must set `~/.background-image`.
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>l</kbd>                                    | Move up.                                                                                                       |                                                                                         |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>o</kbd>                                    | Launch OpenRA.                                                                                                 |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>                                    | Launch VLC media player.                                                                                       |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>r</kbd>                                    | Restart i3 (preserves layout and session), can be used to start a newly installed version of i3.               |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>v</kbd>                                    | Launch Oracle VM VirtualBox.                                                                                   |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>w</kbd>                                    | Rofi (window option).                                                                                          |
+| Audio volume up button                                                          | Increases volume by 5%. |
+| Audio volume down button                                                        | Decreases volume by 5%. |
+| Audio mute button                                                               | Mutes audio. |
+| Home page button                                                                | Opens PCManFM. |
+| Calculator button                                                               | Opens GNU Octave (with SymPy set up). |
+| Play/pause button                                                               | Play or pause media. |
 
