@@ -34,9 +34,6 @@ If you do not want to use these apps (Konsole and ImageMagick) and want to use a
 ## Backgrounds
 To set your desktop background, you must set `~/.background-image`.
 
-## Limitations
-It appears that the `pulseaudio` module does not work on NixOS, even with `pulseaudio` enabled in `/etc/nixos/configuration.nix`, as it returns the error: `pulseaudio: Fatal Error - OSError(libpulse.so.0: cannot open shared object file: No such file or directory)` (reported at [NixOS/nixpkgs#84744](https://github.com/NixOS/nixpkgs/issues/84744)). The closest that appears possible is a shell script that displays current audio volume.
-
 ## Shortcuts
 | Shortcut                                                                        | Action                                                                                                         |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
