@@ -210,6 +210,9 @@ bar {
                 inactive_workspace #454545 #212121 #ffffff
         }
 }
+
+exec --no-startup-id google-chrome-stable
+
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
