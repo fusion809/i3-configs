@@ -13,7 +13,7 @@ status.register("clock",
 status.register("disk",
     path="/data",
     round_size=1,
-    format="/data {used}/{total}G")
+    format="/data {avail}G left")
 
 status.register("shell",
     command="/data/GitHub/mine/scripts/nixos-scripts/.local/bin/rfs-usage",
