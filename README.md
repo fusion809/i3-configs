@@ -1,7 +1,7 @@
 # i3-configs (nixos branch)
-![Screenshot of i3 set up using these configs as of 10 April 2020 (b875d43fa891aadbebd3ebf614c3769e950aba50)](https://fusion809.github.io/images/i3/i3-4.18-nixos-configs-20200410-b875d43fa891aadbebd3ebf614c3769e950aba50.png)
+![Screenshot of i3 set up using these configs as of 24 April 2020 (bef6c51b4822efc1b26bee0213d95c88a48adcbd)](https://fusion809.github.io/images/i3/i3-4.18-nixos-configs-20200424_bef6c51b4822efc1b26bee0213d95c88a48adcbd.png)
 
-***Figure 1: this is what my i3 desktop, using these configs (specifically commit b875d43fa891aadbebd3ebf614c3769e950aba50), looks like as of 10 April 2020 (wallpaper is [this](https://github.com/fusion809/artwork/blob/master/Flags/Boomerang%20with%20white%20star%2C%20blue%20background%20to%20white%20southern%20cross.svg)).***
+***Figure 1: this is what my i3 desktop, using these configs (specifically commit bef6c51b4822efc1b26bee0213d95c88a48adcbd), looks like as of 24 April 2020 (wallpaper is [this](https://github.com/fusion809/artwork/blob/master/Flags/Boomerang%20with%20white%20star%2C%20blue%20background%20to%20white%20southern%20cross.svg)).***
 
 This repository contains my i3 configs. There are some shell/C/C++ powered scripts in this repository that are redundant, they are kepted in `.redundant/` in case they become useful some time in the future, but for now they are broken.
 
@@ -29,7 +29,7 @@ in line #3 in the above snippet. [This](https://github.com/fusion809/NixOS-confi
 Likewise [`nixos-scripts`](https://github.com/fusion809/nixos-scripts) must be present in `/data/GitHub/mine/scripts/`. 
 
 ## Customization
-If you do not want to use these apps (such as Konsole, ImageMagick and Thunar) and want to use alternative apps edit `~/.i3/config` accordingly. If your screen is small and the i3bar does not seem to fit properly on your screen I would suggest editing the font setting line in `~/.i3/config` accordingly.
+If you do not want to use these apps (such as Konsole, ImageMagick and Thunar) and want to use alternative apps edit `~/.i3/config` accordingly. If your screen is small and the i3bar does not seem to fit properly on your screen I would suggest editing the font setting line in `~/.i3/config` accordingly. Likewise, I have the weather settings in `.i3/i3status.py` set so that it shows my local weather, if you want to change it to your local weather edit the `location_code` field in accordance with what is said at https://i3pystatus.readthedocs.io/en/latest/i3pystatus.html#weather-backends.
 
 ## Backgrounds
 To set your desktop background, you must set `~/.background-image`.
@@ -94,7 +94,6 @@ To set your desktop background, you must set `~/.background-image`.
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>7</kbd>                                    | Move window to workspace 7.                                                                                    |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>8</kbd>                                    | Move window to workspace 8.                                                                                    |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>9</kbd>                                    | Move window to workspace 9.                                                                                    |
-| <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>c</kbd>                                    | Reload the configuration file.                                                                                 |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>e</kbd>                                    | Exit i3 (log out of X session).                                                                                |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>f</kbd>                                    | Launch Google Chrome.                                                                                               |
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>j</kbd>                                    | Move left.                                                                                                     |
