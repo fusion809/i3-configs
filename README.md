@@ -21,7 +21,7 @@ The following must be in your `/etc/nixos/configuration.nix` file:
 at an absolute minimum. Although, if you want a comfortable experience, I suggest also having:
 
 ```bash
-imagemagick rofi konsole pcmanfm lxappearance konsole moka-icon-theme
+imagemagick rofi konsole thunar lxappearance konsole moka-icon-theme
 ```
 
 in line #3 in the above snippet. [This](https://github.com/fusion809/NixOS-configs/blob/20.09-pre/configuration.nix) is my full `/etc/nixos/configuration.nix` file, it provides a very comfortable experience. 
@@ -45,7 +45,7 @@ To set your desktop background, you must set `~/.background-image`.
 | <kbd>F7</kbd>                                                                   | Switch to workspace 7.                                                                                         |
 | <kbd>F8</kbd>                                                                   | Switch to workspace 8.                                                                                         |
 | <kbd>F9</kbd>                                                                   | Switch to workspace 9.                                                                                         |
-| <kbd>F10</kbd>                                                                  | Change to the workspace where PCManFM is running.                                                              |
+| <kbd>F10</kbd>                                                                  | Change to the workspace where Thunar is running.                                                              |
 | <kbd>F11</kbd>                                                                  | Change to workspace where an instance of VLC is running.                                                       |
 | <kbd>F12</kbd>                                                                  | Change to workspace where an instance of Konsole is running.                                                     |
 | <kbd>Alt</kbd>+<kbd>d</kbd>                                                     | Focus the child container.                                                                                     |
@@ -70,7 +70,7 @@ To set your desktop background, you must set `~/.background-image`.
 | <kbd>Win</kbd>+<kbd>l</kbd>                                                     | Focus up.                                                                                                      |
 | <kbd>Win</kbd>+<kbd>m</kbd>                                                     | Launch MarvinSketch (installed from [fusion809-overlay](https://github.com/fusion809/fusion809-overlay))       |
 | <kbd>Win</kbd>+<kbd>o</kbd>                                                     | Launch RuneScape NXT Client.                                                          |
-| <kbd>Win</kbd>+<kbd>p</kbd>                                                     | Launch PCManFM (LXDE's file manager).                                                                          |
+| <kbd>Win</kbd>+<kbd>p</kbd>                                                     | Launch Thunar (Xfce's file manager).                                                                          |
 | <kbd>Win</kbd>+<kbd>q</kbd>                                                     | Kill focused window.
 | <kbd>Win</kbd>+<kbd>r</kbd>                                                     | Restart i3 (preserves layout and session), can be used to start a newly installed version of i3.               |                                                                                           |
 | <kbd>Win</kbd>+<kbd>s</kbd>                                                     | Layout stacking.                                                                                               |
@@ -107,7 +107,7 @@ To set your desktop background, you must set `~/.background-image`.
 | Audio volume up button                                                          | Increases volume by 5%. |
 | Audio volume down button                                                        | Decreases volume by 5%. |
 | Audio mute button                                                               | Mutes audio. |
-| Home page button                                                                | Opens PCManFM. |
+| Home page button                                                                | Opens Thunar. |
 | Calculator button                                                               | Opens GNU Octave (with SymPy set up). |
 | Play/pause button                                                               | Play or pause media. |
 

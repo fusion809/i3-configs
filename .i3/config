@@ -18,8 +18,8 @@ floating_modifier $mod
 # Switch to RS
 bindsym Home [class="RuneScape"] focus
 
-# Switch to PCManFM
-bindsym F10 [class="Pcmanfm"] focus
+# Switch to Thunar
+bindsym F10 [class="Thunar"] focus
 
 # Switch to VLC
 bindsym F11 [class="vlc"] focus
@@ -144,7 +144,6 @@ bindsym $mod+u exec urxvt
 bindsym $mod+Tab exec konsole
 bindsym $mod+Enter exec konsole
 
-# Set workspace icons; the final one for PCManFM will be put in place if these two actually work, which they don't
 set $workspace1 "1"
 set $workspace2 "2"
 set $workspace3 "3"
