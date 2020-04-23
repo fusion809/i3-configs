@@ -5,7 +5,7 @@
 
 This repository contains my i3 configs. There are some shell/C/C++ powered scripts in this repository that are redundant, they are kepted in `.redundant/` in case they become useful some time in the future, but for now they are broken.
 
-The Python-based (or i3pystatus) bar displays the following: weather conditions (although sometimes it botches it and labels the temperature in Farenheit as degrees Celsius), download/upload rates, uptime, disk space (used/total), CPU usage (%), load (average over 1 minute), RAM usage (used/total) and date. 
+The Python-based (or i3pystatus) bar displays the following: OS name and version, weather conditions (although sometimes it botches it and labels the temperature in Farenheit as degrees Celsius), download/upload rates, disk space (free), CPU usage (%), load (average over 1 minute), RAM usage (used/total) and date. 
 
 ## Requirements
 The following must be in your `/etc/nixos/configuration.nix` file:
