@@ -42,8 +42,7 @@ bindsym $mod+d exec "rofi -show drun -drun-icon-theme Moka -show-icons"
 bindsym $mod+i exec i3-input
 
 # Launch MarvinSketch
-# Commented out as Marvin doesn't exist on NixOS (yet)
-#bindsym $mod+m exec /opt/chemaxon/marvinsuite/bin/msketch
+bindsym $mod+m exec msketch
 
 # Launch RuneScape NXT client
 bindsym $mod+o exec flatpak run com.jagex.RuneScape
