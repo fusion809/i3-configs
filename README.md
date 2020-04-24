@@ -1,7 +1,7 @@
 # i3-configs (nixos branch)
 ![Screenshot of i3 set up using these configs as of 24 April 2020 (bef6c51b4822efc1b26bee0213d95c88a48adcbd)](https://fusion809.github.io/images/i3/i3-4.18-nixos-configs-20200424_bef6c51b4822efc1b26bee0213d95c88a48adcbd.png)
 
-***Figure 1: this is what my i3 desktop, using these configs (specifically commit bef6c51b4822efc1b26bee0213d95c88a48adcbd), looks like as of 24 April 2020 (wallpaper is [this](https://github.com/fusion809/artwork/blob/master/Flags/Boomerang%20with%20white%20star%2C%20blue%20background%20to%20white%20southern%20cross.svg)).***
+***Figure 1: this is what my i3 desktop, using these configs (specifically commit bef6c51b4822efc1b26bee0213d95c88a48adcbd), looks like as of 24 April 2020 (wallpaper is [this](https://github.com/fusion809/artwork/blob/master/Flags/Boomerang%20with%20white%20star%2C%20blue%20background%20to%20white%20southern%20cross.svg), my own design for a new Aussie flag).***
 
 This repository contains my i3 configs. There are some shell/C/C++ powered scripts in this repository that are redundant, they are kepted in `.redundant/` in case they become useful some time in the future, but for now they are broken.
 
