@@ -220,4 +220,4 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86HomePage exec thunar
 bindsym XF86Calculator exec /home/fusion809/.local/bin/gnu-octave
-bindsym XF86PowerOff exec systemctl poweroff
+#bindsym XF86PowerOff exec systemctl poweroff
