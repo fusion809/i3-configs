@@ -68,7 +68,7 @@ To set your desktop background, you must set `~/.background-image`.
 | <kbd>Win</kbd>+<kbd>j</kbd>                                                     | Focus left.                                                                                                    |
 | <kbd>Win</kbd>+<kbd>k</kbd>                                                     | Focus down.                                                                                                    |
 | <kbd>Win</kbd>+<kbd>l</kbd>                                                     | Focus up.                                                                                                      |
-| <kbd>Win</kbd>+<kbd>m</kbd>                                                     | Launch MarvinSketch (installed from [fusion809-overlay](https://github.com/fusion809/fusion809-overlay))       |
+| <kbd>Win</kbd>+<kbd>m</kbd>                                                     | Launch MarvinSketch |
 | <kbd>Win</kbd>+<kbd>o</kbd>                                                     | Launch RuneScape NXT Client.                                                          |
 | <kbd>Win</kbd>+<kbd>p</kbd>                                                     | Launch Thunar (Xfce's file manager).                                                                          |
 | <kbd>Win</kbd>+<kbd>q</kbd>                                                     | Kill focused window.
