@@ -210,7 +210,7 @@ bar {
 }
 
 exec --no-startup-id google-chrome-stable
-exec --no-startup-id hexchat
+#exec --no-startup-id hexchat
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
