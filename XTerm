@@ -7,11 +7,9 @@ XTerm*rightScrollBar: true
 XTerm*ScrollBar: true
 XTerm*scrollTtyOutput: true
 XTerm*VT100.Translations: #override \
-      Ctrl<Key>V: insert-selection(CLIPBOARD) \n\ 
-      Ctrl<Key>V: insert-selection(PRIMARY) \n\ 
+      Ctrl <key>C: string(0x03) \n\
       Shift<Btn1Down>: select-start() \n\ 
       Shift<Btn1Motion>: select-extend() \n\ 
       Shift<Btn1Up>: select-end(CLIPBOARD) \n\
-Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
-Ctrl <Key>V: insert-selection(CLIPBOARD)
-
+~Shift Ctrl <KeyPress> v: insert-selection(CLIPBOARD)\n\
+~Shift Ctrl <KeyPress> c: copy-selection(CLIPBOARD)\n

@@ -24,11 +24,11 @@ if ! [[ -d /home/fusion809/.local/share/wallpapers ]]; then
 	mkdir /home/fusion809/.local/share/wallpapers
 fi
 
-if ! [[ -f /home/fusion809/.local/share/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg ]]; then
-	wget -cq "https://unsplash.com/photos/JgOeRuGD_Y4/download?force=true" -O john-towner-JgOeRuGD_Y4-unsplash.jpg	
-fi
+#if ! [[ -f /home/fusion809/.local/share/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg ]]; then
+#	wget -cq "https://unsplash.com/photos/JgOeRuGD_Y4/download?force=true" -O john-towner-JgOeRuGD_Y4-unsplash.jpg	
+#fi
 
-feh --bg-scale "/home/fusion809/.local/share/wallpapers/john-towner-JgOeRuGD_Y4-unsplash.jpg"
+feh --bg-scale "/home/fusion809/.local/share/wallpapers/Strong Sea Waves HD.jpg"
 # Run check updates
 #if ! `ps ax | grep i3 | grep -v grep > /dev/null 2>&1` && ! `ps ax | grep check-updates | grep -v grep > /dev/null 2>&1`; then
 #    /usr/local/bin/check-updates-popup-loop

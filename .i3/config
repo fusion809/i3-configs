@@ -33,14 +33,14 @@ bindsym $mod+4 [class="mono-sgen"] focus
 # Switch to RS
 bindsym Home [class="RuneScape"] focus
 
-# Switch to PCManFM
-bindsym F10 [class="Pcmanfm"] focus
+# Switch to Caja
+bindsym F10 [class="Caja"] focus
 
 # Switch to VLC
 bindsym F11 [class="Vlc"] focus
 
 # Switch to xterm
-bindsym F12 [class="XTerm"] focus
+bindsym F12 [class="urxvt"] focus
 
 # Take a screenshot
 bindsym Print --release exec /usr/local/bin/scrnshot
@@ -58,6 +58,7 @@ bindsym $mod+c exec /usr/bin/chromium
 #bindsym $mod+d exec dmenu_run
 # start Rofi
 bindsym $mod+d exec "rofi -show drun -drun-icon-theme ePapirus -show-icons"
+#bindsym $mod+d exec dmenu_run
 
 # Open i3-input
 bindsym $mod+i exec i3-input
@@ -184,8 +185,8 @@ bindsym $mod+$mod1+0 workspace $workspace20
 
 # Terminal
 bindsym $mod+u exec urxvt
-bindsym $mod+Tab exec xterm
-bindsym $mod+Enter exec xterm
+bindsym $mod+Tab exec urxvt
+bindsym $mod+Enter exec urxvt
 
 # Set workspace icons; the final one for PCManFM will be put in place if these two actually work, which they don't
 set $workspace1 ""
@@ -285,24 +286,24 @@ bar {
         }
 }
 
-bar { 
-        workspace_buttons no
-        tray_output no
-        position top
-        font pango:Font Awesome 5 Brands-Regular-400 10
+#bar { 
+#        workspace_buttons no
+#        tray_output no
+#        position top
+#        font pango:Font Awesome 5 Brands-Regular-400 10
 
         #status_command ~/GitHub/mine/scripts/common-scripts/.i3/i3status.sh
-        status_command /usr/bin/python3 $HOME/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
-        colors {
-                background #222222
-                statusline #ffffff
+        #status_command /usr/bin/python3 $HOME/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
+        #colors {
+        #        background #222222
+        #        statusline #ffffff
 
                 #focused_workspace  #ff4500 #000000
                 #inactive_workspace #888888 #000000
-                focused_workspace  #454545 #225577 #ffffff
-                inactive_workspace #454545 #212121 #ffffff
-        }
-}
+        #        focused_workspace  #454545 #225577 #ffffff
+        #        inactive_workspace #454545 #212121 #ffffff
+        #}
+#}
 
 # Execute xsession, which starts feh for the desktop background
 exec ~/.xsession
@@ -314,17 +315,17 @@ exec ~/.xsession
 # https://unix.stackexchange.com/a/479969
 # Firefox
 #assign [class="^Firefox$"] $workspace1
-exec --no-startup-id brave
+exec --no-startup-id google-chrome-stable
 # RuneScape NXT Client
-assign [class="^RuneScape$"] $workspace2
+#assign [class="^RuneScape$"] $workspace2
 #exec --no-startup-id /usr/local/bin/runescape-launcher
-assign [class="^Runescape$"] $workspace2
+#assign [class="^Runescape$"] $workspace2
 # XTerm
 #assign [class="^XTerm$"] $workspace3
 #exec --no-startup-id xterm
 # PCManFM
 #assign [class="^Pcmanfm$"] $workspace4
-#exec --no-startup-id pcmanfm
+exec --no-startup-id caja
 # VirtualBox
 assign [class="^VirtualBox Manager$"] $workspace7
 exec --no-startup-id VirtualBox
