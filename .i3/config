@@ -349,3 +349,4 @@ assign [class="^Gvim$"] $workspace12
 # Google Earth
 #assign [class="^Google Earth Pro$"] $workspace13
 #exec --no-startup-id code
+exec --no-startup-id urxvt
