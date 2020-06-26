@@ -189,19 +189,19 @@ bindsym $mod+Tab exec urxvt
 bindsym $mod+Enter exec urxvt
 
 # Set workspace icons; the final one for PCManFM will be put in place if these two actually work, which they don't
-set $workspace1 ""
-set $workspace2 ""
-set $workspace3 ""
-set $workspace4 ""
-set $workspace5 ""
-set $workspace6 ""
-set $workspace7 ""
-set $workspace8 ""
-set $workspace9 ""
-set $workspace10 ""
-set $workspace11 ""
-set $workspace12 ""
-set $workspace13 ""
+set $workspace1 "1"
+set $workspace2 "2"
+set $workspace3 "3"
+set $workspace4 "4"
+set $workspace5 "5"
+set $workspace6 "6"
+set $workspace7 "7"
+set $workspace8 "8"
+set $workspace9 "9"
+set $workspace10 "10"
+set $workspace11 "11"
+set $workspace12 "12"
+set $workspace13 "13"
 set $workspace14 "14"
 set $workspace15 "15"
 set $workspace16 "16"
@@ -327,13 +327,13 @@ exec --no-startup-id google-chrome-stable
 #assign [class="^Pcmanfm$"] $workspace4
 exec --no-startup-id caja
 # VirtualBox
-assign [class="^VirtualBox Manager$"] $workspace7
-exec --no-startup-id VirtualBox
+#assign [class="^VirtualBox Manager$"] $workspace7
+#exec --no-startup-id VirtualBox
 # OpenRA mods
 #assign [class="^openra.*$"] $workspace8
 #assign [class="^mono-sgen$"] $workspace8
 # HexChat
-assign [class="^Hexchat$"] $workspace9
+#assign [class="^Hexchat$"] $workspace9
 #exec --no-startup-id hexchat
 # Atom
 #assign [class="^Atom$"] $workspace10
@@ -343,9 +343,9 @@ assign [class="^Hexchat$"] $workspace9
 #assign [class="^vlc$"] $workspace5
 # VSCode
 #assign [class="^Code$"] $workspace11
-assign [class="^Code - Insiders$"] $workspace11
+#assign [class="^Code - Insiders$"] $workspace11
 # GVim
-assign [class="^Gvim$"] $workspace12
+#assign [class="^Gvim$"] $workspace12
 # Google Earth
 #assign [class="^Google Earth Pro$"] $workspace13
 #exec --no-startup-id code
