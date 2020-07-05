@@ -40,7 +40,7 @@ bindsym F10 [class="Caja"] focus
 bindsym F11 [class="Vlc"] focus
 
 # Switch to xterm
-bindsym F12 [class="urxvt"] focus
+bindsym F12 [class="URxvt"] focus
 
 # Take a screenshot
 bindsym Print --release exec /usr/local/bin/scrnshot
