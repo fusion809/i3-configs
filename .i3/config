@@ -33,14 +33,14 @@ bindsym $mod+4 [class="mono-sgen"] focus
 # Switch to RS
 bindsym Home [class="RuneScape"] focus
 
-# Switch to PCManFM
-bindsym F10 [class="Pcmanfm"] focus
+# Switch to Caja
+bindsym F10 [class="Caja"] focus
 
 # Switch to VLC
 bindsym F11 [class="Vlc"] focus
 
 # Switch to xterm
-bindsym F12 [class="XTerm"] focus
+bindsym F12 [class="URxvt"] focus
 
 # Take a screenshot
 bindsym Print --release exec /usr/local/bin/scrnshot
@@ -58,6 +58,7 @@ bindsym $mod+c exec /usr/bin/chromium
 #bindsym $mod+d exec dmenu_run
 # start Rofi
 bindsym $mod+d exec "rofi -show drun -drun-icon-theme ePapirus -show-icons"
+#bindsym $mod+d exec dmenu_run
 
 # Open i3-input
 bindsym $mod+i exec i3-input
@@ -162,7 +163,7 @@ bindsym F1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
 bindsym F3 workspace $workspace3
 bindsym F4 workspace $workspace4
-bindsym F5 workspace $workspace5
+#bindsym F5 workspace $workspace5
 #bindsym $mod+6 workspace $workspace6
 #bindsym F6 workspace $workspace6
 bindsym F7 workspace $workspace7
@@ -184,23 +185,23 @@ bindsym $mod+$mod1+0 workspace $workspace20
 
 # Terminal
 bindsym $mod+u exec urxvt
-bindsym $mod+Tab exec xterm
-bindsym $mod+Enter exec xterm
+bindsym $mod+Tab exec urxvt
+bindsym $mod+Enter exec urxvt
 
 # Set workspace icons; the final one for PCManFM will be put in place if these two actually work, which they don't
-set $workspace1 ""
-set $workspace2 ""
-set $workspace3 ""
-set $workspace4 ""
-set $workspace5 ""
-set $workspace6 ""
-set $workspace7 ""
-set $workspace8 ""
-set $workspace9 ""
-set $workspace10 ""
-set $workspace11 ""
-set $workspace12 ""
-set $workspace13 ""
+set $workspace1 "1"
+set $workspace2 "2"
+set $workspace3 "3"
+set $workspace4 "4"
+set $workspace5 "5"
+set $workspace6 "6"
+set $workspace7 "7"
+set $workspace8 "8"
+set $workspace9 "9"
+set $workspace10 "10"
+set $workspace11 "11"
+set $workspace12 "12"
+set $workspace13 "13"
 set $workspace14 "14"
 set $workspace15 "15"
 set $workspace16 "16"
@@ -272,7 +273,7 @@ bindsym $mod+r mode "resize"
 bar { 
         position bottom
         #status_command ~/GitHub/mine/scripts/common-scripts/.i3/i3status.sh
-        status_command /usr/bin/python3 ~/GitHub/mine/scripts/common-scripts/.i3/i3status.py
+        status_command /usr/bin/python3 ~/GitHub/mine/scripts/common-scripts/.i3/i3status-laptop.py
         font pango:Font Awesome 5 Brands-Regular-400 9
         colors {
                 background #000000
@@ -293,15 +294,15 @@ bar {
 
         #status_command ~/GitHub/mine/scripts/common-scripts/.i3/i3status.sh
         #status_command /usr/bin/python3 $HOME/GitHub/mine/scripts/common-scripts/.i3/i3status-notifs.py
-#        colors {
-#                background #222222
-#                statusline #ffffff
+        #colors {
+        #        background #222222
+        #        statusline #ffffff
 
                 #focused_workspace  #ff4500 #000000
                 #inactive_workspace #888888 #000000
-#                focused_workspace  #454545 #225577 #ffffff
-#                inactive_workspace #454545 #212121 #ffffff
-#        }
+        #        focused_workspace  #454545 #225577 #ffffff
+        #        inactive_workspace #454545 #212121 #ffffff
+        #}
 #}
 
 # Execute xsession, which starts feh for the desktop background
@@ -314,24 +315,25 @@ exec ~/.xsession
 # https://unix.stackexchange.com/a/479969
 # Firefox
 #assign [class="^Firefox$"] $workspace1
-exec --no-startup-id brave
+exec --no-startup-id google-chrome-stable
 # RuneScape NXT Client
-assign [class="^RuneScape$"] $workspace2
+#assign [class="^RuneScape$"] $workspace2
 #exec --no-startup-id /usr/local/bin/runescape-launcher
-assign [class="^Runescape$"] $workspace2
+#assign [class="^Runescape$"] $workspace2
 # XTerm
 #assign [class="^XTerm$"] $workspace3
 #exec --no-startup-id xterm
 # PCManFM
 #assign [class="^Pcmanfm$"] $workspace4
-#exec --no-startup-id pcmanfm
+exec --no-startup-id caja
 # VirtualBox
-assign [class="^VirtualBox Manager$"] $workspace7
+#assign [class="^VirtualBox Manager$"] $workspace7
+#exec --no-startup-id VirtualBox
 # OpenRA mods
 #assign [class="^openra.*$"] $workspace8
 #assign [class="^mono-sgen$"] $workspace8
 # HexChat
-assign [class="^Hexchat$"] $workspace9
+#assign [class="^Hexchat$"] $workspace9
 #exec --no-startup-id hexchat
 # Atom
 #assign [class="^Atom$"] $workspace10
@@ -341,9 +343,11 @@ assign [class="^Hexchat$"] $workspace9
 #assign [class="^vlc$"] $workspace5
 # VSCode
 #assign [class="^Code$"] $workspace11
-assign [class="^Code - Insiders$"] $workspace11
+#assign [class="^Code - Insiders$"] $workspace11
 # GVim
-assign [class="^Gvim$"] $workspace12
+#assign [class="^Gvim$"] $workspace12
 # Google Earth
 #assign [class="^Google Earth Pro$"] $workspace13
 #exec --no-startup-id code
+exec --no-startup-id urxvt
+
