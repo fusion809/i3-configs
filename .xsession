@@ -20,12 +20,8 @@
 #feh --bg-scale "$HOME/.local/share/wallpapers/Lake Surrounded By Trees HD.jpg"
 #feh --bg-scale "/home/fusion809/Pictures/Parliament House/Parliament_House_Canberra_(281004929).jpg"
 #feh --bg-scale "/home/fusion809/Pictures/Parliament House/gettyimages-1653377701.jpg"
-if ! [[ -d /home/fusion809/.local/share/wallpapers ]]; then
-	mkdir /home/fusion809/.local/share/wallpapers
-fi
-
 #feh --bg-scale "/home/fusion809/.local/share/wallpapers/Strong Sea Waves HD.jpg"
-feh --bg-scale "/usr/share/backgrounds/Tranquil_by_Pat_David.jpg"
+feh --bg-scale "/home/fusion809/Pictures/102466849_10158195157419550_5999741672455261220_o.jpg"
 # Run check updates
 #if ! `ps ax | grep i3 | grep -v grep > /dev/null 2>&1` && ! `ps ax | grep check-updates | grep -v grep > /dev/null 2>&1`; then
 #    /usr/local/bin/check-updates-popup-loop

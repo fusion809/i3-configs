@@ -150,7 +150,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+a exec /usr/local/bin/aod
 
 # focus the child container
 bindsym $mod1+d focus child
@@ -160,12 +160,11 @@ bindsym $mod+q kill
 
 # switch to workspace
 bindsym F1 workspace $workspace1
-bindsym $mod+2 workspace $workspace2
+bindsym $mod+2 workspace $workspace2 #F2 is reserved for file rename in FM
 bindsym F3 workspace $workspace3
-bindsym F4 workspace $workspace4
+bindsym $mod+4 workspace $workspace4
 bindsym F5 workspace $workspace5
-#bindsym $mod+6 workspace $workspace6
-#bindsym F6 workspace $workspace6
+bindsym F6 workspace $workspace6
 bindsym F7 workspace $workspace7
 bindsym F8 workspace $workspace8
 bindsym F9 workspace $workspace9
