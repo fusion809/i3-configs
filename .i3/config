@@ -27,9 +27,6 @@ bindsym $mod+3 [class="pyrogenesis"] focus
 # Firefox
 bindsym End [class="Firefox"] focus
 
-# OpenRA
-bindsym $mod+4 [class="mono-sgen"] focus
-
 # Switch to RS
 bindsym Home [class="RuneScape"] focus
 
