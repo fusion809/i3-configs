@@ -321,7 +321,8 @@ exec --no-startup-id google-chrome-stable
 #exec --no-startup-id xterm
 # PCManFM
 #assign [class="^Pcmanfm$"] $workspace4
-exec --no-startup-id caja
+exec --no-startup-id pcmanfm
+exec --no-startup-id zotero
 # VirtualBox
 #assign [class="^VirtualBox Manager$"] $workspace7
 #exec --no-startup-id VirtualBox
